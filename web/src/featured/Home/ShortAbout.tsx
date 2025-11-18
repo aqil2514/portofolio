@@ -1,23 +1,49 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import { fontCinzel, fontPrompt } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 export function ShortAbout() {
+  const t = useTranslations("HomePage");
+
   return (
-    <section className="relative z-10 px-6 text-center space-y-6">
+    <motion.section
+      className="relative z-10 px-4 sm:px-6 text-center space-y-6"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7 }}
+    >
       {/* Title */}
-      <h2
+      <motion.h2
         className={cn(
           fontCinzel.className,
-          "text-3xl text-white font-semibold tracking-wide mb-10"
+          `
+          text-2xl sm:text-3xl 
+          text-white 
+          font-semibold 
+          tracking-wide 
+          mb-6 sm:mb-10
+        `
         )}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.1 }}
       >
-        About Me
-      </h2>
+        {t("about-me")}
+      </motion.h2>
 
       {/* Optional Profile Photo */}
-      <div className="flex justify-center mb-6">
-        <div className="w-28 h-28 rounded-full overflow-hidden border border-white/20 shadow-lg shadow-black/40">
+      <motion.div
+        className="flex justify-center mb-4 sm:mb-6"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border border-white/20 shadow-lg shadow-black/40">
           <Image
             src="/me.jpg"
             alt="Aqil Profile"
@@ -26,33 +52,75 @@ export function ShortAbout() {
             className="object-cover"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Description */}
-      <p
+      <motion.p
         className={cn(
           fontPrompt.className,
-          "text-white/90 max-w-xl mx-auto leading-relaxed text-[17px]"
+          `
+          text-white/90 
+          max-w-md sm:max-w-xl 
+          mx-auto 
+          leading-relaxed 
+          text-base sm:text-[17px]
+        `
         )}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
       >
         My name is Aqil, a full-stack developer who enjoys building digital
         systems, AI-powered automation, and real-world projects that people
         actually use.
-      </p>
+      </motion.p>
 
-      <div className="text-left flex justify-between gap-4 items-center">
-        <h2 className={cn(fontCinzel.className, "text-white")}>
-          Want to work together?
+      {/* CTA Row */}
+      <motion.div
+        className="
+          flex flex-col sm:flex-row 
+          items-center sm:items-center 
+          justify-between 
+          gap-3 sm:gap-4 
+          text-center sm:text-left
+          mt-4
+        "
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
+        <h2
+          className={cn(
+            fontCinzel.className,
+            `
+            text-white
+            text-lg sm:text-xl
+            font-semibold
+          `
+          )}
+        >
+          {t("wantToWorkTogether")}
         </h2>
+
         <button
           className={cn(
             fontPrompt.className,
-            "text-white border border-white rounded-2xl p-1 px-3"
+            `
+            text-white 
+            border border-white 
+            rounded-2xl 
+            py-1 px-4 
+            text-sm sm:text-base
+            hover:bg-white/10 
+            transition
+          `
           )}
         >
-          Contact Me
+          {t("contact-me")}
         </button>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }

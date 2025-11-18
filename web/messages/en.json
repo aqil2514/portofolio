@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "greetings": "Hello I am!",
+    "about-me": "About Me",
+    "contact-me": "Contact Me",
+    "skillsTools": "Skills & Tools =>",
+    "featuredProjects": "Featured Projects",
+    "viewAllProjects" :"View All Projects",
+    "wantToWorkTogether" : "Want To Work Together?"
+  }
+}

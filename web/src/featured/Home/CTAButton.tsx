@@ -1,41 +1,60 @@
+import * as motion from "motion/react-client";
 import { BasicLink } from "@/@types/General";
 import { fontCinzel } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { usePageTransition } from "@/providers/PageTransitionProvider";
+import { useRouter } from "@/i18n/navigations";
 
 const items: BasicLink[] = [
-  {
-    label: "About Me",
-    link: "#",
-  },
-  {
-    label: "Contact Me",
-    link: "#",
-  },
+  { label: "about-me", link: "/about-me" },
+  { label: "contact-me", link: "#" },
 ];
 
 export function CTAButton() {
   const router = useRouter();
+  const { setTransition } = usePageTransition();
+  const t = useTranslations("HomePage");
 
   return (
-    <section className="flex gap-6 relative z-10">
-      {/* Outer gradient wrapper */}
-      {items.map((item) => (
-        <div
+    <section
+      className="
+        flex flex-wrap justify-center 
+        gap-3 sm:gap-6 
+        relative z-10
+      "
+    >
+      {items.map((item, index) => (
+        <motion.div
           key={item.label}
-          className="p-0.5 rounded-xl bg-linear-to-r to-[#0989e4] from-[#456882]"
+          className="
+            p-0.5 rounded-xl 
+            bg-linear-to-r from-[#456882] to-[#0989e4]
+          "
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.5, delay: 1 + index * 0.5 }}
         >
-          {/* Inner button (black) */}
           <button
             className={cn(
               fontCinzel.className,
-              "px-6 py-2 rounded-xl bg-black text-white transition-all duration-100 hover:bg-transparent active:scale-95 font-semibold cursor-pointer"
+              `
+              rounded-xl bg-black text-white 
+              transition-all duration-100 
+              hover:bg-transparent active:scale-95 font-semibold cursor-pointer
+              px-4 py-2             
+              sm:px-6 sm:py-2     
+              w-full sm:w-auto    
+            `
             )}
-            onClick={() => router.push(item.link)}
+            onClick={() => {
+              setTransition("slideLeft");
+              router.push(item.link);
+            }}
           >
-            {item.label}
+            {t(item.label as "about-me" | "contact-me")}
           </button>
-        </div>
+        </motion.div>
       ))}
     </section>
   );

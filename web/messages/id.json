@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "greetings": "Halo, saya",
+    "about-me": "Tentang Saya",
+    "contact-me": "Hubungi Saya",
+    "skillsTools": "Keahlian & Alat =>",
+    "featuredProjects": "Proyek Unggulan",
+    "viewAllProjects": "Lihat Semua Proyek",
+    "wantToWorkTogether": "Ingin Bekerja Sama?"
+  }
+}
