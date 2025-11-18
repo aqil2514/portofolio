@@ -5,6 +5,7 @@ import { BallAnimation } from "@/featured/AboutMe/BallAnimation";
 import { fontCinzel } from "@/constant/fonts";
 import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { PageLoader } from "../layouts/loader/PageLoader";
+import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 
 export default function AboutMeTemplate() {
   const { isReady } = usePageTransition();
@@ -23,9 +24,10 @@ export default function AboutMeTemplate() {
           About Me
         </h1>
         <p className="text-white/90 text-sm sm:text-base">
-          A short description about who I am and what I do...
+          I love coding because it allows me to turn ideas into real, functional systems that people can actually use.
         </p>
       </BallAnimation>
+      <RoadmapTimeline />
     </MainContainer>
   );
 }
