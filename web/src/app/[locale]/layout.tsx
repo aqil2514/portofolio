@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { PageTransitionProvider } from "@/providers/PageTransitionProvider";
+import { FloatingNavButton } from "@/components/layouts/navigations/FloatingNavButton";
+import { VARIABLE_COLOR } from "@/constant/variables";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +29,18 @@ export default function LocaleLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      style={{ background: VARIABLE_COLOR.BLUE_PRIMARY }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <NextIntlClientProvider>
-          <PageTransitionProvider>{children}</PageTransitionProvider>
+          <PageTransitionProvider>
+            <main className="overflow-x-hidden">
+              <FloatingNavButton />
+              {children}
+            </main>
+          </PageTransitionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

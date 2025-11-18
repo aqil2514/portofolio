@@ -7,14 +7,18 @@ import { CTAButton } from "@/featured/Home/CTAButton";
 import { SkillsSection } from "@/featured/Home/SkillsSection";
 import { FeaturedProjects } from "@/featured/Home/FeaturedProjects";
 import { ShortAbout } from "@/featured/Home/ShortAbout";
-import { LanguageSwitcher } from "@/featured/Home/LanguageSwitcher";
+import { usePageTransition } from "@/providers/PageTransitionProvider";
+import { PageLoader } from "../layouts/loader/PageLoader";
 
 export default function HomeTemplate() {
+  const { isReady } = usePageTransition();
+
+  if (!isReady) return <PageLoader />;
+
   return (
     <MainContainer className="relative flex justify-center items-center flex-col space-y-6">
       <ParticleContainer />
 
-      <LanguageSwitcher />
       <HomeGreetings />
       <CTAButton />
       <SkillsSection />

@@ -6,7 +6,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 
 export function MainContainer({ children, className, ...props }: Props) {
   return (
-    <div {...props} className={cn("container mx-auto py-20", className)}>
+    <div {...props} className={cn("container mx-auto py-20 overflow-x-hidden", className)}>
       {children}
     </div>
   );
