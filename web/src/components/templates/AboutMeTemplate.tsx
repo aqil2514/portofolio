@@ -6,6 +6,7 @@ import { fontCinzel } from "@/constant/fonts";
 import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { PageLoader } from "../layouts/loader/PageLoader";
 import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
+import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
 
 export default function AboutMeTemplate() {
   const { isReady } = usePageTransition();
@@ -27,6 +28,10 @@ export default function AboutMeTemplate() {
           I love coding because it allows me to turn ideas into real, functional systems that people can actually use.
         </p>
       </BallAnimation>
+      <WhoAmI />
+      {/* REFERENSI WHO AM I https://codepen.io/JavaScriptJunkie/pen/WgRBxw */}
+      {/* Core Skills Grid pakek accordion */}
+      {/* Product Philosophy pakek Badge */}
       <RoadmapTimeline />
     </MainContainer>
   );

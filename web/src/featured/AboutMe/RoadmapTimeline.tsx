@@ -41,7 +41,7 @@ export function RoadmapTimeline() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 2 }}
+        transition={{ duration: 0.6, delay: 2.3 }}
         className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-white/20 -translate-x-1/2"
       />
 
@@ -50,7 +50,7 @@ export function RoadmapTimeline() {
         {aboutRoadmap.map((item, index) => {
           const isLeft = index % 2 === 0;
 
-          const baseDelay = index === 0 || index === 1 ? 2 : 0;
+          const baseDelay = index === 0 || index === 1 ? 2.3 : 0;
 
           return (
             <motion.div
