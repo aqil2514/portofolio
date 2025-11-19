@@ -12,7 +12,6 @@ export function BallAnimation({ children }: { children: React.ReactNode }) {
       className="
         flex justify-center items-start w-full 
         relative 
-        pt-24 
         px-4 sm:px-0   /* padding mobile biar tidak mepet */
       "
     >

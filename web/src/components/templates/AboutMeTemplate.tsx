@@ -20,10 +20,10 @@ export default function AboutMeTemplate() {
       style={{
         background: VARIABLE_COLOR.BLUE_DARK,
       }}
-      className="min-h-screen relative space-y-12"
+      className="relative space-y-12"
     >
       <BallAnimation>
-        <h1 className={fontCinzel.className + " text-3xl font-bold"}>
+        <h1 className={fontCinzel.className + "text-3xl font-bold"}>
           About Me
         </h1>
         <p className="text-white/90 text-sm sm:text-base">

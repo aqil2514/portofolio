@@ -18,7 +18,7 @@ const items: WhoAmIItem[] = [
     title: "About Me",
     subTitle: "About AS",
     imageAlt: "Image 1",
-    imageSrc: "/Certificates/fsd-fewd.jpg",
+    imageSrc: "/Certificates/fsd-rwd.webp",
     CtaButton: <FancyButton>OK</FancyButton>,
   },
   {
