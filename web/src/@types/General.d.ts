@@ -11,5 +11,5 @@ export interface BasicImage {
 
 export interface ImageWithLink extends BasicImage {
   link: string;
-  label?: string;
+  labelLink?: string;
 }
