@@ -7,11 +7,26 @@ export const aboutProductPhilosophy = defineType({
   fields: [
     defineField({
       name: 'title',
-      type: 'string',
+      type: 'internationalizedArrayString',
     }),
     defineField({
       name: 'description',
-      type: 'text',
+      type: 'internationalizedArrayText',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      desc: 'description',
+    },
+    prepare({title, desc}) {
+      const titleValue = title?.[0]?.value || 'No title'
+      const descValue = desc?.[0]?.value?.slice(0, 50) || ''
+
+      return {
+        title: titleValue,
+        subtitle: descValue + (descValue ? '…' : ''),
+      }
+    },
+  },
 })

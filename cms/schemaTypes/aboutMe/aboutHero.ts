@@ -8,12 +8,12 @@ export const aboutHero = defineType({
     {
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'internationalizedArrayString',
     },
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'internationalizedArrayText',
     },
   ],
 })

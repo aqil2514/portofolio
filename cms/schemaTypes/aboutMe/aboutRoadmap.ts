@@ -7,7 +7,7 @@ export const aboutRoadmap = defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'internationalizedArrayString',
     }),
     defineField({
       name: 'date',
@@ -17,7 +17,7 @@ export const aboutRoadmap = defineType({
     defineField({
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'internationalizedArrayText',
     }),
     defineField({
       name: 'learningSkill',
@@ -32,4 +32,24 @@ export const aboutRoadmap = defineType({
       of: [{type: 'imageWithLink'}],
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      desc: 'description',
+      skillImg: 'learningSkill.0.imageSrc',
+      certImg: 'certificates.0.imageSrc',
+    },
+    prepare({title, desc, skillImg, certImg}) {
+      const titleValue = title?.[0]?.value || 'No title'
+      const descValue = desc?.[0]?.value?.slice(0, 50) || ''
+
+      const media = skillImg || certImg || undefined
+
+      return {
+        title: titleValue,
+        subtitle: descValue ? descValue + '…' : '',
+        media,
+      }
+    },
+  },
 })

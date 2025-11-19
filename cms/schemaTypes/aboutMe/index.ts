@@ -1,4 +1,4 @@
-import {aboutHero} from './abouHero'
+import {aboutHero} from './aboutHero'
 import {aboutCoreSkill} from './aboutCoreSkill'
 import { aboutProductPhilosophy } from './aboutProductPhilosophy'
 import { aboutRoadmap } from './aboutRoadmap'

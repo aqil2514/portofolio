@@ -8,17 +8,17 @@ export const aboutWhoAmI = defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'internationalizedArrayString',
     }),
     defineField({
       name: 'subtitle',
       title: 'Subtitle',
-      type: 'string',
+      type: 'internationalizedArrayString',
     }),
     defineField({
       name: 'content',
       title: 'Content',
-      type: 'text',
+      type: 'internationalizedArrayText',
     }),
     defineField({
       name: 'imageSrc',
