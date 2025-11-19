@@ -1,3 +1,5 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
@@ -7,13 +9,12 @@ import { WhoAmIItem } from "@/@types/About";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { FancyButton } from "@/components/atoms/FancyButton";
-
 import { motion } from "motion/react";
 
 const items: WhoAmIItem[] = [
   {
     content:
-      "Full Stack Developer with experience in web application development using JavaScript, TypeScript, React, Node.js, and databases (SQL, NoSQL). Proficient in digital administration systems and accustomed to working with ERP and data management. Capable of developing applications from frontend to backend to improve business efficiency. ",
+      "Full Stack Developer with experience in web application development using JavaScript, TypeScript, React, Node.js, and databases (SQL, NoSQL). Proficient in digital administration systems and accustomed to working with ERP and data management. Capable of developing applications from frontend to backend to improve business efficiency.",
     title: "About Me",
     subTitle: "About AS",
     imageAlt: "Image 1",
@@ -24,7 +25,7 @@ const items: WhoAmIItem[] = [
     content: "Halo nama saya Aqil",
     title: "Tentang Saya2",
     subTitle: "About AS",
-    imageAlt: "Image 1",
+    imageAlt: "Image 2",
     imageSrc: "/Certificates/fsd-fewd.jpg",
   },
 ];
@@ -39,23 +40,23 @@ export function WhoAmI() {
         opacity: 0,
         scale: 0.5,
         backgroundColor: "#8ab4d2",
-        x: "50%", // center-ish morph
+        x: "50%",
         translateX: "-50%",
       }}
       animate={{
-        width: "100%", // same as w-2/3
-        height: 400,
+        width: "100%",
+        height: "auto",
         borderRadius: 20,
         opacity: 1,
         scale: 1,
-        backgroundColor: "rgba(255,255,255,0)", // fully remove
+        backgroundColor: "rgba(255,255,255,0)",
         x: 0,
         translateX: "0%",
       }}
       transition={{
         duration: 0.65,
         ease: "easeOut",
-        delay: 2.2
+        delay: 2.2,
       }}
       className="mx-auto rounded-2xl overflow-hidden"
     >
@@ -65,17 +66,36 @@ export function WhoAmI() {
         transition={{ delay: 0.45, duration: 0.5 }}
       >
         <Swiper
-          direction="vertical"
+          direction="horizontal"
+          autoHeight={true}
           pagination={{ clickable: true }}
           modules={[Pagination]}
+          breakpoints={{
+            768: {
+              direction: "vertical", // desktop / tablet
+              autoHeight: false, // harus false di vertical
+              height: 420, // fixed height
+            },
+          }}
           slidesPerView={1}
-          className="mx-auto h-[400px] w-2/3 rounded-2xl"
+          className="mx-auto md:h-[420px] w-full sm:w-4/5 lg:w-2/3 rounded-2xl px-4 sm:px-0 bg-white/10 backdrop-blur-lg border border-white/20 md:bg-transparent md:backdrop-blur-none"
         >
           {items.map((item, i) => (
-            // Pakek grid! karena bawaannya block
-            <SwiperSlide key={item.title} className="px-20">
-              <div className="bg-white/10 backdrop-blur-lg border border-white/20 relative grid grid-cols-2 py-8 rounded-2xl">
-                <div className="relative w-[300px] h-[300px] -left-10 overflow-hidden rounded-2xl shadow-2xl shadow-black">
+            <SwiperSlide
+              key={item.title}
+              className="px-2 sm:px-10 lg:px-20 py-4"
+            >
+              <div
+                className="
+                  bg-white/10 backdrop-blur-lg border border-white/20 
+                  grid grid-cols-1 sm:grid-cols-2 
+                  gap-6 sm:gap-4 
+                  p-6 sm:p-8 
+                  rounded-2xl
+                "
+              >
+                {/* IMAGE */}
+                <div className="relative w-full h-[220px] sm:h-[260px] lg:h-[300px] mx-auto sm:-left-20 overflow-hidden rounded-2xl shadow-2xl shadow-black">
                   <div className="absolute inset-0 bg-linear-to-tl from-[#122a3b] to-[#85beea] opacity-80 z-10" />
                   <Image
                     fill
@@ -85,18 +105,24 @@ export function WhoAmI() {
                     className="object-cover"
                   />
                 </div>
-                <div className={cn("space-y-2 pr-12")}>
-                  <p className="font-semibold text-sm text-white">
+
+                {/* TEXT */}
+                <div
+                  className={cn(
+                    "space-y-2 sm:pr-6 lg:pr-12 text-white text-left"
+                  )}
+                >
+                  <p className="font-semibold text-sm text-white/90">
                     {item.title}
                   </p>
                   <p className="font-bold text-xl text-white">
                     {item.subTitle}
                   </p>
-                  <article className="text-white text-justify">
+                  <article className="text-white/90 text-sm sm:text-base text-justify leading-relaxed">
                     {item.content}
                   </article>
 
-                  {item.CtaButton}
+                  <div className="mt-2">{item.CtaButton}</div>
                 </div>
               </div>
             </SwiperSlide>
@@ -105,20 +131,46 @@ export function WhoAmI() {
       </motion.div>
 
       <style>{`
-  .swiper-pagination {
-    right: 100px !important;
-  }
- .swiper-pagination-bullet-active {
-  background: #1B3C53 !important;
-  opacity: 1;
-  height: 20px;
-  border-radius: 20px;
-  box-shadow: 
-    0 0 6px rgba(27,60,83,0.7),
-    0 0 12px rgba(27,60,83,0.5),
-    0 0 20px rgba(27,60,83,0.35);
-}
-`}</style>
+        .swiper-pagination {
+          right: 20px !important;
+        }
+
+        @media (min-width: 640px) {
+          .swiper-pagination {
+            right: 50px !important;
+          }
+
+         
+        }
+
+        @media (min-width: 1024px) {
+          .swiper-pagination {
+            right: 100px !important;
+          }
+        }
+
+        @media (max-width:768px){
+         .swiper-pagination-bullet-active{
+          width: 20px;
+          height: 8px !important;
+          }}
+
+        .swiper-pagination-bullet {
+          background:#FFF;
+          opacity: .4;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #FFF !important;
+          opacity: 1;
+          height: 20px;
+          border-radius: 20px;
+          box-shadow: 
+            0 0 6px rgba(27,60,83,0.7),
+            0 0 12px rgba(27,60,83,0.5),
+            0 0 20px rgba(27,60,83,0.35);
+        }
+      `}</style>
     </motion.div>
   );
 }

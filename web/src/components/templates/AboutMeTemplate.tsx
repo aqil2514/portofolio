@@ -7,6 +7,8 @@ import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { PageLoader } from "../layouts/loader/PageLoader";
 import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
+import { CoreSkills } from "@/featured/AboutMe/CoreSkill";
+import { ProductPhilosophy } from "@/featured/AboutMe/ProductPhilosophy";
 
 export default function AboutMeTemplate() {
   const { isReady } = usePageTransition();
@@ -18,10 +20,10 @@ export default function AboutMeTemplate() {
       style={{
         background: VARIABLE_COLOR.BLUE_DARK,
       }}
-      className="min-h-screen relative"
+      className="min-h-screen relative space-y-12"
     >
       <BallAnimation>
-        <h1 className={fontCinzel.className + " text-3xl font-bold mb-2"}>
+        <h1 className={fontCinzel.className + " text-3xl font-bold"}>
           About Me
         </h1>
         <p className="text-white/90 text-sm sm:text-base">
@@ -29,9 +31,8 @@ export default function AboutMeTemplate() {
         </p>
       </BallAnimation>
       <WhoAmI />
-      {/* REFERENSI WHO AM I https://codepen.io/JavaScriptJunkie/pen/WgRBxw */}
-      {/* Core Skills Grid pakek accordion */}
-      {/* Product Philosophy pakek Badge */}
+      <CoreSkills />
+      <ProductPhilosophy />
       <RoadmapTimeline />
     </MainContainer>
   );
