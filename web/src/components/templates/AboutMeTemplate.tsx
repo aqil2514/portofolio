@@ -9,31 +9,42 @@ import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
 import { CoreSkills } from "@/featured/AboutMe/CoreSkill";
 import { ProductPhilosophy } from "@/featured/AboutMe/ProductPhilosophy";
+import { PageAboutTypes } from "@/@types/Sanity";
+import { AboutMeProvider } from "@/featured/AboutMe/provider";
+import { useLocale } from "next-intl";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 
-export default function AboutMeTemplate() {
+interface Props {
+  data: PageAboutTypes;
+}
+
+export default function AboutMeTemplate({ data }: Props) {
   const { isReady } = usePageTransition();
+  const locale = useLocale();
 
   if (!isReady) return <PageLoader />;
 
   return (
-    <MainContainer
-      style={{
-        background: VARIABLE_COLOR.BLUE_DARK,
-      }}
-      className="relative space-y-12"
-    >
-      <BallAnimation>
-        <h1 className={fontCinzel.className + "text-3xl font-bold"}>
-          About Me
-        </h1>
-        <p className="text-white/90 text-sm sm:text-base">
-          I love coding because it allows me to turn ideas into real, functional systems that people can actually use.
-        </p>
-      </BallAnimation>
-      <WhoAmI />
-      <CoreSkills />
-      <ProductPhilosophy />
-      <RoadmapTimeline />
-    </MainContainer>
+    <AboutMeProvider data={data}>
+      <MainContainer
+        style={{
+          background: VARIABLE_COLOR.BLUE_DARK,
+        }}
+        className="relative space-y-12"
+      >
+        <BallAnimation>
+          <h1 className={fontCinzel.className + "text-3xl font-bold"}>
+            {getInternationalizationValue(data.hero.title, locale)}
+          </h1>
+          <p className="text-white/90 text-sm sm:text-base">
+            {getInternationalizationValue(data.hero.description, locale)}
+          </p>
+        </BallAnimation>
+        <WhoAmI />
+        <CoreSkills />
+        <ProductPhilosophy />
+        <RoadmapTimeline />
+      </MainContainer>
+    </AboutMeProvider>
   );
 }

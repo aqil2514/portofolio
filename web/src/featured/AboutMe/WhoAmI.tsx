@@ -5,32 +5,36 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import { WhoAmIItem } from "@/@types/About";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { FancyButton } from "@/components/atoms/FancyButton";
 import { motion } from "motion/react";
+import { useAboutMeContext } from "./provider";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
+import { useLocale } from "next-intl";
+import { WhoAmIButton } from "./WhoAmIButton";
 
-const items: WhoAmIItem[] = [
-  {
-    content:
-      "Full Stack Developer with experience in web application development using JavaScript, TypeScript, React, Node.js, and databases (SQL, NoSQL). Proficient in digital administration systems and accustomed to working with ERP and data management. Capable of developing applications from frontend to backend to improve business efficiency.",
-    title: "About Me",
-    subTitle: "About AS",
-    imageAlt: "Image 1",
-    imageSrc: "/Certificates/fsd-rwd.webp",
-    CtaButton: <FancyButton>OK</FancyButton>,
-  },
-  {
-    content: "Halo nama saya Aqil",
-    title: "Tentang Saya2",
-    subTitle: "About AS",
-    imageAlt: "Image 2",
-    imageSrc: "/Certificates/fsd-fewd.jpg",
-  },
-];
+// const items: WhoAmIItemType[] = [
+//   {
+//     content:
+//       "Full Stack Developer with experience in web application development using JavaScript, TypeScript, React, Node.js, and databases (SQL, NoSQL). Proficient in digital administration systems and accustomed to working with ERP and data management. Capable of developing applications from frontend to backend to improve business efficiency.",
+//     title: "About Me",
+//     subTitle: "About AS",
+//     imageAlt: "Image 1",
+//     imageSrc: "/Certificates/fsd-rwd.webp",
+//     CtaButton: <FancyButton>OK</FancyButton>,
+//   },
+//   {
+//     content: "Halo nama saya Aqil",
+//     title: "Tentang Saya2",
+//     subTitle: "About AS",
+//     imageAlt: "Image 2",
+//     imageSrc: "/Certificates/fsd-fewd.jpg",
+//   },
+// ];
 
 export function WhoAmI() {
+  const { data } = useAboutMeContext();
+  const locale = useLocale();
   return (
     <motion.div
       initial={{
@@ -80,9 +84,9 @@ export function WhoAmI() {
           slidesPerView={1}
           className="mx-auto md:h-[420px] w-full sm:w-4/5 lg:w-2/3 rounded-2xl px-4 sm:px-0 bg-white/10 backdrop-blur-lg border border-white/20 md:bg-transparent md:backdrop-blur-none"
         >
-          {items.map((item, i) => (
+          {data.whoAmI.map((item, i) => (
             <SwiperSlide
-              key={item.title}
+              key={getInternationalizationValue(item.title, locale)}
               className="px-2 sm:px-10 lg:px-20 py-4"
             >
               <div
@@ -113,16 +117,16 @@ export function WhoAmI() {
                   )}
                 >
                   <p className="font-semibold text-sm text-white/90">
-                    {item.title}
+                    {getInternationalizationValue(item.title, locale)}
                   </p>
                   <p className="font-bold text-xl text-white">
-                    {item.subTitle}
+                    {getInternationalizationValue(item.subtitle, locale)}
                   </p>
                   <article className="text-white/90 text-sm sm:text-base text-justify leading-relaxed">
-                    {item.content}
+                    {getInternationalizationValue(item.content, locale) }
                   </article>
 
-                  <div className="mt-2">{item.CtaButton}</div>
+                  <WhoAmIButton buttonId={item.ctaButtonId} />
                 </div>
               </div>
             </SwiperSlide>

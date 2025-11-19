@@ -7,5 +7,12 @@
     "featuredProjects": "Proyek Unggulan",
     "viewAllProjects": "Lihat Semua Proyek",
     "wantToWorkTogether": "Ingin Bekerja Sama?"
+  },
+   "AboutPage":{
+    "productPhilosophy":"Filosofi Produk",
+    "coreSkill":"Skil Utama",
+    "learningSkill" : "Skill yang Dipelajari",
+    "certificates":"Sertifikat",
+    "viewCertificate":"Lihat Sertifikat →"
   }
 }

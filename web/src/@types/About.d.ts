@@ -1,10 +1,36 @@
-import React from "react";
+import { BasicImage, ImageWithLink } from "./General";
 
-export interface WhoAmIItem {
-  imageSrc: string;
-  imageAlt: string;
+export interface AboutHeroSection {
   title: string;
-  subTitle: string;
+  description: string;
+}
+
+export interface WhoAmIItemType {
   content: string;
-  CtaButton?: React.ReactNode;
+  imageAlt: string;
+  imageSrc: string;
+  subTitle: string;
+  title: string;
+  CtaButton?: WhoAmIItemButtonId;
+}
+
+export type WhoAmIItemButtonId = "none" | "download-cv";
+
+export interface CoreSkillType {
+  skillField: string;
+  skillLevel: string;
+  skillList: string[];
+}
+
+export interface ProductPhilosophyType {
+  title: string;
+  description: string;
+}
+
+export interface RoadmapAbout {
+  title: string;
+  date: string;
+  description: string;
+  learningSkill?: BasicImage[];
+  certificates?: ImageWithLink[];
 }

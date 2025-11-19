@@ -7,5 +7,12 @@
     "featuredProjects": "Featured Projects",
     "viewAllProjects" :"View All Projects",
     "wantToWorkTogether" : "Want To Work Together?"
+  },
+  "AboutPage":{
+    "productPhilosophy":"Product Philosophy",
+    "coreSkill":"Core Skill",
+    "learningSkill" : "Learning Skills",
+    "certificates":"Certificates",
+    "viewCertificate":"View Certificate →"
   }
 }
