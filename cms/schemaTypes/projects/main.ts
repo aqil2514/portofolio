@@ -44,6 +44,28 @@ export const projectsType = defineType({
       },
     }),
     defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [
+              {title: 'Frontend', value: 'frontend'},
+              {title: 'Backend', value: 'backend'},
+              {title: 'Database', value: 'database'},
+              {title: 'DevOps', value: 'devops'},
+              {title: 'Automation', value: 'automation'},
+              {title: 'AI Integration', value: 'ai'},
+              {title: 'Product Engineering', value: 'product'},
+            ],
+            layout:"dropdown"
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'techStack',
       title: 'Tech Stack',
       type: 'array',

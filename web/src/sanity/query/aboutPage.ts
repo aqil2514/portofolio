@@ -1,6 +1,6 @@
 import { defineQuery } from "next-sanity";
 
-export const aboutPageGroq = defineQuery(`*[_type=="about-page"][0]{
+const mapping = `{
   hero{
     title,
     description
@@ -38,4 +38,6 @@ export const aboutPageGroq = defineQuery(`*[_type=="about-page"][0]{
       link
     }
   }
-}`);
+}`
+
+export const aboutPageGroq = defineQuery(`*[_type=="about-page"][0]${mapping}`);

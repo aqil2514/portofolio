@@ -1,8 +1,11 @@
+import { BasicImage } from "./General";
+import { InternationalizedArray } from "./Sanity";
+
 export interface Projects {
   imageSrc: string;
   imageAlt: string;
   title: string;
-  previewLink:string;
+  previewLink: string;
   stacks: string[];
 }
 
@@ -11,6 +14,13 @@ export type ProjectSummary = Pick<
   "imageAlt" | "imageSrc" | "stacks" | "title" | "previewLink"
 >;
 
+export type ProjectStatus = "live" | "archived" | "on-progress";
+
+export interface SubDemoTypes {
+  description: InternationalizedArray;
+  title: string;
+  videoUrl: string;
+}
 
 // DARI CHATGPT
 export interface ProjectCard {
@@ -18,41 +28,24 @@ export interface ProjectCard {
   id: string;
 
   /** Project title in multiple languages */
-  title: {
-    id: string;
-    en: string;
-  };
+  title: string;
 
   /** Short description */
-  shortDesc: {
-    id: string;
-    en: string;
-  };
+  shortDesc: InternationalizedArray;
 
   /** Full description for detail modal/page */
-  fullDesc?: {
-    id: string;
-    en: string;
-  };
+  fullDesc?: InternationalizedArray;
 
   /** Featured image */
-  image: {
-    src: string;
-    alt: string;
-    caption?: string;
-  };
+  image: BasicImage;
 
   /** Demo links */
-  links?: {
-    liveDemo?: string;
-    adminDemo?: string;
-    apiDocs?: string;
-    repo?: string;
-    download?: string;
-  };
+  subDemos?: SubDemoTypes[];
 
   /** Demo video (optional) */
-  demoVideo?: string;
+  mainDemo?: string;
+
+  status: ProjectStatus;
 
   /** Technology stacks used */
   techStack: string[];
@@ -67,19 +60,4 @@ export interface ProjectCard {
     | "AI Integration"
     | "Product Engineering"
   )[];
-
-  /** Key features of the project */
-  features?: {
-    id: string; // Indonesian description
-    en: string; // English description
-  }[];
-
-  /** Extra demo per feature */
-  featureDemos?: {
-    title: string;
-    demoUrl: string;
-  }[];
-
-  /** Is the project still maintained? */
-  status?: "active" | "archived" | "prototype";
 }
