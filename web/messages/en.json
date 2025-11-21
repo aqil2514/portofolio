@@ -5,14 +5,21 @@
     "contact-me": "Contact Me",
     "skillsTools": "Skills & Tools =>",
     "featuredProjects": "Featured Projects",
-    "viewAllProjects" :"View All Projects",
-    "wantToWorkTogether" : "Want To Work Together?"
+    "viewAllProjects": "View All Projects",
+    "wantToWorkTogether": "Want To Work Together?"
   },
-  "AboutPage":{
-    "productPhilosophy":"Product Philosophy",
-    "coreSkill":"Core Skill",
-    "learningSkill" : "Learning Skills",
-    "certificates":"Certificates",
-    "viewCertificate":"View Certificate →"
+  "AboutPage": {
+    "productPhilosophy": "Product Philosophy",
+    "coreSkill": "Core Skill",
+    "learningSkill": "Learning Skills",
+    "certificates": "Certificates",
+    "viewCertificate": "View Certificate →"
+  },
+  "ProjectsPage": {
+    "title": "My Projects",
+    "subtitle": "Few projects that I've built"
+  },
+  "General": {
+    "More": "More..."
   }
 }

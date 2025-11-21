@@ -14,5 +14,12 @@
     "learningSkill" : "Skill yang Dipelajari",
     "certificates":"Sertifikat",
     "viewCertificate":"Lihat Sertifikat →"
+  },
+  "ProjectsPage":{
+    "title":"Proyek Saya",
+    "subtitle":"Beberapa proyek yang pernah saya buat"
+  },
+  "General": {
+    "More": "Lainnya..."
   }
 }

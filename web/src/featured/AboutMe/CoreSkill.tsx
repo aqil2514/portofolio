@@ -3,67 +3,9 @@
 import { SkillCard } from "@/components/atoms/SkillCard";
 import { motion } from "motion/react";
 import { useAboutMeContext } from "./provider";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import GraphemeSplitter from "grapheme-splitter";
 
-{
-  /* <SkillCard
-          delay={0.1}
-          icon={<span>⚛️</span>}
-          title="Frontend"
-          level="Advanced"
-          skills={[
-            "React.js",
-            "Next.js",
-            "Tailwind CSS",
-            "Zustand / Context",
-            "Framer Motion",
-          ]}
-        />
-
-        <SkillCard
-          delay={0.2}
-          icon={<span>🟩</span>}
-          title="Backend"
-          level="Advanced"
-          skills={["Node.js", "NestJS", "Express", "Prisma ORM", "REST API"]}
-        />
-
-        <SkillCard
-          delay={0.3}
-          icon={<span>🗄️</span>}
-          title="Database"
-          level="Intermediate"
-          skills={["PostgreSQL", "Supabase", "Firebase", "Prisma Schema"]}
-        />
-
-        <SkillCard
-          delay={0.4}
-          icon={<span>🐳</span>}
-          title="DevOps"
-          level="Intermediate"
-          skills={["Docker", "Railway", "Render", "Nginx Reverse Proxy"]}
-        />
-
-        <SkillCard
-          delay={0.5}
-          icon={<span>🛠️</span>}
-          title="Tools"
-          skills={["Git / GitHub", "VSCode", "Figma", "Postman"]}
-        />
-
-        <SkillCard
-          delay={0.6}
-          icon={<span>💡</span>}
-          title="Methodology"
-          skills={[
-            "Clean Architecture",
-            "OOP",
-            "Design Patterns",
-            "Responsive Design",
-          ]}
-        /> */
-}
 
 export function CoreSkills() {
   const { data } = useAboutMeContext();

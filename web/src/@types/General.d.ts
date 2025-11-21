@@ -1,3 +1,8 @@
+export interface BasicSelect {
+  label: string;
+  value: string;
+}
+
 export interface BasicLink {
   label: string;
   link: string;

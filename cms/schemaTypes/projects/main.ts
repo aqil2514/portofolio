@@ -9,11 +9,13 @@ export const projectsType = defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: (val) => val.required(),
     }),
     defineField({
       name: 'mainImage',
       title: 'Main Image',
       type: 'basicImage',
+      validation: (val) => val.required(),
     }),
     defineField({
       name: 'mainDemo',
@@ -60,7 +62,7 @@ export const projectsType = defineType({
               {title: 'AI Integration', value: 'AI Integration'},
               {title: 'Product Engineering', value: 'Product Engineering'},
             ],
-            layout:"dropdown"
+            layout: 'dropdown',
           },
         },
       ],

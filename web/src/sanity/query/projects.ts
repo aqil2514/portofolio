@@ -1,6 +1,6 @@
 import { defineQuery } from "next-sanity"
 
-const mappingData = `{
+const allData = `{
   "id":_id,
   title,
   "shortDesc": description[]{
@@ -31,5 +31,10 @@ const categoriesData = `{
   categories
 }`
 
-export const allProjectData = defineQuery(`*[_type=="projects"]${mappingData}`)
+const techStackData = `{
+  techStack
+}`
+
+export const allProjectData = defineQuery(`*[_type=="projects"]${allData}`)
 export const projectCategories = defineQuery(`*[_type=="projects"]${categoriesData}`)
+export const projectTechStack = defineQuery(`*[_type=="projects"]${techStackData}`)

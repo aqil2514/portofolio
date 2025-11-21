@@ -1,18 +1,17 @@
 import { BasicImage } from "./General";
 import { InternationalizedArray } from "./Sanity";
 
-export interface Projects {
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  previewLink: string;
-  stacks: string[];
-}
-
 export type ProjectSummary = Pick<
-  Projects,
-  "imageAlt" | "imageSrc" | "stacks" | "title" | "previewLink"
+  ProjectCard,
+  "title" | "liveUrl" | "image" | "techStack"
 >;
+
+export type ProjectShortDesc = Pick<
+  ProjectCard,
+  "title" | "shortDesc" | "categories" | "image" | "id" | "status" | "techStack"
+>;
+
+export type ProjectCardData = ProjectSummary | ProjectShortDesc;
 
 export type ProjectStatus = "live" | "archived" | "on-progress";
 
@@ -40,10 +39,10 @@ export interface ProjectCard {
   title: string;
 
   /** Short description */
-  shortDesc: InternationalizedArray;
+  shortDesc: InternationalizedArray[];
 
   /** Full description for detail modal/page */
-  fullDesc?: InternationalizedArray;
+  fullDesc?: InternationalizedArray[];
 
   /** Featured image */
   image: BasicImage;
@@ -61,4 +60,7 @@ export interface ProjectCard {
 
   /** Skill groups this project relates to */
   categories: ProjectCategory[];
+
+  liveUrl: string;
+  sourceCode: string;
 }

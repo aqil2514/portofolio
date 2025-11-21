@@ -4,6 +4,7 @@ import React, { createContext, useContext } from "react";
 interface ProjectsContextType {
   projects: ProjectCard[];
   projectCategories:ProjectCategory[];
+  projectTechStacks: string[]
 }
 
 const ProjectsContext = createContext<ProjectsContextType>(
@@ -14,12 +15,14 @@ interface ProjectsProviderProps {
   children: React.ReactNode;
   projects: ProjectCard[];
   projectCategories:ProjectCategory[];
+  projectTechStacks: string[]
 }
 
-export function ProjectsProvider({ children, projectCategories, projects }: ProjectsProviderProps) {
+export function ProjectsProvider({ children, projectCategories, projects, projectTechStacks }: ProjectsProviderProps) {
   const value: ProjectsContextType = {
     projectCategories,
-    projects
+    projects,
+    projectTechStacks
   };
   return (
     <ProjectsContext.Provider value={value}>{children}</ProjectsContext.Provider>
