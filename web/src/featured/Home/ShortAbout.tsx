@@ -2,10 +2,10 @@ import * as motion from "motion/react-client";
 import Image from "next/image";
 import { fontCinzel, fontPrompt } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export function ShortAbout() {
-  const t = useTranslations("HomePage");
+export async function ShortAbout() {
+  const t = await getTranslations("HomePage");
 
   return (
     <motion.section

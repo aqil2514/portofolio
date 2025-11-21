@@ -1,7 +1,7 @@
 import * as motion from "motion/react-client";
-import { fontCinzel, fontPrompt } from "@/constant/fonts";
+import { fontCinzel } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
-import { TypeAnimation } from "react-type-animation";
+import { TypeAnimationClient } from "./TypeAnimation";
 
 export function HomeGreetings() {
   return (
@@ -37,19 +37,7 @@ export function HomeGreetings() {
         Muhamad Aqil Maulana
       </motion.h1>
 
-      {/* Type Animation */}
-      <TypeAnimation
-        sequence={["Full Stack Developer", 1000]}
-        wrapper="span"
-        repeat={Infinity}
-        className={cn(
-          fontPrompt.className,
-          `
-          block mt-2 font-medium
-          text-sm sm:text-base md:text-lg
-        `
-        )}
-      />
+      <TypeAnimationClient />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { fontCinzel, fontPrompt } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
 import * as motion from "motion/react-client";
+import { getTranslations } from "next-intl/server";
 
 const skills = [
   "Next.js",
@@ -14,8 +14,8 @@ const skills = [
   "Cloudflare",
 ];
 
-export function SkillsSection() {
-  const t = useTranslations("HomePage");
+export async function SkillsSection() {
+  const t = await getTranslations("HomePage");
 
   return (
     <div
