@@ -1,5 +1,5 @@
 import ProjectsTemplate from "@/components/templates/ProjectsTemplate";
-import { getAllProjectsData } from "@/sanity/actions/projects";
+import { getAllProjectCategory, getAllProjectsData } from "@/sanity/actions/projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +7,10 @@ export const metadata: Metadata = {
 };
 
 export default async function ProjectsPage() {
-  const data = await getAllProjectsData()
-  console.log(data)
-  return <ProjectsTemplate />;
+  const [projects, projectCategories] = await Promise.all([
+    getAllProjectsData(),
+    getAllProjectCategory()
+  ]);
+
+  return <ProjectsTemplate projectCategories={projectCategories} projects={projects} />;
 }

@@ -52,13 +52,13 @@ export const projectsType = defineType({
           type: 'string',
           options: {
             list: [
-              {title: 'Frontend', value: 'frontend'},
-              {title: 'Backend', value: 'backend'},
-              {title: 'Database', value: 'database'},
-              {title: 'DevOps', value: 'devops'},
-              {title: 'Automation', value: 'automation'},
-              {title: 'AI Integration', value: 'ai'},
-              {title: 'Product Engineering', value: 'product'},
+              {title: 'Frontend', value: 'Frontend'},
+              {title: 'Backend', value: 'Backend'},
+              {title: 'Database', value: 'Database'},
+              {title: 'DevOps', value: 'DevOps'},
+              {title: 'Automation', value: 'Automation'},
+              {title: 'AI Integration', value: 'AI Integration'},
+              {title: 'Product Engineering', value: 'Product Engineering'},
             ],
             layout:"dropdown"
           },

@@ -27,4 +27,9 @@ const mappingData = `{
   sourceCode
 }`
 
+const categoriesData = `{
+  categories
+}`
+
 export const allProjectData = defineQuery(`*[_type=="projects"]${mappingData}`)
+export const projectCategories = defineQuery(`*[_type=="projects"]${categoriesData}`)

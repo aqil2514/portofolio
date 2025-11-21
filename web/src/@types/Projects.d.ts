@@ -16,13 +16,22 @@ export type ProjectSummary = Pick<
 
 export type ProjectStatus = "live" | "archived" | "on-progress";
 
+export type ProjectCategory =
+  | "Frontend"
+  | "Backend"
+  | "Database"
+  | "DevOps"
+  | "Automation"
+  | "AI Integration"
+  | "Product Engineering";
+
 export interface SubDemoTypes {
   description: InternationalizedArray;
   title: string;
   videoUrl: string;
 }
 
-// DARI CHATGPT
+// UTAMA
 export interface ProjectCard {
   /** Unique ID */
   id: string;
@@ -51,13 +60,5 @@ export interface ProjectCard {
   techStack: string[];
 
   /** Skill groups this project relates to */
-  categories: (
-    | "Frontend"
-    | "Backend"
-    | "Database"
-    | "DevOps"
-    | "Automation"
-    | "AI Integration"
-    | "Product Engineering"
-  )[];
+  categories: ProjectCategory[];
 }

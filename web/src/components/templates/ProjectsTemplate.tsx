@@ -2,14 +2,26 @@
 
 import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { MainContainer } from "../layouts/containers/MainContainer";
-import { useLocale } from "next-intl";
 import { PageLoader } from "../layouts/loader/PageLoader";
+import { ProjectCard, ProjectCategory } from "@/@types/Projects";
+import { ProjectsProvider } from "@/featured/Projects/provider";
 
-export default function ProjectsTemplate() {
+interface Props {
+  projects: ProjectCard[];
+  projectCategories: ProjectCategory[];
+}
+
+export default function ProjectsTemplate({
+  projectCategories,
+  projects,
+}: Props) {
   const { isReady } = usePageTransition();
-  const locale = useLocale();
 
   if (!isReady) return <PageLoader />;
 
-  return <MainContainer>Soon</MainContainer>;
+  return (
+    <ProjectsProvider projectCategories={projectCategories} projects={projects}>
+      <MainContainer>Soon</MainContainer>;
+    </ProjectsProvider>
+  );
 }
