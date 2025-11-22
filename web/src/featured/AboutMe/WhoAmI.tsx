@@ -13,25 +13,6 @@ import { getInternationalizationValue } from "@/utils/getInternationalizationVal
 import { useLocale } from "next-intl";
 import { WhoAmIButton } from "./WhoAmIButton";
 
-// const items: WhoAmIItemType[] = [
-//   {
-//     content:
-//       "Full Stack Developer with experience in web application development using JavaScript, TypeScript, React, Node.js, and databases (SQL, NoSQL). Proficient in digital administration systems and accustomed to working with ERP and data management. Capable of developing applications from frontend to backend to improve business efficiency.",
-//     title: "About Me",
-//     subTitle: "About AS",
-//     imageAlt: "Image 1",
-//     imageSrc: "/Certificates/fsd-rwd.webp",
-//     CtaButton: <FancyButton>OK</FancyButton>,
-//   },
-//   {
-//     content: "Halo nama saya Aqil",
-//     title: "Tentang Saya2",
-//     subTitle: "About AS",
-//     imageAlt: "Image 2",
-//     imageSrc: "/Certificates/fsd-fewd.jpg",
-//   },
-// ];
-
 export function WhoAmI() {
   const { data } = useAboutMeContext();
   const locale = useLocale();

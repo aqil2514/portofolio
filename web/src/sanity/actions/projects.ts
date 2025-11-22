@@ -12,7 +12,7 @@ export async function getAllProjectCategory(): Promise<ProjectCategory[]> {
   const res: { categories: string[] }[] = await client.fetch(projectCategories);
 
   const data = res.flatMap((data) => data.categories);
-  const setData = new Set(data);
+  const setData = new Set(data.map(d => d.trim()));
 
   return Array.from(setData).sort() as ProjectCategory[];
 }
@@ -21,7 +21,7 @@ export async function getAllProjectTechStack(): Promise<string[]> {
   const res: { techStack: string[] }[] = await client.fetch(projectTechStack);
 
   const data = res.flatMap((data) => data.techStack);
-  const setData = new Set(data);
-
+  const setData = new Set(data.map(d => d.trim()));
+  
   return Array.from(setData).sort();
 }

@@ -2,10 +2,14 @@ import * as motion from "motion/react-client";
 import Image from "next/image";
 import { fontCinzel, fontPrompt } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getAboutPageCms } from "@/sanity/actions/aboutPage";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 
 export async function ShortAbout() {
-  const t = await getTranslations("HomePage");
+  const [t, about, locale] = await Promise.all([getTranslations("HomePage"), getAboutPageCms(), getLocale()]);
+
+  const shortAbout = about.whoAmI[0].content;
 
   return (
     <motion.section
@@ -71,9 +75,7 @@ export async function ShortAbout() {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        My name is Aqil, a full-stack developer who enjoys building digital
-        systems, AI-powered automation, and real-world projects that people
-        actually use.
+        {getInternationalizationValue(shortAbout, locale)}
       </motion.p>
 
       {/* CTA Row */}

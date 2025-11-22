@@ -4,7 +4,7 @@ import { aboutPageGroq } from "../query/aboutPage";
 import { redis } from "@/lib/redis";
 
 // TODO : HAPUS SAAT PRODUCTION
-export async function getAbutPageCms() {
+export async function getAboutPageCms() {
   const data = await client.fetch(aboutPageGroq);
 
   return data as PageAboutTypes;

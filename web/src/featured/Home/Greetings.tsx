@@ -2,8 +2,10 @@ import * as motion from "motion/react-client";
 import { fontCinzel } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
 import { TypeAnimationClient } from "./TypeAnimation";
+import { useTranslations } from "next-intl";
 
 export function HomeGreetings() {
+  const t = useTranslations("HomePage")
   return (
     <div className="relative z-10 text-center text-white space-y-3 px-4">
       {/* Greeting */}
@@ -13,7 +15,7 @@ export function HomeGreetings() {
         transition={{ duration: 0.5 }}
         className="mb-1 text-base sm:text-lg md:text-xl"
       >
-        Hello I am
+        {t("greetings")}
       </motion.p>
 
       {/* Name */}

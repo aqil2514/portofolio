@@ -1,4 +1,5 @@
 import { fontCinzel } from "@/constant/fonts";
+import { Link } from "@/i18n/navigations";
 import { cn } from "@/lib/utils";
 import * as motion from "motion/react-client";
 import { useTranslations } from "next-intl";
@@ -12,6 +13,7 @@ export function FeaturedProjectsFooter() {
       transition={{ duration: 0.5, delay: 4.6 }}
       className="mt-10 text-center"
     >
+      <Link href={"/projects"}>
       <button
         className={cn(
           fontCinzel.className,
@@ -30,6 +32,7 @@ export function FeaturedProjectsFooter() {
       >
         {t("viewAllProjects")}
       </button>
+      </Link>
     </motion.div>
   );
 }
