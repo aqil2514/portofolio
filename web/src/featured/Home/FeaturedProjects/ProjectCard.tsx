@@ -7,6 +7,8 @@ import * as motion from "motion/react-client";
 import { ProjectCardData } from "@/@types/Projects";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import { useLocale, useTranslations } from "next-intl";
+import { UiBadge } from "@/components/atoms/UiBadge";
+import { VARIABEL_IMAGE_SIZE } from "@/constant/variables";
 
 interface ProjectCardProps {
   data: ProjectCardData;
@@ -75,6 +77,8 @@ export function ProjectCard({
             alt={data.image.imageAlt}
             src={data.image.imageSrc}
             fill
+            priority={index > 4}
+            sizes={VARIABEL_IMAGE_SIZE.BASIC}
             className="object-cover"
           />
         </div>
@@ -103,20 +107,9 @@ export function ProjectCard({
             const isLast = totalTech > 2 && i === 2;
 
             return (
-              <span
-                key={tech}
-                className="
-                  text-white/85
-                  text-xs sm:text-sm 
-                  px-3 py-1 
-                  rounded-md 
-                  border border-white/20 
-                  bg-white/5
-                  backdrop-blur-sm
-                "
-              >
+              <UiBadge key={i}>
                 {isLast ? `${totalTech - 2} ${t("General.More")}` : tech}
-              </span>
+              </UiBadge>
             );
           })}
         </div>
@@ -129,18 +122,9 @@ export function ProjectCard({
               const isLast = total > 2 && i === arr.length - 1;
 
               return (
-                <span
-                  key={cat}
-                  className="
-                    text-white/60
-                    text-xs 
-                    px-2 py-1 
-                    rounded 
-                    border border-white/10 
-                  "
-                >
+                <UiBadge key={cat} variant="outline">
                   {isLast ? `${total - 2} ${t("General.More")}` : cat}
-                </span>
+                </UiBadge>
               );
             })}
           </div>

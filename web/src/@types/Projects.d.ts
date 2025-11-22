@@ -30,6 +30,13 @@ export interface SubDemoTypes {
   videoUrl: string;
 }
 
+export interface ProjectFeatures {
+  en: string;
+  id: string;
+  _key: string;
+  _type: string;
+}
+
 // UTAMA
 export interface ProjectCard {
   /** Unique ID */
@@ -60,6 +67,8 @@ export interface ProjectCard {
 
   /** Skill groups this project relates to */
   categories: ProjectCategory[];
+
+  features: ProjectFeatures[];
 
   liveUrl: string;
   sourceCode: string;

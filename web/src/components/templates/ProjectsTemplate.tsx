@@ -1,8 +1,4 @@
-"use client";
-
-import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { MainContainer } from "../layouts/containers/MainContainer";
-import { PageLoader } from "../layouts/loader/PageLoader";
 import { ProjectCard, ProjectCategory } from "@/@types/Projects";
 import { ProjectsProvider } from "@/featured/Projects/provider";
 import { Title } from "@/featured/Projects/Title";
@@ -20,9 +16,6 @@ export default function ProjectsTemplate({
   projects,
   projectTechStacks,
 }: Props) {
-  const { isReady } = usePageTransition();
-
-  if (!isReady) return <PageLoader />;
 
   return (
     <ProjectsProvider

@@ -1,20 +1,22 @@
 import { ProjectCard } from "@/@types/Projects";
+import { BadgeVariants, UiBadge } from "@/components/atoms/UiBadge";
 import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { fontCinzel } from "@/constant/fonts";
-import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
-import { useLocale } from "next-intl";
+import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import React from "react";
 
 interface Props {
   data: ProjectCard | null;
 }
 
 export function ProjectDialogHeader({ data }: Props) {
-  const locale = useLocale();
+  const t = useTranslations();
   if (!data) return null;
 
   return (
@@ -25,6 +27,8 @@ export function ProjectDialogHeader({ data }: Props) {
       >
         {data.title}
       </DialogTitle>
+
+      <DialogDescription></DialogDescription>
 
       {/* Image wrapper */}
       <div
@@ -41,23 +45,40 @@ export function ProjectDialogHeader({ data }: Props) {
           alt={data.image.imageAlt}
           width={1000}
           height={600}
+          loading="eager"
           className="object-cover w-full h-full"
         />
       </div>
 
-      {/* Full Description */}
-      {data.fullDesc && (
-        <DialogDescription
-          className="
-            mt-2
-            text-white/70
-            text-sm
-            leading-relaxed
-          "
-        >
-          {getInternationalizationValue(data.fullDesc, locale)}
-        </DialogDescription>
-      )}
+      <BadgeItem
+        data={data.techStack}
+        title={t("General.techStack")}
+        variant="fill"
+      />
+      <BadgeItem
+        data={data.categories}
+        title={t("General.category")}
+        variant="outline"
+      />
     </DialogHeader>
   );
 }
+
+const BadgeItem: React.FC<{
+  title: string;
+  data: string[];
+  variant: BadgeVariants;
+}> = ({ data, title, variant }) => {
+  return (
+    <div className="space-y-4">
+      <p className={cn(fontCinzel.className, "font-semibold")}>{title}</p>
+      <div className="flex gap-4 flex-wrap">
+        {data.map((item) => (
+          <UiBadge key={item} variant={variant}>
+            {item}
+          </UiBadge>
+        ))}
+      </div>
+    </div>
+  );
+};

@@ -8,18 +8,24 @@
     "viewAllProjects": "Lihat Semua Proyek",
     "wantToWorkTogether": "Ingin Bekerja Sama?"
   },
-   "AboutPage":{
-    "productPhilosophy":"Filosofi Produk",
-    "coreSkill":"Skil Utama",
-    "learningSkill" : "Skill yang Dipelajari",
-    "certificates":"Sertifikat",
-    "viewCertificate":"Lihat Sertifikat →"
+  "AboutPage": {
+    "productPhilosophy": "Filosofi Produk",
+    "coreSkill": "Skil Utama",
+    "learningSkill": "Skill yang Dipelajari",
+    "certificates": "Sertifikat",
+    "viewCertificate": "Lihat Sertifikat →"
   },
-  "ProjectsPage":{
-    "title":"Proyek Saya",
-    "subtitle":"Beberapa proyek yang pernah saya buat"
+  "ProjectsPage": {
+    "title": "Proyek Saya",
+    "subtitle": "Beberapa proyek yang pernah saya buat",
+    "projectDescription":"Deskripsi Proyek",
+    "liveLabel":"Lihat Proyek",
+    "sourceCodeLabel":"Sumber Kode"
   },
   "General": {
-    "More": "Lainnya..."
+    "More": "Lainnya...",
+    "techStack": "Teknologi",
+    "category": "Kategori",
+    "features":"Fitur-fitur"
   }
 }

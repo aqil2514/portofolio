@@ -21,6 +21,7 @@ const allData = `{
     videoUrl
   },
   mainDemo,
+  features,
   status,
   techStack,
   liveUrl,

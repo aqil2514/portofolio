@@ -17,9 +17,15 @@
   },
   "ProjectsPage": {
     "title": "My Projects",
-    "subtitle": "Few projects that I've built"
+    "subtitle": "Few projects that I've built",
+    "projectDescription":"Project Description",
+    "liveLabel":"Visit Project",
+    "sourceCodeLabel":"Source Code"
   },
   "General": {
-    "More": "More..."
+    "More": "More...",
+    "techStack": "Tech Stack",
+    "category": "Category",
+    "features":"Features"
   }
 }

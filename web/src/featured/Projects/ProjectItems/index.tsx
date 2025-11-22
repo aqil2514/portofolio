@@ -1,3 +1,5 @@
+"use client"
+
 import { ProjectCard } from "@/featured/Home/FeaturedProjects/ProjectCard";
 import { useProjectsContext } from "../provider";
 import { useState } from "react";
@@ -17,8 +19,8 @@ export function ProjectItems() {
       max-w-6xl
       mx-auto"
       >
-        {projects.map((pro) => (
-          <ProjectCard onClick={() => setData(pro)} data={pro} key={pro.id} />
+        {projects.map((pro, i) => (
+          <ProjectCard index={i} onClick={() => setData(pro)} data={pro} key={pro.id} />
         ))}
       </div>
 

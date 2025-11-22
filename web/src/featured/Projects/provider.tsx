@@ -1,3 +1,4 @@
+"use client"
 import { ProjectCard, ProjectCategory } from "@/@types/Projects";
 import React, { createContext, useContext } from "react";
 
