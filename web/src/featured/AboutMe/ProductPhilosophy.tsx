@@ -1,18 +1,18 @@
-"use client";
-
 import { PhilosophyCard } from "@/components/atoms/PhilosophyCard";
-import { motion } from "motion/react";
-import { useAboutMeContext } from "./provider";
-import { useLocale } from "next-intl";
-import { useTranslations } from "use-intl";
+import * as motion from "motion/react-client";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import GraphemeSplitter from "grapheme-splitter";
+import { PageAboutTypes } from "@/@types/Sanity";
+import { LocaleLang } from "@/@types/General";
+import { getTranslations } from "next-intl/server";
 
+interface Props {
+  data: PageAboutTypes;
+  locale: LocaleLang;
+}
 
-export function ProductPhilosophy() {
-  const { data } = useAboutMeContext();
-  const locale = useLocale();
-  const t = useTranslations("AboutPage");
+export async function ProductPhilosophy({ data, locale }: Props) {
+  const t = await getTranslations("AboutPage");
 
   return (
     <div className="w-full flex justify-center">
@@ -30,7 +30,9 @@ export function ProductPhilosophy() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.productPhilosophy.map((item, i) => {
             const splitter = new GraphemeSplitter();
-            const graphemes = splitter.splitGraphemes(getInternationalizationValue(item.title, locale))
+            const graphemes = splitter.splitGraphemes(
+              getInternationalizationValue(item.title, locale)
+            );
 
             const icon = graphemes[0];
             const title = graphemes.slice(1).join("");

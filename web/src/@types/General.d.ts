@@ -18,3 +18,5 @@ export interface ImageWithLink extends BasicImage {
   link: string;
   labelLink?: string;
 }
+
+export type LocaleLang = "en" | "id"

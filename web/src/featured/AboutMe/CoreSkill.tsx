@@ -1,14 +1,14 @@
-"use client";
-
 import { SkillCard } from "@/components/atoms/SkillCard";
-import { motion } from "motion/react";
-import { useAboutMeContext } from "./provider";
+import * as motion from "motion/react-client";
 import { useTranslations } from "next-intl";
 import GraphemeSplitter from "grapheme-splitter";
+import { PageAboutTypes } from "@/@types/Sanity";
 
+interface Props {
+  data: PageAboutTypes;
+}
 
-export function CoreSkills() {
-  const { data } = useAboutMeContext();
+export function CoreSkills({ data }: Props) {
   const t = useTranslations("AboutPage");
   return (
     <div className="w-full flex justify-center">

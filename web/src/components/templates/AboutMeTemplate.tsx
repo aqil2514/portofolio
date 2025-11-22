@@ -1,29 +1,22 @@
-"use client";
 import { VARIABLE_COLOR } from "@/constant/variables";
 import { MainContainer } from "../layouts/containers/MainContainer";
 import { BallAnimation } from "@/featured/AboutMe/BallAnimation";
 import { fontCinzel } from "@/constant/fonts";
-import { usePageTransition } from "@/providers/PageTransitionProvider";
-import { PageLoader } from "../layouts/loader/PageLoader";
 import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
 import { CoreSkills } from "@/featured/AboutMe/CoreSkill";
 import { ProductPhilosophy } from "@/featured/AboutMe/ProductPhilosophy";
 import { PageAboutTypes } from "@/@types/Sanity";
 import { AboutMeProvider } from "@/featured/AboutMe/provider";
-import { useLocale } from "next-intl";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
+import { LocaleLang } from "@/@types/General";
 
 interface Props {
   data: PageAboutTypes;
+  locale: LocaleLang;
 }
 
-export default function AboutMeTemplate({ data }: Props) {
-  const { isReady } = usePageTransition();
-  const locale = useLocale();
-
-  if (!isReady) return <PageLoader />;
-
+export default async function AboutMeTemplate({ data, locale }: Props) {
   return (
     <AboutMeProvider data={data}>
       <MainContainer
@@ -41,8 +34,8 @@ export default function AboutMeTemplate({ data }: Props) {
           </p>
         </BallAnimation>
         <WhoAmI />
-        <CoreSkills />
-        <ProductPhilosophy />
+        <CoreSkills data={data} />
+        <ProductPhilosophy data={data} locale={locale} />
         <RoadmapTimeline />
       </MainContainer>
     </AboutMeProvider>
