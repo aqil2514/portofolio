@@ -48,7 +48,7 @@ export function ProjectDemoSlider({ items }: { items: SubDemoTypes[] }) {
               {/* VIDEO */}
               <div className="rounded-xl overflow-hidden">
                 <video
-                  preload="none"
+                  preload={index !== 0 ? "none" : ""}
                   src={demo.videoUrl}
                   muted
                   loop
