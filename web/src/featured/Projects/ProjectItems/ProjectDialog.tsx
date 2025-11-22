@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import { CheckCircle } from "lucide-react";
 import { FancyButton } from "@/components/atoms/FancyButton";
+import { ProjectDemoSlider } from "./ProjectDemoSlider";
 
 interface Props {
   data: ProjectCard | null;
@@ -15,6 +16,7 @@ interface Props {
 export function ProjectDialog({ data, setData }: Props) {
   const locale = useLocale();
   const t = useTranslations();
+  console.log(data);
   return (
     <Dialog open={!!data} onOpenChange={(open) => !open && setData(null)}>
       <DialogContent
@@ -46,6 +48,9 @@ export function ProjectDialog({ data, setData }: Props) {
               </p>
             </div>
           )}
+
+          {/* Video */}
+          {data?.subDemos && data.subDemos.length > 0 && <ProjectDemoSlider items={data.subDemos} />}
 
           {/* Fitur */}
           {data?.features && (

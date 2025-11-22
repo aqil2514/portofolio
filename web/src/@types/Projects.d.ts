@@ -25,7 +25,7 @@ export type ProjectCategory =
   | "Product Engineering";
 
 export interface SubDemoTypes {
-  description: InternationalizedArray;
+  description: InternationalizedArray[];
   title: string;
   videoUrl: string;
 }
