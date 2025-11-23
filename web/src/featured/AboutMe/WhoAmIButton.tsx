@@ -1,6 +1,8 @@
 import { WhoAmIItemButtonId } from "@/@types/About";
 import { FancyButton } from "@/components/atoms/FancyButton";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Link } from "@/i18n/navigations";
+import { Info } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 interface Props {
@@ -17,20 +19,29 @@ const DownloadItem = () => {
   const locale = useLocale();
 
   return (
-    <div className="flex flex-col gap-2 items-start">
-      <div className="flex gap-2 items-center">
-        <Link href={"/pdf"} target="_blank">
-          <FancyButton>{t("whoAmIseeCV")}</FancyButton>
-        </Link>
-        <a href={`/api/cv?locale=${locale}`} target="_blank">
-          <FancyButton>{t("whoAmIDownloadCV")}</FancyButton>
-        </a>
-      </div>
+    <div className="flex gap-2 items-center">
+      <Link href={"/pdf"} target="_blank">
+        <FancyButton>{t("whoAmIseeCV")}</FancyButton>
+      </Link>
 
-      <p className="text-xs text-neutral-400 pl-1">
-        {/* Gunakan key dari i18n */}
-        {t("cvLanguageNote")}
-      </p>
+      <a href={`/api/cv?locale=${locale}`} target="_blank">
+        <FancyButton>{t("whoAmIDownloadCV")}</FancyButton>
+      </a>
+
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <button
+            type="button"
+            className="p-1 rounded-full hover:bg-white/10 transition"
+          >
+            <Info size={16} className="text-white opacity-70" />
+          </button>
+        </TooltipTrigger>
+
+        <TooltipContent side="top">
+          <p className="text-xs">{t("cvLanguageNote")}</p>
+        </TooltipContent>
+      </Tooltip>
     </div>
   );
 };
