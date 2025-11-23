@@ -5,5 +5,5 @@ export const portofolioData = {
   address: "Kabupaten Bekasi, Jawa Barat",
   github: "https://github.com/aqil2514",
   linkedIn: "https://www.linkedin.com/in/aqil2514",
-  portofolioLink:"https://cv.maqilm.site"
+  portofolioLink:"https://maqilm-portofolio.vercel.app"
 };
