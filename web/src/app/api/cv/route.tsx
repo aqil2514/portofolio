@@ -7,7 +7,6 @@ import { LocaleLang } from "@/@types/General";
 export const runtime = "nodejs";
 
 export async function GET(req: NextRequest) {
-  // Fetch data & locale lebih aman dengan "const" berbeda
   const pdfData = await getAllCVData();
   const { searchParams } = req.nextUrl;
   const locale = searchParams.get("locale") as LocaleLang | null;
@@ -18,11 +17,10 @@ export async function GET(req: NextRequest) {
       { status: 400 }
     );
 
-  // Buat JSX DI LUAR try/catch
-  const element = <PDFDocument pdfData={pdfData} locale={locale} />;
-
-  try {
-    const buffer = await pdf(element).toBuffer();
+    const element = <PDFDocument pdfData={pdfData} locale={locale} />;
+    
+    try {
+      const buffer = await pdf(element).toBuffer();
     const fileName = `${locale.toUpperCase()} Muhamad Aqil Maulana - Full Stack Developer CV.pdf`;
 
     // @ts-expect-error Ini berhasil

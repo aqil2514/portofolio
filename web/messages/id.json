@@ -15,7 +15,9 @@
     "certificates": "Sertifikat",
     "viewCertificate": "Lihat Sertifikat →",
     "whoAmIseeCV": "Lihat CV",
-    "whoAmIDownloadCV": "Unduh CV"
+    "whoAmIDownloadCV": "Unduh CV",
+    "cvLanguageNote": "Bahasa dalam CV akan menyesuaikan dengan bahasa situs yang sedang Anda gunakan."
+
   },
   "ProjectsPage": {
     "title": "Proyek Saya",

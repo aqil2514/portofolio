@@ -15,14 +15,22 @@ export function WhoAmIButton({ buttonId }: Props) {
 const DownloadItem = () => {
   const t = useTranslations("AboutPage");
   const locale = useLocale();
+
   return (
-    <div className="flex gap-2 items-center">
-      <Link href={"/pdf"} target="_blank">
-        <FancyButton>{t("whoAmIseeCV")}</FancyButton>
-      </Link>
-      <a href={`/api/cv?locale=${locale}`} target="_blank">
-        <FancyButton>{t("whoAmIDownloadCV")}</FancyButton>
-      </a>
+    <div className="flex flex-col gap-2 items-start">
+      <div className="flex gap-2 items-center">
+        <Link href={"/pdf"} target="_blank">
+          <FancyButton>{t("whoAmIseeCV")}</FancyButton>
+        </Link>
+        <a href={`/api/cv?locale=${locale}`} target="_blank">
+          <FancyButton>{t("whoAmIDownloadCV")}</FancyButton>
+        </a>
+      </div>
+
+      <p className="text-xs text-neutral-400 pl-1">
+        {/* Gunakan key dari i18n */}
+        {t("cvLanguageNote")}
+      </p>
     </div>
   );
 };

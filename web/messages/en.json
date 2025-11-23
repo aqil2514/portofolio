@@ -15,7 +15,8 @@
     "certificates": "Certificates",
     "viewCertificate": "View Certificate →",
     "whoAmIseeCV": "View CV",
-    "whoAmIDownloadCV": "Download CV"
+    "whoAmIDownloadCV": "Download CV",
+    "cvLanguageNote": "The CV language automatically matches the current website language."
   },
   "ProjectsPage": {
     "title": "My Projects",
