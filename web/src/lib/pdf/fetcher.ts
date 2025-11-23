@@ -3,6 +3,7 @@ import { getAboutPageCms } from "@/sanity/actions/aboutPage";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import { getLocale } from "next-intl/server";
 
+// TODO DELETE KALO PDF LANCAR DIAKSES
 export async function getPDFData(): Promise<PDFDocument> {
   const [summary] = await Promise.all([getPdfSummary()]);
 

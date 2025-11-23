@@ -193,6 +193,19 @@ export const styles = StyleSheet.create({
     marginRight: 8,
   },
 
+  skillItem: {
+    marginBottom: 4,
+    fontSize: 10,
+  },
+
+  skillLabel: {
+    fontWeight: "600",
+  },
+
+  skillValue: {
+    fontFamily: "Times-Roman",
+  },
+
   // -----------------------------
   // PROJECTS SECTION
   // -----------------------------

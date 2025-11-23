@@ -1,36 +1,29 @@
 import { Text, View } from "@react-pdf/renderer";
 import { styles } from "./styles";
 import { EducationSection } from "@/@types/PDF";
+import { LocaleLang } from "@/@types/General";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
+import { formatMonthYear } from "@/utils/formatMonthYear";
 
-const educationData: EducationSection = {
-  title: "EDUCATION",
-  items: [
-    {
-      degree: "Bachelor's Degree in Translation",
-      major: "(Arabic-Indonesian)",
-      university: "Universitas Islam Negeri Syarif Hidayatullah Jakarta",
-      location: "Ciputat, Tangerang",
-      startDate: "September 2019",
-      endDate: "July 2023",
-      gpa: "3.66 / 4.00",
-    },
-  ],
-};
+interface Props {
+  data: EducationSection;
+  locale: LocaleLang;
+}
 
-export function PDFEducation() {
+export function PDFEducation({data, locale}: Props) {
   return (
     <View style={styles.educationSection}>
-      <Text style={styles.sectionTitle}>{educationData.title}</Text>
+      <Text style={styles.sectionTitle}>{getInternationalizationValue(data.title, locale)}</Text>
 
-      {educationData.items.map((edu, index) => (
+      {data.items.map((edu, index) => (
         <View key={index} style={styles.eduItemContainer}>
           {/* Row 1: Degree + Dates */}
           <View style={styles.eduTopRow}>
             <Text style={styles.eduDegree}>
-              {edu.degree} {edu.major}
+              {getInternationalizationValue(edu.degree, locale)} {getInternationalizationValue(edu.major, locale)}
             </Text>
             <Text style={styles.eduDates}>
-              {edu.startDate} - {edu.endDate}
+              {formatMonthYear(edu.startDate, locale)} - {formatMonthYear(edu.endDate, locale)}
             </Text>
           </View>
 

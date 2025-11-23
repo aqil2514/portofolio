@@ -1,65 +1,49 @@
 import { View, Text } from "@react-pdf/renderer";
 import { styles } from "./styles";
 import { ExperienceSection } from "@/@types/PDF";
+import { LocaleLang } from "@/@types/General";
+import React from "react";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
+import { formatMonthYear } from "@/utils/formatMonthYear";
 
-const experienceData: ExperienceSection = {
-  title: "EXPERIENCE",
-  items: [
-    {
-      jobTitle: "Warehouse Administration Staff",
-      company: "PT. Alumindo Alloy Abadi",
-      location: "Cibitung, West Java",
-      startDate: "March 2024",
-      endDate: "March 2025",
-      bullets: [
-        "Recorded and managed stock using ERP and Excel systems",
-        "Ensured smooth product distribution and logistics across branches",
-      ],
-    },
-    {
-      jobTitle: "Full Stack Developer",
-      company: "Freelance / Personal Projects",
-      location: "Sukawangi, West Java",
-      startDate: "July 2023",
-      endDate: "Present",
-      bullets: [
-        "Developed a web-based retail management system including transaction tracking, inventory control, and margin calculations using Next.js, NestJS, Supabase, Shadcn, and Tailwind CSS.",
-        "Built an internal financial dashboard for tracking income, expenses, and profit using React.js, Node.js, and MySQL.",
-        "Integrated Midtrans API for payment simulation and added Google Analytics & Search Console for insights.",
-        "Applied scalable full stack architecture with authentication, authorization, and efficient ID structuring.",
-        "Focused on usability and efficiency based on real business experience.",
-      ],
-    },
-  ],
-};
+interface Props {
+  data: ExperienceSection;
+  locale: LocaleLang;
+}
 
-export const PDFExperience = () => {
+export const PDFExperience: React.FC<Props> = ({ data, locale }) => {
   return (
     <View style={styles.experienceSection}>
-      <Text style={styles.sectionTitle}>{experienceData.title}</Text>
+      <Text style={styles.sectionTitle}>
+        {getInternationalizationValue(data.title, locale)}
+      </Text>
 
-      {experienceData.items.map((item, index) => (
+      {data.items.map((item, index) => (
         <View key={index} style={styles.expItemContainer}>
-
           {/* Job Title & Dates */}
           <View style={styles.expHeaderRow}>
-            <Text style={styles.expJobTitle}>{item.jobTitle}</Text>
+            <Text style={styles.expJobTitle}>
+              {getInternationalizationValue(item.jobTitle, locale)}
+            </Text>
             <Text style={styles.expDates}>
-              {item.startDate} - {item.endDate}
+              {formatMonthYear(item.startDate, locale)} - {formatMonthYear(item.endDate, locale)}
             </Text>
           </View>
 
           {/* Company & Location */}
           <View style={styles.expSubRow}>
             <Text style={styles.expCompany}>{item.company}</Text>
-            <Text style={styles.expLocation}>{item.location}</Text>
+            <Text style={styles.expLocation}>
+              {getInternationalizationValue(item.location, locale)}
+            </Text>
           </View>
 
           {/* Bullet List */}
           {item.bullets.map((b, i) => (
-            <Text key={i} style={styles.expBullet}>• {b}</Text>
+            <Text key={i} style={styles.expBullet}>
+              • {getInternationalizationValue(b.text, locale)}
+            </Text>
           ))}
-
         </View>
       ))}
     </View>

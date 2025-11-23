@@ -1,3 +1,5 @@
+import { InternationalizedArray } from "./Sanity";
+
 export interface PDFDocument {
   summary: SummarySection;
   experience: ExperienceSection;
@@ -7,53 +9,62 @@ export interface PDFDocument {
 }
 
 export interface SummarySection {
-  title: string;
-  item: string;
+  title: InternationalizedArray[];
+  item: InternationalizedArray[];
 }
 
 export interface ExperienceItem {
-  jobTitle: string;
+  bullets: {
+    text: InternationalizedArray[];
+  }[];
   company: string;
-  location: string;
-  startDate: string;
   endDate: string;
-  bullets: string[];
+  jobTitle: InternationalizedArray[];
+  location: InternationalizedArray[];
+  startDate: string;
 }
 
 export interface ExperienceSection {
-  title: string;
+  title: InternationalizedArray[];
   items: ExperienceItem[];
 }
 
 export interface EducationItem {
-  degree: string;
-  major: string;
-  university: string;
-  location: string;
-  startDate: string;
+  degree: InternationalizedArray[];
   endDate: string;
   gpa: string;
+  location: string;
+  major: InternationalizedArray[];
+  startDate: string;
+  university: string;
 }
 
 export interface EducationSection {
-  title: string;
+  title: InternationalizedArray[];
   items: EducationItem[];
 }
 
 export interface SkillsSection {
-  title: string;
-  skills: string[];
+  title: InternationalizedArray[];
+  skills: SkillItem[];
+}
+
+export interface SkillItem{
+  label:string;
+  value:string;
 }
 
 export interface ProjectItem {
-  title: string;
-  role?: string;
-  startDate: string;
+  bullets: {
+    text: InternationalizedArray[];
+  }[];
   endDate: string;
-  bullets: string[];
+  role?: InternationalizedArray[];
+  startDate: string;
+  title: InternationalizedArray[];
 }
 
 export interface ProjectsSection {
-  title: string;
+  title: InternationalizedArray[];
   items: ProjectItem[];
 }

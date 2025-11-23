@@ -1,40 +1,28 @@
 import { View, Text } from "@react-pdf/renderer";
 import { styles } from "./styles";
 import { SkillsSection } from "@/@types/PDF";
+import React from "react";
+import { LocaleLang } from "@/@types/General";
+import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 
-const skillsData: SkillsSection = {
-  title: "SKILLS",
-  skills: [
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "Redux",
-    "Node.js",
-    "Express.js",
-    "NestJS",
-    "MySQL",
-    "MongoDB",
-    "PostgreSQL",
-    "Git",
-    "GitHub",
-    "REST API",
-    "Cloud Computing (Vercel, Firebase)",
-    "CI/CD",
-    "Communication",
-    "Adaptability",
-    "Time Management"
-  ]
-};
+interface Props {
+  data: SkillsSection;
+  locale: LocaleLang;
+}
 
-
-export const PDFSkills = () => {
+export const PDFSkills: React.FC<Props> = ({ data, locale }) => {
   return (
     <View style={styles.skillsSection}>
-      <Text style={styles.sectionTitle}>{skillsData.title}</Text>
-
-      <Text style={styles.skillsText}>
-        {skillsData.skills.join(", ")}
+      <Text style={styles.sectionTitle}>
+        {getInternationalizationValue(data.title, locale)}
       </Text>
+
+      {data.skills.map((skill, index) => (
+        <Text key={index} style={styles.skillItem}>
+          <Text style={styles.skillLabel}>{skill.label}: </Text>
+          <Text style={styles.skillValue}>{skill.value}</Text>
+        </Text>
+      ))}
     </View>
   );
 };
