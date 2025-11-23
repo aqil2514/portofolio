@@ -16,6 +16,7 @@ import { WhoAmIButton } from "./WhoAmIButton";
 export function WhoAmI() {
   const { data } = useAboutMeContext();
   const locale = useLocale();
+
   return (
     <motion.div
       initial={{
@@ -104,7 +105,7 @@ export function WhoAmI() {
                     {getInternationalizationValue(item.subtitle, locale)}
                   </p>
                   <article className="text-white/90 text-sm sm:text-base text-justify leading-relaxed">
-                    {getInternationalizationValue(item.content, locale) }
+                    {getInternationalizationValue(item.content, locale)}
                   </article>
 
                   <WhoAmIButton buttonId={item.ctaButtonId} />

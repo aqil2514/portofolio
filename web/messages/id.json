@@ -13,19 +13,21 @@
     "coreSkill": "Skil Utama",
     "learningSkill": "Skill yang Dipelajari",
     "certificates": "Sertifikat",
-    "viewCertificate": "Lihat Sertifikat →"
+    "viewCertificate": "Lihat Sertifikat →",
+    "whoAmIseeCV": "Lihat CV",
+    "whoAmIDownloadCV": "Unduh CV"
   },
   "ProjectsPage": {
     "title": "Proyek Saya",
     "subtitle": "Beberapa proyek yang pernah saya buat",
-    "projectDescription":"Deskripsi Proyek",
-    "liveLabel":"Lihat Proyek",
-    "sourceCodeLabel":"Sumber Kode"
+    "projectDescription": "Deskripsi Proyek",
+    "liveLabel": "Lihat Proyek",
+    "sourceCodeLabel": "Sumber Kode"
   },
   "General": {
     "More": "Lainnya...",
     "techStack": "Teknologi",
     "category": "Kategori",
-    "features":"Fitur-fitur"
+    "features": "Fitur-fitur"
   }
 }

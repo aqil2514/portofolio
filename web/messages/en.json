@@ -13,19 +13,21 @@
     "coreSkill": "Core Skill",
     "learningSkill": "Learning Skills",
     "certificates": "Certificates",
-    "viewCertificate": "View Certificate →"
+    "viewCertificate": "View Certificate →",
+    "whoAmIseeCV": "View CV",
+    "whoAmIDownloadCV": "Download CV"
   },
   "ProjectsPage": {
     "title": "My Projects",
     "subtitle": "Few projects that I've built",
-    "projectDescription":"Project Description",
-    "liveLabel":"Visit Project",
-    "sourceCodeLabel":"Source Code"
+    "projectDescription": "Project Description",
+    "liveLabel": "Visit Project",
+    "sourceCodeLabel": "Source Code"
   },
   "General": {
     "More": "More...",
     "techStack": "Tech Stack",
     "category": "Category",
-    "features":"Features"
+    "features": "Features"
   }
 }
