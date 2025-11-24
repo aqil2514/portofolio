@@ -8,8 +8,7 @@ export async function getAllProjectTechStack(): Promise<string[]> {
   const cached = await redis.get(cacheKey);
   if (cached) return cached as string[];
 
-  const res = await client.fetch(allTechName);
-
+  const res:string[] = await client.fetch(allTechName);
 
   await redis.set(cacheKey, res, { ex: 60 * 60 * 6 });
 
