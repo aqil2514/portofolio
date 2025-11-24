@@ -17,7 +17,6 @@
     "whoAmIseeCV": "Lihat CV",
     "whoAmIDownloadCV": "Unduh CV",
     "cvLanguageNote": "Bahasa dalam CV akan menyesuaikan dengan bahasa situs yang sedang Anda gunakan."
-
   },
   "ProjectsPage": {
     "title": "Proyek Saya",
@@ -25,6 +24,16 @@
     "projectDescription": "Deskripsi Proyek",
     "liveLabel": "Lihat Proyek",
     "sourceCodeLabel": "Sumber Kode"
+  },
+  "Contact": {
+    "form": {
+      "title": "Kirim Pesan via {via}",
+      "switchVia": "Ganti ke {via}",
+      "messageLabel": "Pesan Anda",
+      "placeholder": "Tulis pesan Anda di sini...",
+      "send": "Kirim",
+      "alertEmpty": "Pesan tidak boleh kosong!"
+    }
   },
   "General": {
     "More": "Lainnya...",

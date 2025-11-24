@@ -25,6 +25,16 @@
     "liveLabel": "Visit Project",
     "sourceCodeLabel": "Source Code"
   },
+  "Contact": {
+    "form": {
+      "title": "Send a message via {via}",
+      "switchVia": "Switch to {via}",
+      "messageLabel": "Your Message",
+      "placeholder": "Write your message here...",
+      "send": "Send",
+      "alertEmpty": "Message cannot be empty!"
+    }
+  },
   "General": {
     "More": "More...",
     "techStack": "Tech Stack",

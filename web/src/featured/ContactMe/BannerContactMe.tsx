@@ -28,7 +28,7 @@ export async function BannerContactMe() {
       <motion.h1
         className={cn(
           fontCinzel.className,
-          "z-20 font-bold text-white text-4xl sm:text-5xl drop-shadow-xl"
+          "z-20 font-bold text-white text-2xl md:text-4xl lg:text-5xl drop-shadow-xl"
         )}
         animate={{
           rotate: [0, -1.5, 1.5, -1, 0],
