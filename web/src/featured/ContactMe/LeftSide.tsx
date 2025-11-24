@@ -20,7 +20,9 @@ export function LeftSide() {
           max-w-[550px]     
           md:max-w-[700px]
           lg:max-w-[850px] 
-          h-96
+          h-52
+          md:h-72
+          lg:h-96
         "
       />
     </div>

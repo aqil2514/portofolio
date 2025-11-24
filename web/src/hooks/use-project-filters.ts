@@ -1,84 +1,96 @@
 "use client";
 
-import { BasicSelect } from "@/@types/General";
 import { useProjectsContext } from "@/featured/Projects/provider";
-import { useRouter } from "@/i18n/navigations";
-import { generateSlug } from "@/utils/generateSlug";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useRouter, usePathname } from "@/i18n/navigations";
 
 export function useProjectFilters() {
   const router = useRouter();
-  const params = useSearchParams();
+  const pathname = usePathname(); // gives /id/projects or /en/projects
 
-  const initialStatus = params.get("status") ?? "all";
-  const initialCategory = params.get("category") ?? "all";
-  const initialTech = params.get("tech") ?? "all";
-  const initialSearch = params.get("search") ?? "";
+  const {
+    selectedStatus,
+    selectedCategory,
+    selectedTech,
+    searchQuery,
 
-  const [status, setStatus] = useState(initialStatus);
-  const [category, setCategory] = useState(initialCategory);
-  const [tech, setTech] = useState(initialTech);
-  const [search, setSearch] = useState(initialSearch);
+    setSelectedStatus,
+    setSelectedCategory,
+    setSelectedTech,
+    setSearchQuery,
 
-  const { projectCategories, projectTechStacks } = useProjectsContext();
+    clearFilters,
+
+    projectCategories,
+    projectTechStacks,
+  } = useProjectsContext();
 
   const applyFilters = () => {
-    const query = new URLSearchParams();
+    const params = new URLSearchParams();
 
-    if (status !== "all") query.set("status", status);
-    if (category !== "all") query.set("category", category);
-    if (tech !== "all") query.set("tech", tech);
-    if (search.trim() !== "") query.set("search", search);
+    if (selectedStatus !== "all") params.set("status", selectedStatus);
+    if (selectedCategory !== "all") params.set("category", selectedCategory);
+    if (selectedTech !== "all") params.set("tech", selectedTech);
+    if (searchQuery.trim() !== "") params.set("search", searchQuery.trim());
 
-    router.replace(`/projects?${query.toString()}`);
+    router.replace(
+      params.toString() === "" ? pathname : `${pathname}?${params.toString()}`
+    );
   };
 
   const resetFilters = () => {
-    setStatus("all");
-    setCategory("all");
-    setTech("all");
-    setSearch("");
-    router.replace("/projects");
+    clearFilters();
+    router.replace(pathname);
   };
 
-    const categoryOptions: BasicSelect[] = [
+  const categoryOptions = [
     { label: "All", value: "all" },
-    ...projectCategories.map((p) => ({ label: p, value: generateSlug(p) })),
+    ...projectCategories
+      .slice()
+      .sort((a, b) => a.localeCompare(b))
+      .map((c) => ({
+        label: c,
+        value: slugify(c),
+      })),
   ];
 
-  const techOptions: BasicSelect[] = [
+  const techOptions = [
     { label: "All", value: "all" },
-    ...projectTechStacks.map((p) => ({ label: p, value: generateSlug(p) })),
+    ...projectTechStacks
+      .slice()
+      .sort((a, b) => a.localeCompare(b))
+      .map((t) => ({
+        label: t,
+        value: slugify(t),
+      })),
   ];
 
   const statusOptions = [
-    { value: "all", label: "All" },
-    { value: "live", label: "Live" },
-    { value: "archived", label: "Archived" },
-    { value: "on-progress", label: "On Progress" },
+    { label: "All", value: "all" },
+    { label: "Live", value: "live" },
+    { label: "Archived", value: "archived" },
+    { label: "On Progress", value: "on-progress" },
   ];
 
   return {
-    // State
-    status,
-    category,
-    tech,
-    search,
-    
-    // Set State
-    setStatus,
-    setCategory,
-    setTech,
-    setSearch,
+    status: selectedStatus,
+    category: selectedCategory,
+    tech: selectedTech,
+    search: searchQuery,
 
-    // Filter Handler
+    setStatus: setSelectedStatus,
+    setCategory: setSelectedCategory,
+    setTech: setSelectedTech,
+    setSearch: setSearchQuery,
+
     applyFilters,
     resetFilters,
 
-    // Data
     categoryOptions,
     techOptions,
-    statusOptions
+    statusOptions,
   };
+}
+
+function slugify(str: string) {
+  return str.toLowerCase().replace(/\s+/g, "-");
 }
