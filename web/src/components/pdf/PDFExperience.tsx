@@ -12,6 +12,7 @@ interface Props {
 }
 
 export const PDFExperience: React.FC<Props> = ({ data, locale }) => {
+  const isCurrentValue = locale === "en" ? "Present" : "Sekarang";
   return (
     <View style={styles.experienceSection}>
       <Text style={styles.sectionTitle}>
@@ -26,7 +27,10 @@ export const PDFExperience: React.FC<Props> = ({ data, locale }) => {
               {getInternationalizationValue(item.jobTitle, locale)}
             </Text>
             <Text style={styles.expDates}>
-              {formatMonthYear(item.startDate, locale)} - {formatMonthYear(item.endDate, locale)}
+              {formatMonthYear(item.startDate, locale)} -{" "}
+              {item.isCurrent
+                ? isCurrentValue
+                 : formatMonthYear(item.endDate, locale)}
             </Text>
           </View>
 

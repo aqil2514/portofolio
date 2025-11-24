@@ -13,6 +13,7 @@ export const allCVData = defineQuery(`*[_type=="portofolio"][0]{
       location,
       startDate,
       endDate,
+      isCurrent,
       "bullets":bullets[]{
         text
       }

@@ -1,5 +1,6 @@
 import ProjectsTemplate from "@/components/templates/ProjectsTemplate";
-import { getAllProjectCategory, getAllProjectsData, getAllProjectTechStack } from "@/sanity/actions/projects";
+import { getAllProjectCategory, getAllProjectsData } from "@/sanity/actions/projects";
+import { getAllProjectTechStack } from "@/sanity/actions/tech";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

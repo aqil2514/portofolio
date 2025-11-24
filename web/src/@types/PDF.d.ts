@@ -18,6 +18,7 @@ export interface ExperienceItem {
     text: InternationalizedArray[];
   }[];
   company: string;
+  isCurrent: boolean;
   endDate: string;
   jobTitle: InternationalizedArray[];
   location: InternationalizedArray[];

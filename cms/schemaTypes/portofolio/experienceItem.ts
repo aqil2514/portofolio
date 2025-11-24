@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export const experienceItem = defineType({
   name: 'experienceItem',
@@ -26,15 +26,22 @@ export const experienceItem = defineType({
       type: 'date',
     }),
     defineField({
+      name: 'isCurrent',
+      title: 'Still Working Here?',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
       name: 'endDate',
       title: 'End Date',
       type: 'date',
+      hidden: ({parent}) => parent?.isCurrent === true,
     }),
     defineField({
       name: 'bullets',
       title: 'Bullets',
       type: 'array',
-      of: [{ type: 'bulletItem' }],
+      of: [{type: 'bulletItem'}],
     }),
   ],
-});
+})

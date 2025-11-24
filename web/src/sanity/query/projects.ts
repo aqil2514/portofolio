@@ -23,7 +23,7 @@ const allData = `{
   mainDemo,
   features,
   status,
-  techStack,
+  "techStack": techStack[]->name,
   liveUrl,
   sourceCode
 }`

@@ -71,7 +71,12 @@ export const projectsType = defineType({
       name: 'techStack',
       title: 'Tech Stack',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [
+        {
+          type: 'reference',
+          to: [{type: 'tech'}],
+        },
+      ],
     }),
     defineField({
       name: 'description',
