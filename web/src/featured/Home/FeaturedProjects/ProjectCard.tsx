@@ -4,10 +4,10 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { fontCinzel } from "@/constant/fonts";
 import * as motion from "motion/react-client";
-import { ProjectCardData } from "@/@types/Projects";
+import { ProjectCardData, ProjectStatus } from "@/@types/Projects";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import { useLocale, useTranslations } from "next-intl";
-import { UiBadge } from "@/components/atoms/UiBadge";
+import { BadgeVariants, UiBadge } from "@/components/atoms/UiBadge";
 import { VARIABEL_IMAGE_SIZE } from "@/constant/variables";
 
 interface ProjectCardProps {
@@ -50,6 +50,18 @@ export function ProjectCard({
         }
       : {};
 
+  const statusMap: Record<ProjectStatus, string> = {
+    live: "Live",
+    "on-progress": "On Progress",
+    archived: "Archived",
+  };
+
+  const statusBadgeVariant: Record<ProjectStatus, BadgeVariants> = {
+    live: "status-live",
+    "on-progress": "status-progress",
+    archived: "status-archived",
+  };
+
   return (
     <Wrapper
       {...wrapperProps}
@@ -82,6 +94,15 @@ export function ProjectCard({
             className="object-cover"
           />
         </div>
+
+        {"status" in data && (
+          <UiBadge
+            variant={statusBadgeVariant[data.status]}
+            className="px-6"
+          >
+            {statusMap[data.status]}
+          </UiBadge>
+        )}
 
         {/* Title */}
         <h3

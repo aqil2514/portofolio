@@ -15,7 +15,7 @@ export function ProjectDemoSlider({ items }: { items: SubDemoTypes[] }) {
   if (!items || items.length === 0) return null;
 
   return (
-    <div className="max-w-3xl mx-auto my-10 px-2 sm:px-0">
+    <div className="max-w-xs md:max-w-2xl lg:max-w-3xl mx-auto my-10 px-2 sm:px-0">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}

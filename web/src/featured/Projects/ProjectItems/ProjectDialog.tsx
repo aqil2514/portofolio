@@ -16,7 +16,6 @@ interface Props {
 export function ProjectDialog({ data, setData }: Props) {
   const locale = useLocale();
   const t = useTranslations();
-  console.log(data);
   return (
     <Dialog open={!!data} onOpenChange={(open) => !open && setData(null)}>
       <DialogContent
