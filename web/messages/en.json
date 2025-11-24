@@ -35,6 +35,11 @@
       "alertEmpty": "Message cannot be empty!"
     }
   },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  },
   "General": {
     "More": "More...",
     "techStack": "Tech Stack",

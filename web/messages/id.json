@@ -35,6 +35,11 @@
       "alertEmpty": "Pesan tidak boleh kosong!"
     }
   },
+  "NotFoundPage": {
+    "title": "Halaman Tidak Ditemukan",
+    "description": "Maaf, halaman yang Anda tuju tidak tersedia atau telah dipindahkan.",
+    "backHome": "Kembali ke Beranda"
+  },
   "General": {
     "More": "Lainnya...",
     "techStack": "Teknologi",
