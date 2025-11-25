@@ -5,6 +5,18 @@ import { NextIntlClientProvider } from "next-intl";
 import { PageTransitionProvider } from "@/providers/PageTransitionProvider";
 import { FloatingNavButton } from "@/components/layouts/navigations/FloatingNavButton";
 import { VARIABLE_COLOR } from "@/constant/variables";
+import { getLocale } from "next-intl/server";
+import {
+  AUTHOR,
+  DEFAULT_OG,
+  LANGUAGES,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+  SITE_NAME,
+  SITE_URL,
+} from "@/constant/seo";
+import Script from "next/script";
+import { personSchema, websiteSchema } from "@/constant/schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,21 +29,62 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+
   title: {
-    template: "%s | Muhamad Aqil Maulana",
-    default: "Muhamad Aqil Maulana",
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+
+  description: SITE_DESCRIPTION,
+
+  keywords: SITE_KEYWORDS,
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  authors: [AUTHOR],
+  creator: SITE_NAME,
+
+  alternates: {
+    canonical: SITE_URL,
+    languages: LANGUAGES,
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+
+  openGraph: {
+    ...DEFAULT_OG,
   },
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang={locale} className="overflow-x-hidden">
+      <head>
+        <Script
+          id="json-ld-person"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+
+        <Script
+          id="json-ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body
-      style={{ background: VARIABLE_COLOR.BLUE_PRIMARY }}
+        style={{ background: VARIABLE_COLOR.BLUE_PRIMARY }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <NextIntlClientProvider>
