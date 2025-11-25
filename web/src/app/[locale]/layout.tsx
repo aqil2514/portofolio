@@ -17,6 +17,7 @@ import {
 } from "@/constant/seo";
 import Script from "next/script";
 import { personSchema, websiteSchema } from "@/constant/schema";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,6 +96,7 @@ export default async function LocaleLayout({
             </main>
           </PageTransitionProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
