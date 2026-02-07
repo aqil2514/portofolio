@@ -2,7 +2,6 @@
 
 import * as motion from "motion/react-client";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 
 export function BallAnimation({ children }: { children: React.ReactNode }) {
   const [showCard, setShowCard] = useState(false);
@@ -65,29 +64,18 @@ export function BallAnimation({ children }: { children: React.ReactNode }) {
       {/* CARD APPEARS */}
       {showCard && (
         <motion.div
-          initial={{
-            width: 20,
-            height: 20,
-            borderRadius: 9999,
-            opacity: 0,
-            backgroundColor: "rgba(255,255,255,0.15)",
-          }}
-          animate={{
-            width: "min(95%, 680px)",  // lebih lega di mobile & max lebih proporsional
-            height: "auto",
-            borderRadius: 20,
-            opacity: 1,
-          }}
+          initial={{ scale: 0.2, opacity: 0, borderRadius: 9999 }}
+          animate={{ scale: 1, opacity: 1, borderRadius: 20 }}
           transition={{ duration: 0.45, ease: "easeOut" }}
-          className={cn(
-            `
-            bg-white/10 backdrop-blur-lg border border-white/20
-            p-4 sm:p-6
-            shadow-xl text-white text-center
-            `
-          )}
+          className="
+      w-[95%] max-w-[680px]
+      bg-white/10 backdrop-blur-lg
+      border border-white/20
+      p-4 sm:p-6
+      shadow-xl text-white text-center
+      will-change-transform
+    "
         >
-          {/* HERO CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

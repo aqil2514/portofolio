@@ -86,7 +86,7 @@ export function ProjectCard({
         {/* Image */}
         <div className="relative w-full h-40 sm:h-48 lg:h-56 rounded-xl overflow-hidden mb-3 sm:mb-4">
           <Image
-            alt={data.image.imageAlt}
+            alt={data.image.imageAlt ?? "Portofolio Image"}
             src={data.image.imageSrc}
             fill
             priority={index > 4}

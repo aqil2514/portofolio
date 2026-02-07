@@ -5,23 +5,23 @@ import { FeaturedProjectsFooter } from "./FeaturedProjectsFooter";
 
 const featuredItems: ProjectSummary[] = [
   {
-    title: "Dragon 8 Travel",
+    title: "Flowtooly",
     image: {
-      imageAlt: "Dragon 8 Travel",
-      label: "Dragon 8 Travel",
-      imageSrc: "/fsd-dragon8.webp",
+      imageAlt: "Flowtooly",
+      label: "Flowtooly",
+      imageSrc: "https://cdn.sanity.io/images/30c680d2/production/22e2a190189476fefe06ad9cde5fd69e43ff6198-1918x899.png",
     },
-    liveUrl: "https://www.dragon8travel.com",
-    techStack: ["Next.js", "Tailwind", "Supabase"],
+    liveUrl: "https://www.flowtooly.com",
+    techStack: ["Next.js", "Tailwind", "ShadCn"],
   },
   {
-    title: "Studinesia",
+    title: "Internal Operating System",
     image: {
-      imageAlt: "Studinesia Blog",
-      label: "Studinesia Blog",
-      imageSrc: "/fsd-studinesia-nextjs.webp",
+      imageAlt: "Internal Operating System",
+      label: "Internal Operating System",
+      imageSrc: "https://cdn.sanity.io/images/30c680d2/production/8fad0eb555f9f02bb7883e449c443a7c258a7348-1918x912.png",
     },
-    techStack: ["Next.js", "AI Automation", "Supabase"],
+    techStack: ["Next.js", "NestJs", "Supabase"],
     liveUrl: "https://www.studinesia.online",
   },
 ];

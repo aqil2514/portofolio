@@ -33,7 +33,8 @@
       "placeholder": "Write your message here...",
       "send": "Send",
       "alertEmpty": "Message cannot be empty!"
-    }
+    },
+    "meet-my-social-account": "Meet Me At"
   },
   "NotFoundPage": {
     "title": "Page Not Found",

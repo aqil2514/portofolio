@@ -17,7 +17,7 @@ export async function getAllProjectsData(): Promise<ProjectCard[]> {
   const data: ProjectCard[] = await client.fetch(allProjectData);
 
   // Cache 6 jam
-  await redis.set(cacheKey, data, { ex: 60 * 60 * 6 });
+  await redis.set(cacheKey, data, { ex: 15 * 60});
 
   return data;
 }

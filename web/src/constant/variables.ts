@@ -8,7 +8,5 @@ export enum VARIABLE_COLOR {
 }
 
 export enum VARIABEL_IMAGE_SIZE {
-  BASIC = `(max-width: 768px) 100vw,
-         (max-width: 1200px) 50vw,
-         33vw`,
+  BASIC = `(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw`,
 }

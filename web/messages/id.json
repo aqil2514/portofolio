@@ -33,7 +33,8 @@
       "placeholder": "Tulis pesan Anda di sini...",
       "send": "Kirim",
       "alertEmpty": "Pesan tidak boleh kosong!"
-    }
+    },
+    "meet-my-social-account": "Temui Saya Di"
   },
   "NotFoundPage": {
     "title": "Halaman Tidak Ditemukan",

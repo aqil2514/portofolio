@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { PageTransitionProvider } from "@/providers/PageTransitionProvider";
 import { FloatingNavButton } from "@/components/layouts/navigations/FloatingNavButton";
 import { VARIABLE_COLOR } from "@/constant/variables";
-import { getLocale } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import {
   AUTHOR,
   DEFAULT_OG,
@@ -69,6 +68,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <html lang={locale} className="overflow-x-hidden">
       <head>
@@ -88,13 +89,11 @@ export default async function LocaleLayout({
         style={{ background: VARIABLE_COLOR.BLUE_PRIMARY }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        <NextIntlClientProvider>
-          <PageTransitionProvider>
+        <NextIntlClientProvider locale={locale} messages={messages} >
             <main className="overflow-x-hidden">
               <FloatingNavButton />
               {children}
             </main>
-          </PageTransitionProvider>
         </NextIntlClientProvider>
         <Analytics />
       </body>

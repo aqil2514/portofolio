@@ -17,7 +17,7 @@ export async function getAllCVData(): Promise<PDFDocument> {
   const data: PDFDocument = await client.fetch(allCVData);
 
   // 3. Simpan ke Redis (TTL: 6 jam)
-  await redis.set(cacheKey, data, { ex: 60 * 60 * 6 });
+  await redis.set(cacheKey, data, { ex: 15 * 60 });
 
   return data;
 }

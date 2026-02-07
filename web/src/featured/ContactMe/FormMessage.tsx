@@ -4,6 +4,7 @@ import { FancyButton } from "@/components/atoms/FancyButton";
 import { useContactContext } from "./provider";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import { SocialAccounts } from "./SocialAccounts";
 
 export function FormMessage() {
   const { via, setVia } = useContactContext();
@@ -68,6 +69,8 @@ export function FormMessage() {
       </div>
 
       <FancyButton onClick={handleSend}>{t("form.send")}</FancyButton>
+
+      <SocialAccounts />
     </div>
   );
 }

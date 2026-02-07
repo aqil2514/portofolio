@@ -1,11 +1,9 @@
 "use client";
 
 import { motion } from "motion/react";
-import Link from "next/link";
 import { X } from "lucide-react";
-import { usePageTransition } from "@/providers/PageTransitionProvider";
 import { LanguageSwitcher } from "@/featured/Home/LanguageSwitcher";
-import { usePathname } from "@/i18n/navigations";
+import { Link, usePathname } from "@/i18n/navigations";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -21,11 +19,10 @@ export function SideNavMenu({
   open: boolean;
   onClose: () => void;
 }) {
-  const { setTransition, setIsReady } = usePageTransition();
+  // const { setTransition, } = usePageTransition();
   const pathname = usePathname();
 
   // index halaman saat ini
-  const currentIndex = navItems.findIndex((item) => item.href === pathname);
 
   return (
     <>
@@ -79,7 +76,7 @@ export function SideNavMenu({
           }}
           className="flex flex-col gap-5 mt-4"
         >
-          {navItems.map((item, targetIndex) => {
+          {navItems.map((item) => {
             const isActive = item.href === pathname;
 
             return (
@@ -105,15 +102,6 @@ export function SideNavMenu({
                   <Link
                     href={item.href}
                     onClick={() => {
-                      setIsReady(false);
-
-                      // Tentukan transisi slide
-                      if (currentIndex < targetIndex) {
-                        setTransition("slideRight");
-                      } else if (currentIndex > targetIndex) {
-                        setTransition("slideLeft");
-                      }
-
                       onClose();
                     }}
                     className="

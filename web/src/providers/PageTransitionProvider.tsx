@@ -2,13 +2,11 @@
 
 import { createContext, useContext, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { usePathname } from "@/i18n/navigations";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 interface PageTransitionContextProps {
   transition: TransitionStyle;
   setTransition: (style: TransitionStyle) => void;
-  isReady: boolean;            
-  setIsReady: (state: boolean) => void;           
 }
 
 export type TransitionStyle =
@@ -18,7 +16,9 @@ export type TransitionStyle =
   | "slideRight"
   | "blur";
 
-const PageTransitionContext = createContext<PageTransitionContextProps | null>(null);
+const PageTransitionContext = createContext<PageTransitionContextProps | null>(
+  null,
+);
 
 const variants = {
   fade: {
@@ -49,26 +49,14 @@ const variants = {
 };
 
 export function PageTransitionProvider({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+  const segment = useSelectedLayoutSegment();
   const [transition, setTransition] = useState<TransitionStyle>("blur");
 
-  const [isReady, setIsReady] = useState(true);
-
-  // Ketika route berubah → halaman baru BELUM boleh animasi
-  // isReady akan menjadi false otomatis karena key berubah
-  // lalu AnimatePresence exit dulu
-
   return (
-    <PageTransitionContext.Provider value={{ transition, setTransition, isReady, setIsReady }}>
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => {
-          // EXIT SUDAH SELESAI → halaman baru boleh animasi
-          setIsReady(true);
-        }}
-      >
+    <PageTransitionContext.Provider value={{ transition, setTransition }}>
+      <AnimatePresence initial={false}>
         <motion.div
-          key={pathname}
+          key={segment}
           initial={variants[transition].initial}
           animate={variants[transition].animate}
           exit={variants[transition].exit}
@@ -84,6 +72,8 @@ export function PageTransitionProvider({ children }: { children: React.ReactNode
 export function usePageTransition() {
   const ctx = useContext(PageTransitionContext);
   if (!ctx)
-    throw new Error("usePageTransition must be used inside PageTransitionProvider");
+    throw new Error(
+      "usePageTransition must be used inside PageTransitionProvider",
+    );
   return ctx;
 }

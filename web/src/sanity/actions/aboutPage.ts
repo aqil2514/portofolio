@@ -4,7 +4,7 @@ import { aboutPageGroq } from "../query/aboutPage";
 import { redis } from "@/lib/redis";
 
 const CACHE_KEY = "cms:about-page";
-const CACHE_TTL = 60 * 60 * 6; // 6 hours
+const CACHE_TTL = 15 * 60;
 
 export async function getAboutPageCms(): Promise<PageAboutTypes> {
   try {

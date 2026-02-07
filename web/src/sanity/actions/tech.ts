@@ -10,7 +10,7 @@ export async function getAllProjectTechStack(): Promise<string[]> {
 
   const res:string[] = await client.fetch(allTechName);
 
-  await redis.set(cacheKey, res, { ex: 60 * 60 * 6 });
+  await redis.set(cacheKey, res, { ex: 15 * 60 });
 
   return res.sort();
 }
