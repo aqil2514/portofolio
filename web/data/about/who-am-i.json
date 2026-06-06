@@ -1,0 +1,84 @@
+[
+  {
+    "content": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "My name is Aqil, a full-stack developer who enjoys building digital systems, AI-powered automation, and real-world projects that people actually use."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Saya Aqil, seorang Full Stack Developer yang menikmati pembuatan sistem digital, automasi by AI, dan project nyata yang dapat digunakan oleh orang-orang."
+      }
+    ],
+    "ctaButtonId": "none",
+    "imageAlt": "About Me Image",
+    "imageSrc": "/images/about/whoami-0.jpg",
+    "subtitle": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "About Me"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Tentang Saya"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "About Me"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Tentang Saya"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Full-stack developer experienced in building digital systems, AI automation, and scalable end-to-end applications. Focused on performance, workflow optimization, and user experience through reliable, modern software engineering."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Full-stack developer dengan pengalaman mengembangkan sistem digital, automasi AI, dan aplikasi end-to-end yang skalabel serta efisien. Berfokus pada peningkatan performa, alur kerja, dan pengalaman pengguna melalui rekayasa perangkat lunak yang modern dan andal."
+      }
+    ],
+    "ctaButtonId": "download-cv",
+    "imageAlt": "Foto 2",
+    "imageSrc": "/images/about/whoami-1.jpg",
+    "subtitle": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Full Stack Developer"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Full Stack Developer"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Building digital systems and AI-powered automation for real-world needs."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Membangun sistem digital dan automasi berbasis AI untuk kebutuhan nyata."
+      }
+    ]
+  }
+]

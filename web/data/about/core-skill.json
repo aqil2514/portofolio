@@ -1,0 +1,80 @@
+[
+  {
+    "skillField": "⚛️Frontend",
+    "skillLevel": "advanced",
+    "skillList": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Zustand / Context",
+      "Framer Motion"
+    ]
+  },
+  {
+    "skillField": "🟩Backend",
+    "skillLevel": "advanced",
+    "skillList": [
+      "Node.js",
+      "NestJS",
+      "Express",
+      "REST API"
+    ]
+  },
+  {
+    "skillField": "🛢️Database",
+    "skillLevel": "advanced",
+    "skillList": [
+      "PostgreSQL",
+      "MySQL",
+      "Supabase",
+      "Firebase",
+      "MongoDB",
+      "Redis"
+    ]
+  },
+  {
+    "skillField": "🛠 DevOps & Deployment",
+    "skillLevel": "intermediate",
+    "skillList": [
+      "Vercel",
+      "Railway",
+      "Render",
+      "CloudFlare",
+      "SSL & Domains"
+    ]
+  },
+  {
+    "skillField": "🤖 Automation",
+    "skillLevel": "intermediate",
+    "skillList": [
+      "n8n Automation",
+      "Telegram Bot (Telegraf)",
+      "Cron Jobs",
+      "Webhooks",
+      "API Orchestration.",
+      "AI-assisted automation"
+    ]
+  },
+  {
+    "skillField": "🧠 AI Integration",
+    "skillLevel": "intermediate",
+    "skillList": [
+      "OpenAI API",
+      "Prompt Engineering",
+      "AI Image Generation Flow",
+      "AI-based Content Automation"
+    ]
+  },
+  {
+    "skillField": "📦 Product Engineering",
+    "skillLevel": "intermediate",
+    "skillList": [
+      "Product Architecture",
+      "CMS Integration",
+      "Admin Dashboard Development",
+      "Authentication (NextAuth / Auth.js)",
+      "REST API Design",
+      "State Management Architecture"
+    ]
+  }
+]

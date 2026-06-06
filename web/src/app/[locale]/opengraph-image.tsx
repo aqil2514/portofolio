@@ -1,6 +1,6 @@
 import { getLocale } from "next-intl/server";
 import { generateOGImage } from "../og/generator";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 
 export default async function Image() {
   const locale = await getLocale();

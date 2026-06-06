@@ -1,0 +1,94 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "DevOps",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "a6cef2031571",
+      "_type": "feature",
+      "en": "Multilingual routing (ID & EN)",
+      "id": "Routing multibahasa (ID & EN)"
+    },
+    {
+      "_key": "9e8f3eabdb95",
+      "_type": "feature",
+      "en": "Dynamic OpenGraph image generation per page",
+      "id": "Pembuatan gambar OpenGraph dinamis per halaman"
+    },
+    {
+      "_key": "fbef63aba842",
+      "_type": "feature",
+      "en": "JSON-LD (Person, Website, Breadcrumb) structured data",
+      "id": "Schema terstruktur JSON-LD (Person, Website, Breadcrumb)"
+    },
+    {
+      "_key": "0ebd18835697",
+      "_type": "feature",
+      "en": "PDF CV generator using React-PDF",
+      "id": "Generator CV PDF menggunakan React-PDF"
+    },
+    {
+      "_key": "c1d2e3f4a5b6",
+      "_type": "feature",
+      "en": "Content managed via local JSON files — no external CMS dependency",
+      "id": "Konten dikelola via file JSON lokal — tanpa ketergantungan CMS eksternal"
+    },
+    {
+      "_key": "b6a5f4e3d2c1",
+      "_type": "feature",
+      "en": "Vercel Analytics for page performance monitoring",
+      "id": "Vercel Analytics untuk pemantauan performa halaman"
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "This project is a fully engineered developer portfolio platform designed to showcase professional identity, technical expertise, and project work. Built with a modern web stack, it includes bilingual routing (ID & EN), automated SEO metadata generation, dynamic OpenGraph image rendering per page, JSON-LD schema injection for Google indexing, content managed via local JSON files, PDF CV generation using React-PDF, and Vercel Analytics for performance monitoring.\nIt serves as both a personal brand hub and a technical demonstration of advanced web engineering practices — and is the very platform you are browsing right now."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Project ini merupakan platform portfolio developer yang dibangun secara menyeluruh untuk menampilkan identitas profesional, keahlian teknis, dan katalog proyek. Dengan teknologi web modern, sistem ini menyediakan routing dua bahasa (ID & EN), generasi metadata SEO otomatis, render OpenGraph gambar dinamis per halaman, injeksi schema JSON-LD untuk meningkatkan indexing Google, konten yang dikelola via file JSON lokal, generator CV dalam bentuk PDF menggunakan React-PDF, dan Vercel Analytics untuk pemantauan performa.\nPlatform ini berfungsi sebagai pusat brand pribadi sekaligus demonstrasi kemampuan rekayasa web tingkat lanjut — dan merupakan platform yang sedang Anda buka saat ini."
+    }
+  ],
+  "id": "6da70fcc-395a-4d26-aab8-00407e7a55da",
+  "image": {
+    "imageAlt": "Developer Portfolio Platform",
+    "imageSrc": "/images/projects/developer-portfolio-platform.png",
+    "label": "Developer Portfolio Platform"
+  },
+  "liveUrl": "https://maqilm-portofolio.vercel.app/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A fully engineered developer portfolio platform with bilingual routing, dynamic OpenGraph, JSON-LD SEO, PDF CV generator, and..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Platform portfolio developer dengan routing multibahasa, OpenGraph dinamis, SEO JSON-LD, generator CV PDF, dan konten berbasis..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/portofolio",
+  "status": "live",
+  "subDemos": null,
+  "techStack": [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "ShadCN",
+    "next-intl",
+    "Dynamic OpenGraph (next/og)",
+    "@react-pdf/renderer (PDF Engine)",
+    "Vercel Analytics",
+    "Framer Motion",
+    "JSON-LD"
+  ],
+  "title": "Developer Portfolio Platform"
+}

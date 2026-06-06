@@ -1,8 +1,8 @@
 import AboutMeTemplate from "@/components/templates/AboutMeTemplate";
-import { getAboutPageCms } from "@/sanity/actions/aboutPage";
+import { getAboutPage } from "@/data/getAboutPage";
 import { Metadata } from "next";
 import { getLocale } from "next-intl/server";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
 
@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutMePage() {
-  const [data, locale] = await Promise.all([getAboutPageCms(), getLocale()]);
+  const [data, locale] = await Promise.all([getAboutPage(), getLocale()]);
 
   return (
     <>

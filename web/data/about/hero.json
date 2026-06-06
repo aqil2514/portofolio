@@ -1,0 +1,26 @@
+{
+  "description": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "I love coding because it allows me to turn ideas into real, functional systems that people can actually use."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Saya suka dengan coding karena itu dapat membuat suatu ide menjadi nyata, dan juga menghasilkan suatu sistem yang benar-benar bisa digunakan oleh orang-orang."
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "About Me"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "Tentang Saya"
+    }
+  ]
+}

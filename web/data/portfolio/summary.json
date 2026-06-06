@@ -1,0 +1,26 @@
+{
+  "item": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Full-stack Developer experienced in architecting digital systems, AI-driven automation, and production-ready applications. Proven track record in delivering scalable, efficient solutions that optimize workflows and enhance user experience through robust and practical software engineering."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Full-stack Developer yang berpengalaman membangun sistem digital dan integrasi AI untuk solusi dunia nyata. Spesialis dalam menciptakan aplikasi yang efisien dan skalabel, dengan fokus utama pada optimasi alur kerja dan penyederhanaan proses kompleks melalui rekayasa perangkat lunak yang andal."
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "SUMMARY"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "RINGKASAN PROFIL"
+    }
+  ]
+}

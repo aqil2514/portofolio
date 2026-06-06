@@ -1,0 +1,47 @@
+{
+  "_type": "skillsSection",
+  "skills": [
+    {
+      "_key": "b441dd7aa57f",
+      "_type": "skillItem",
+      "label": "Front-End & UI/UX",
+      "value": "Next.js, React.js, TypeScript, Tailwind CSS, ShadCN, Redux, i18n (Internationalization), Desktop App Framework"
+    },
+    {
+      "_key": "a40c64186992",
+      "_type": "skillItem",
+      "label": "Back-End & Database",
+      "value": "NestJS, Node.js, Express.js, Supabase, PostgreSQL, MySQL, MongoDB, REST API, Webhook Handling, Server-Side Validation, RabbitMQ / Redis, Microservices Architecture"
+    },
+    {
+      "_key": "173cebc86f2d",
+      "_type": "skillItem",
+      "label": "Modern Tech Stack",
+      "value": "Wagmi (Web3 Integration), OpenAI API, Prompt Engineering, n8n Workflow Automation, Headless CMS Development, LangGraph & LangChain, Agentic Workflows, Vector Databases, OpenRouter Integration"
+    },
+    {
+      "_key": "712956b96941",
+      "_type": "skillItem",
+      "label": "DevOps & Tools",
+      "value": "Git, GitHub, Vercel, Render, CI/CD, Cloudinary, Payment Gateway Integration, Docker, VPS"
+    },
+    {
+      "_key": "0285983c50eb",
+      "_type": "skillItem",
+      "label": "Soft Skills",
+      "value": "Product Engineering, Problem Solving, Communication, Adaptability, Time Management"
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "SKILLS"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "KEMAMPUAN"
+    }
+  ]
+}

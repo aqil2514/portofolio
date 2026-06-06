@@ -1,5 +1,5 @@
 "use client";
-import { PageAboutTypes } from "@/@types/Sanity";
+import { PageAboutTypes } from "@/@types/types";
 import React, { createContext, useContext } from "react";
 
 interface AboutMeContextType {

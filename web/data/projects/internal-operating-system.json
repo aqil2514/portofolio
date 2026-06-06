@@ -1,0 +1,186 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "DevOps",
+    "Automation",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "0881975880e5",
+      "_type": "feature",
+      "en": "View and track the item stock list in real-time.",
+      "id": "Melihat dan memantau daftar stok barang secara real-time."
+    },
+    {
+      "_key": "bae327c21797",
+      "_type": "feature",
+      "en": "Record sales transactions and monitor sales performance.",
+      "id": "Mencatat transaksi penjualan dan memantau performa penjualan."
+    },
+    {
+      "_key": "6ae41067b697",
+      "_type": "feature",
+      "en": "Manage purchase transactions and incoming stock.",
+      "id": "Mengelola transaksi pembelian dan stok masuk."
+    },
+    {
+      "_key": "5e14a67d477e",
+      "_type": "feature",
+      "en": "Provide concise reports for stock, sales, and purchases",
+      "id": "Menyediakan laporan ringkas untuk stok, penjualan, dan pembelian."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "This is an internal system application developed to support the operational needs of my personal business. The system streamlines the management of stock, sales, purchases, and reports in a structured manner, while ensuring secure access through Google OAuth authentication and Paseto tokens.\n\nIn addition to internal use, the application features a demo mode, designed specifically for similar small businesses (SMEs) to try the system before fully adopting it. This allows users to explore key functionalities safely without affecting actual data."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Ini adalah aplikasi sistem internal yang dibuat untuk membantu operasional bisnis saya pribadi. Sistem ini memudahkan pengelolaan stok, penjualan, pembelian, dan laporan secara terstruktur, sekaligus memastikan keamanan akses melalui autentikasi berbasis Google OAuth dan token Paseto.\n\nSelain untuk kebutuhan internal, aplikasi ini juga menyediakan mode demo, yang dirancang khusus agar UMKM serupa dapat mencoba sistem ini sebelum menggunakannya secara penuh. Dengan begitu, pengguna bisa mengeksplorasi fitur-fitur utama secara aman, tanpa memengaruhi data asli."
+    }
+  ],
+  "id": "861a5d7b-feaf-4472-9aba-4c0128e2a1a5",
+  "image": {
+    "imageAlt": "Internal Operating System Image",
+    "imageSrc": "/images/projects/internal-operating-system.png",
+    "label": "Internal Operating System"
+  },
+  "liveUrl": "https://www.sistem-toserba.shop/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "This is an internal system application developed to support the operational needs of my personal business...."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Ini adalah aplikasi sistem internal yang dibuat untuk membantu operasional bisnis saya pribadi. Sistem ini memudahkan..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/sistem-toserba",
+  "status": "archived",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "This video demonstrates the Google OAuth and Paseto Authentication feature, including successful login simulation, protected route access, switching between demo and private modes, and role validation for private features. The video also showcases real-time system security and provides an overview of the authentication and access control flow in this internal application."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Video ini menampilkan demo fitur Authentication dengan Google OAuth dan Paseto, termasuk simulasi login berhasil, akses protected route, switch mode antara demo dan private, serta validasi role untuk fitur private. Video ini juga menunjukkan keamanan sistem secara real-time dan memberikan gambaran alur autentikasi dan kontrol akses pada aplikasi internal ini."
+        }
+      ],
+      "title": "Authtentication With Oauth Google 2.0 and Paseto",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1768879548/Toserba%20Sistem%20Internal/Authtentication_With_Oauth_Google_2.0_and_Paseto_lcawo6.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "I built an automatic cashflow system that generates financial records directly from sales data or scheduled system triggers (webhook/cron). The system separates cash, receivables, and internal transfers, groups receivables per customer, and ensures transfers are not misclassified as income. The design focuses on consistency, auditability, and scalability for future financial automation."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Saya membangun fitur cashflow otomatis yang dapat menghasilkan pencatatan keuangan langsung dari data penjualan maupun dari sistem terjadwal (webhook/cron). Sistem ini memisahkan transaksi tunai, piutang, dan transfer internal, mengelompokkan piutang per pelanggan, serta memastikan transfer tidak salah diklasifikasikan sebagai pendapatan. Seluruh proses dirancang agar konsisten, dapat diaudit, dan siap dikembangkan untuk otomatisasi keuangan yang lebih kompleks."
+        }
+      ],
+      "title": "Automatic Cashflow",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1770352231/Toserba%20Sistem%20Internal/Cashflow_Otomatis_1_bghh1y.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "In this feature, users can record sales transactions with just a single click.\nThe system automatically separates the records based on the selected payment method.\nIf the payment is made in cash, the transaction is immediately recorded in the cashflow as income.\nHowever, if the payment is made on credit, the system not only records the transaction in the cashflow, but also automatically stores the customer's debt information and adds the amount to the accounts receivable list.\nWith this mechanism, the recording process becomes faster, fully integrated, and reduces the risk of manual entry errors."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Pada fitur ini, pengguna dapat mencatat hasil penjualan hanya dengan satu kali klik.\nSistem secara otomatis akan memisahkan pencatatan berdasarkan metode pembayaran yang digunakan.\nJika pembayaran dilakukan secara tunai, transaksi akan langsung dicatat ke dalam cashflow sebagai pemasukan.\nNamun, jika pembayaran dilakukan secara utang, sistem tidak hanya mencatat transaksi ke dalam cashflow, tetapi juga secara otomatis menyimpan data pelanggan yang berutang dan menambahkan nominalnya ke dalam daftar utang piutang.\nDengan mekanisme ini, proses pencatatan menjadi lebih cepat, terintegrasi, dan meminimalkan risiko kesalahan akibat pencatatan manual."
+        }
+      ],
+      "title": "Automate Cashflow and Receivable Input Data",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1770887676/Toserba%20Sistem%20Internal/Demo_Fitur_Utang_Piutang_mgwqlh.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "I developed a live dashboard feature using Pusher, Next.js, and NestJS to display real-time activity logs without requiring a browser refresh. Every user action is automatically stored in the database and instantly pushed to the dashboard through real-time events. I used Pusher as a third-party WebSocket solution because Vercel does not natively support persistent WebSocket connections. This implementation improves system transparency, responsiveness, and overall user experience in monitoring application activities."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Saya mengembangkan fitur live dashboard menggunakan Pusher, Next.js, dan NestJS untuk menampilkan log aktivitas secara real-time tanpa perlu melakukan refresh browser. Setiap aktivitas pengguna otomatis tercatat di database dan langsung dikirim ke dashboard melalui event real-time. Saya menggunakan Pusher sebagai solusi WebSocket pihak ketiga karena Vercel tidak mendukung koneksi WebSocket persisten secara langsung. Implementasi ini meningkatkan transparansi sistem, responsivitas, dan pengalaman pengguna dalam memonitor aktivitas aplikasi."
+        }
+      ],
+      "title": "Real-time dashboard (Pusher + Next.js + NestJS)",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1771740646/Toserba%20Sistem%20Internal/Websocket_wc6kyi.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "In this activity log feature, I implemented a registry-driven approach to create a more flexible and scalable component. Instead of using a static layout and fixed actions, the footer dynamically adapts based on the activity category and action type. This allows each activity type to display contextual data without modifying the core component structure. Adding new activity types only requires registering new configurations, making the system more modular, extensible, and maintainable."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Pada fitur log aktivitas ini, saya menerapkan metode registry-driven untuk membuat komponen yang lebih fleksibel dan scalable. Biasanya komponen memiliki layout dan aksi yang statis, namun pada implementasi ini bagian footer dirancang dinamis berdasarkan kategori dan jenis aksi yang terjadi. Dengan pendekatan ini, setiap tipe aktivitas dapat menampilkan data kontekstual yang berbeda tanpa perlu mengubah struktur utama komponen. Penambahan jenis aktivitas baru cukup dengan mendaftarkan konfigurasi baru di registry, sehingga sistem menjadi lebih modular, mudah dikembangkan, dan lebih maintainable."
+        }
+      ],
+      "title": "Registry-driven dynamic component",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1771741054/Toserba%20Sistem%20Internal/Log_Aktivitas_Fleksibel_Footer_k12p6z.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "In the debt and receivable settlement feature, the system is designed so that a single action can automatically manage multiple financial processes. By simply adding or editing a settlement record, the system handles remaining balance calculations, cashflow updates, and relevant asset allocations. From the user's perspective, the flow remains simple — select the debtor/creditor, open the edit menu, adjust the amount, and finish. Behind the scenes, the system ensures data consistency and financial integrity through structured business logic orchestration."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Pada fitur pelunasan piutang dan utang, sistem dirancang agar satu aksi sederhana dapat mengelola berbagai proses keuangan secara otomatis. Dengan hanya menambahkan atau mengedit data pelunasan, sistem langsung menangani pencatatan sisa piutang/utang, pembaruan cashflow, serta alokasi aset yang relevan. Dari sisi pengguna, alurnya tetap sederhana — memilih pihak yang berutang/piutang, membuka menu edit, mengubah nominal, lalu selesai. Namun di balik layar, sistem memastikan konsistensi data dan integritas finansial tetap terjaga melalui orkestrasi logika bisnis yang terstruktur."
+        }
+      ],
+      "title": "Automated debt/receivable settlement logic",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1771741525/Toserba%20Sistem%20Internal/Utang_Piutang_qy4elj.mp4"
+    }
+  ],
+  "techStack": [
+    "Next.js",
+    "NestJS",
+    "ShadCN",
+    "Tailwind CSS",
+    "React Hook Form",
+    "Axios",
+    "SWR",
+    "TanStack Table",
+    "Passport.js",
+    "Supabase",
+    "Google OAuth",
+    "PDF Lib",
+    "Cron Schedules",
+    "Webhook Triggers",
+    "Telegram Bot"
+  ],
+  "title": "Internal Operating System"
+}

@@ -1,0 +1,50 @@
+{
+  "_type": "educationSection",
+  "items": [
+    {
+      "_key": "1a7ac8ff7406",
+      "_type": "educationItem",
+      "degree": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Bachelor's Degree"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Sarjana"
+        }
+      ],
+      "endDate": "2023-07-01",
+      "gpa": "3.66",
+      "location": "Ciputat, Tangerang",
+      "major": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Tarjamah (Translation Arabic-Indonesian)"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Tarjamah (Penerjamah Arab Indonesia)"
+        }
+      ],
+      "startDate": "2019-09-01",
+      "university": "Universitas Islam Negeri Syarif Hidayatullah Jakarta "
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "EDUCATION"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "PENDIDIKAN"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "355efc5e1383",
+      "_type": "feature",
+      "en": "Dynamic content management system powered by Supabase, allowing admin to update homepage, hero sliders, and articles in real time.\n",
+      "id": "Sistem manajemen konten dinamis berbasis Supabase yang memungkinkan admin memperbarui beranda, slider hero, dan artikel secara real-time."
+    },
+    {
+      "_key": "0272684d2e85",
+      "_type": "feature",
+      "en": "Integrated authentication using Google OAuth for secure and convenient access to the CMS dashboard.\n",
+      "id": "Autentikasi terintegrasi menggunakan Google OAuth untuk akses aman dan praktis ke dashboard CMS."
+    },
+    {
+      "_key": "fcc9ccba087e",
+      "_type": "feature",
+      "en": "Seamless multilingual support (English, Bahasa Indonesia, Mandarin) with automatic language detection and manual switcher.\n",
+      "id": "Dukungan tiga bahasa (Inggris, Indonesia, Chinese) dengan deteksi otomatis dan pemilih bahasa manual."
+    },
+    {
+      "_key": "a6bca25df08e",
+      "_type": "feature",
+      "en": "Responsive, visually rich design optimized for mobile, tablet, and desktop using Tailwind CSS.\n",
+      "id": "Desain responsif dan menarik yang dioptimalkan untuk perangkat mobile, tablet, dan desktop menggunakan Tailwind CSS."
+    },
+    {
+      "_key": "ff0321e99b93",
+      "_type": "feature",
+      "en": "Image hosting and optimization via Cloudinary integration for fast and high-quality media delivery.\n",
+      "id": "Hosting dan optimasi gambar melalui integrasi Cloudinary untuk kecepatan tinggi dan kualitas media terbaik."
+    },
+    {
+      "_key": "09239751b652",
+      "_type": "feature",
+      "en": "Admin dashboard with live preview, content versioning, and image upload capabilities.\n",
+      "id": "Dashboard admin dengan fitur pratinjau langsung, versi konten, dan kemampuan unggah gambar."
+    },
+    {
+      "_key": "3d0cf18fa3b1",
+      "_type": "feature",
+      "en": "Modern frontend architecture built with Next.js 15 and TypeScript for scalability and performance.\n",
+      "id": "Arsitektur frontend modern menggunakan Next.js 15 dan TypeScript untuk skalabilitas dan performa tinggi.\n"
+    },
+    {
+      "_key": "5b4807206472",
+      "_type": "feature",
+      "en": "Deployed on Vercel with continuous integration and optimized SEO metadata for better global reach.\n",
+      "id": "Dideploy di Vercel dengan integrasi berkelanjutan serta metadata SEO yang dioptimalkan untuk jangkauan global."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Official website of a China–Indonesia travel company, featuring a professional design, dynamic CMS integration, and multilingual support to enhance the international user experience."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Website resmi perusahaan travel yang menghubungkan China dan Indonesia, dengan tampilan profesional, sistem CMS dinamis, dan dukungan multi-bahasa untuk memperkuat pengalaman pengguna internasional."
+    }
+  ],
+  "id": "107d38ac-91ac-42d0-a7f4-2aaa151d90a7",
+  "image": {
+    "imageAlt": "Dragon 8 Travel Main Image",
+    "imageSrc": "/images/projects/dragon-8-travel.png",
+    "label": "Dragon 8 Travel"
+  },
+  "liveUrl": "https://dragon8travel.com/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Official website of a China–Indonesia travel company, featuring a professional design, dynamic CMS integration, and multilingual..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Website resmi perusahaan travel yang menghubungkan China dan Indonesia, dengan tampilan profesional, sistem CMS dinamis, dan..."
+    }
+  ],
+  "sourceCode": null,
+  "status": "live",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Setup i18n, Google OAuth Setup, and restrict user access to Admin Dashboard."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Setup i18n, Google OAuth Setup, dan batasi akses pengguna yang bisa akses Admin Dashboard."
+        }
+      ],
+      "title": "Next Intl And Admin Dashboard",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763780617/portofolio/Dragon%208%20Travel%20-%20Next%20Intl%20And%20Admin%20Dashboard.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Change the images, text, and content on a page via the Admin Dashboard"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Mengubah gambar, teks, dan konten yang ada di suatu halaman melalui Admin Dashboard"
+        }
+      ],
+      "title": "CMS From Admin Dashboard",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763781554/portofolio/Dragon%208%20Travel%20-%20About%20Page%20CMS.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Upload videos and add videos via Admin Dashboard"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Upload video dan tambahkan video melalui Admin Dashboard"
+        }
+      ],
+      "title": "Video Display and Manage",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763781637/portofolio/Dragon%208%20Travel%20-%20Video%20Display%20and%20Manage.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Upload 3-language content via Sanity with the Document Internationalization & Array Internationalization plugins"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Upload konten 3 bahasa melalui Sanity dengan plugin Document Internationalization & Array Internationalization "
+        }
+      ],
+      "title": "Sanity Document Internationalization",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763781737/portofolio/Dragon%208%20Travel%20-%20Sanity%20Document%20Internationalization.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Set up home page by integrating Sanity CMS and Admin Dashboard"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Mengatur halaman home dengan mengintegrasikan Sanity CMS dan Admin Dashboard"
+        }
+      ],
+      "title": "Home Setting Destination",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763781913/portofolio/Dragon%208%20Travel%20-%20Home%20Setting%20Destination.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Browse destination search through Home Page"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Menelusuri pencarian destinasi melalui Home Page"
+        }
+      ],
+      "title": "Filter Destination From Home",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763782003/portofolio/Dragon%208%20Travel%20-%20Filter%20Destination%20From%20Home.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Restrict access to destination content so that it can only be accessed if the user is logged in."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Membatasi akses konten destinasi agar hanya bisa diakses jika pengguna login."
+        }
+      ],
+      "title": "Destination Locked Components",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763782042/portofolio/Dragon%208%20Travel%20-%20Destination%20Locked%20Components.mp4"
+    }
+  ],
+  "techStack": [
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "ShadCN",
+    "Supabase",
+    "Google OAuth",
+    "Vercel",
+    "Sanity",
+    "Cloudinary",
+    "React Quill",
+    "NextAuth",
+    "next-intl",
+    "ZOD",
+    "@hookform/resolvers",
+    "Embla Carousel",
+    "SWR",
+    "React Hook Form"
+  ],
+  "title": "Dragon 8 Travel"
+}

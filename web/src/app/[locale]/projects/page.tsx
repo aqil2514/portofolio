@@ -1,12 +1,12 @@
 import ProjectsTemplate from "@/components/templates/ProjectsTemplate";
 import {
-  getAllProjectCategory,
-  getAllProjectsData,
-} from "@/sanity/actions/projects";
-import { getAllProjectTechStack } from "@/sanity/actions/tech";
+  getProjectCategories,
+  getProjectsData,
+  getProjectTechStack,
+} from "@/data/getProjects";
 import { getLocale } from "next-intl/server";
 import { Metadata } from "next";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
 
@@ -30,13 +30,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ProjectsPage() {
-  const [projects, projectCategories, projectTechStacks, locale] =
-    await Promise.all([
-      getAllProjectsData(),
-      getAllProjectCategory(),
-      getAllProjectTechStack(),
-      getLocale(),
-    ]);
+  const [locale] = await Promise.all([getLocale()]);
+  const projects = getProjectsData();
+  const projectCategories = getProjectCategories();
+  const projectTechStacks = getProjectTechStack();
 
   return (
     <>

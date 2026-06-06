@@ -1,7 +1,7 @@
 import HomeTemplate from "@/components/templates/HomeTemplate";
 import { Metadata } from "next";
 import { getLocale } from "next-intl/server";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

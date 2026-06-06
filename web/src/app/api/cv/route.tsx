@@ -1,13 +1,13 @@
 import { pdf } from "@react-pdf/renderer";
 import { PDFDocument } from "@/components/pdf/Document";
-import { getAllCVData } from "@/sanity/actions/cv";
+import { getPortfolio } from "@/data/getPortfolio";
 import { NextRequest, NextResponse } from "next/server";
 import { LocaleLang } from "@/@types/General";
 
 export const runtime = "nodejs";
 
 export async function GET(req: NextRequest) {
-  const pdfData = await getAllCVData();
+  const pdfData = getPortfolio();
   const { searchParams } = req.nextUrl;
   const locale = searchParams.get("locale") as LocaleLang | null;
 

@@ -1,0 +1,140 @@
+{
+  "categories": [
+    "Frontend",
+    "Product Engineering",
+    "DevOps"
+  ],
+  "features": [
+    {
+      "_key": "1314c4f5788f",
+      "_type": "feature",
+      "en": "Image conversion (JPG, PNG, WebP) and client-side image compression.",
+      "id": "Konversi gambar (JPG, PNG, WebP) dan kompresi berbasis client-side."
+    },
+    {
+      "_key": "a8829e0d2e1b",
+      "_type": "feature",
+      "en": "Image-to-PDF generator with automatic page sizing and orientation.",
+      "id": "Generator PDF dari gambar dengan pengaturan ukuran halaman dan orientasi otomatis."
+    },
+    {
+      "_key": "f973adca3f5e",
+      "_type": "feature",
+      "en": "QR Code generator with image overlay, adjustable opacity, margin, and background.",
+      "id": "Generator QR Code dengan opsi overlay gambar, pengaturan opacity, margin, dan background."
+    },
+    {
+      "_key": "1d3b647bb8e4",
+      "_type": "feature",
+      "en": "Real-time COGS & margin calculator (unit cost, profit/unit, selling margin, markup, break-even).",
+      "id": "Kalkulator HPP & Margin dengan perhitungan real-time (HPP/unit, profit/unit, margin jual, markup, break-even)."
+    },
+    {
+      "_key": "40d858c694ad",
+      "_type": "feature",
+      "en": "Detailed analysis dialog for each item (purchase info, cost breakdown, margin, revenue projection).",
+      "id": "Dialog detail analisis lengkap untuk setiap item (informasi pembelian, biaya, margin, potensi keuntungan)."
+    },
+    {
+      "_key": "2bffd123e832",
+      "_type": "feature",
+      "en": "Multilingual support (ID & EN) using Next Intl.",
+      "id": "Dukungan multibahasa (ID & EN) dengan Next Intl."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Flowtooly is a multi-utility web application built with Next.js, providing a collection of productivity tools such as image conversion, PDF manipulation, QR generation, and a complete COGS & margin calculator for business needs. Designed with modular architecture, Flowtooly is fast, intuitive, and accessible without requiring any installation.\n\nThe project emphasizes user experience, performance, and scalability. Flowtooly utilizes React Hook Form, shadcn/ui, Next Intl (i18n), and a global state Context Provider to deliver a consistent and efficient workflow. Each tool features a clean, professional UI/UX with real-time calculations, validation, and clear output presentation.\n\nFlowtooly serves as an evolving mini-SaaS, showcasing my ability to build end-to-end applications — from UI design and frontend engineering to business logic implementation and performance optimization."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Flowtooly adalah aplikasi web multi-fungsi berbasis Next.js yang menyediakan berbagai alat produktivitas harian seperti konversi gambar, manipulasi PDF, generator QR, serta kalkulator HPP & margin untuk kebutuhan bisnis. Dibangun dengan arsitektur modular, Flowtooly dirancang untuk cepat, mudah digunakan, dan dapat diakses oleh siapa pun tanpa instalasi tambahan.\n\nProyek ini menekankan pengalaman pengguna, performa, dan skalabilitas. Flowtooly menggunakan React Hook Form, shadcn/ui, Next Intl (i18n), dan state global berbasis Context Provider untuk memastikan alur kerja yang konsisten dan efisien. Setiap fitur memiliki UI/UX yang sederhana namun profesional, dengan perhitungan real-time, validasi, dan tampilan hasil yang rapi.\n\nFlowtooly berfungsi sebagai mini-SaaS yang terus berkembang, menunjukkan kemampuan saya dalam membangun aplikasi end-to-end dari sisi frontend, logika bisnis, desain UI, hingga optimasi performa."
+    }
+  ],
+  "id": "70789b27-9f47-44d1-8894-fc3a6a726f6b",
+  "image": {
+    "imageAlt": "Flowtooly",
+    "imageSrc": "/images/projects/flowtooly.png",
+    "label": "Flowtooly Image"
+  },
+  "liveUrl": "https://flowtooly.com",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Flowtooly is a multi-utility web application built with Next.js, providing a collection of productivity tools such..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Flowtooly adalah aplikasi web multi-fungsi berbasis Next.js yang menyediakan berbagai alat produktivitas harian seperti konversi gambar,..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/daily-tools",
+  "status": "live",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "The PDF Generator is a Flowtooly feature that allows users to dynamically create PDF documents for invoices, certificates, and other business needs. With an intuitive interface, users can fill structured multi-section forms (Header, From, To, Terms, Items, Notes) while instantly previewing the results in the live PDF viewer on the right. The system generates professionally formatted PDFs using selectable templates, enabling users to download ready-to-use documents without additional software. This feature is designed to be flexible, fast, and ideal for everyday business workflows."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "PDF Generator ini adalah fitur Flowtooly yang memungkinkan pengguna membuat dokumen PDF secara dinamis untuk kebutuhan seperti invoice, sertifikat, dan formulir bisnis lainnya. Dengan antarmuka yang intuitif, pengguna dapat mengisi data melalui form multi-section (Header, From, To, Terms, Items, Notes) dan melihat perubahan secara real-time melalui panel preview di sebelah kanan. Sistem menghasilkan PDF dengan layout profesional menggunakan template yang dapat dipilih, memastikan dokumen siap unduh tanpa perlu aplikasi tambahan. Fitur ini dirancang fleksibel, cepat, dan cocok untuk penggunaan bisnis harian."
+        }
+      ],
+      "title": "PDF Generator",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1764924528/portofolio/PDF_Generator_Demo_Music_eikokm.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Flowtooly's Image to PDF feature allows users to convert one or multiple images into a clean, well-formatted PDF document. Users can customize page orientation (portrait or landscape), select paper sizes like A4 or Letter, adjust margins, and reorder images as needed. The entire process runs client-side for speed and privacy, ensuring files never leave the user's device. With intuitive controls and image previews, this tool provides a fast and seamless way to create printable documents, reports, and digital archives in just a few clicks."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Fitur Image to PDF pada Flowtooly memungkinkan pengguna mengubah satu atau beberapa gambar menjadi file PDF dengan layout yang bersih dan rapi. Pengguna dapat mengatur orientasi halaman (portrait atau landscape), memilih ukuran kertas seperti A4 atau Letter, mengatur margin, serta menyusun gambar sesuai urutan yang diinginkan. Seluruh proses dilakukan langsung di browser tanpa upload file ke server, sehingga cepat dan aman. Dengan antarmuka intuitif dan preview gambar sebelum konversi, fitur ini memudahkan pembuatan laporan, dokumen cetak, dan arsip digital hanya dalam beberapa klik."
+        }
+      ],
+      "title": "Image To PDF",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1764925159/portofolio/Image_To_PDF_Music_tuvnjn.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Flowtooly's Cash Counter allows users to quickly and accurately calculate total cash based on the denominations entered. The tool automatically computes the subtotal for each currency unit, generates a real-time cash total, compares it against bookkeeping values (cash in data), and accounts for receivables and third-party cash. Equipped with an instant summary and export options for PDF, Excel, CSV, and JSON, this tool is highly effective for daily cash audits, store operations, and business financial administration."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Fitur Cash Counter pada Flowtooly membantu pengguna menghitung total uang tunai dengan cepat dan akurat berdasarkan pecahan uang yang diinput. Sistem secara otomatis menjumlahkan setiap denominasi, menampilkan total kas, menghitung selisih dengan data pembukuan (cash in data), serta mengakomodasi piutang dan uang titipan pihak lain. Dilengkapi dengan ringkasan real-time dan opsi ekspor ke PDF, Excel, CSV, dan JSON, alat ini sangat praktis digunakan untuk pengecekan kas harian, rekonsiliasi toko, hingga kebutuhan administrasi bisnis."
+        }
+      ],
+      "title": "Cash Counter",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1764928357/portofolio/Cash_Counter_Music_ud1bjg.mp4"
+    }
+  ],
+  "techStack": [
+    "Next.js",
+    "ShadCN",
+    "@react-pdf/renderer (PDF Engine)",
+    "Tailwind CSS",
+    "TypeScript",
+    "Vercel",
+    "next-intl",
+    "React Hook Form"
+  ],
+  "title": "Flowtooly"
+}

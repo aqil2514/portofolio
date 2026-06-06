@@ -1,0 +1,89 @@
+{
+  "categories": [
+    "Frontend"
+  ],
+  "features": [
+    {
+      "_key": "d9876082da03",
+      "_type": "feature",
+      "en": "Frontend login simulation with multiple input validations.",
+      "id": "Simulasi login di sisi frontend dengan beberapa validasi input."
+    },
+    {
+      "_key": "85ae2e9456ad",
+      "_type": "feature",
+      "en": "Quiz configuration using parameters provided by the Open Trivia Database API.",
+      "id": "Konfigurasi soal kuis menggunakan parameter yang disediakan oleh Open Trivia Database."
+    },
+    {
+      "_key": "5ba0f20e62f8",
+      "_type": "feature",
+      "en": "Persistent quiz progress mechanism to resume unfinished quizzes.",
+      "id": "Mekanisme penyimpanan dan kelanjutan progres kuis yang sempat tertunda."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Quiz App — A simple quiz application built with React.js, using Zustand for state-based page navigation. Question data is fetched from the Open Trivia Database (opentdb.com)."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Quiz App — Aplikasi kuis sederhana yang dibangun menggunakan React.js. Perpindahan antar halaman dikelola melalui state management dengan Zustand. Data soal diambil dari Open Trivia Database (opentdb.com)."
+    }
+  ],
+  "id": "64d66dfe-d995-474f-894c-67e11ad90b15",
+  "image": {
+    "imageAlt": "Mini quiz",
+    "imageSrc": "/images/projects/mini-quiz.png",
+    "label": "Mini Quiz"
+  },
+  "liveUrl": "https://dot-challange-quiz-app.netlify.app/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Quiz App — A simple quiz application built with React.js, using Zustand for state-based page navigation...."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Quiz App — Aplikasi kuis sederhana yang dibangun menggunakan React.js. Perpindahan antar halaman dikelola melalui state..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/dot-challange-quiz-app",
+  "status": "live",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Demo Application"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Demo aplikasi"
+        }
+      ],
+      "title": "Demo Application",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1770624695/portofolio/Simple_Quiz_App_1_i3gnwi.mp4"
+    }
+  ],
+  "techStack": [
+    "React.Js",
+    "TypeScript",
+    "Zustand",
+    "Axios",
+    "React Hook Form",
+    "@hookform/resolvers",
+    "ZOD",
+    "SWR",
+    "Tailwind CSS"
+  ],
+  "title": "Mini Quiz"
+}

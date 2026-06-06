@@ -1,0 +1,220 @@
+[
+  {
+    "certificates": [
+      {
+        "imageAlt": "Certificate Image",
+        "imageSrc": "/images/about/roadmap-0-cert-0.webp",
+        "label": "Basic Web Certificate",
+        "link": "https://www.freecodecamp.org/certification/aqil2514/responsive-web-design"
+      },
+      {
+        "imageAlt": "Front End Sertifikat",
+        "imageSrc": "/images/about/roadmap-0-cert-1.jpg",
+        "label": "Frontend in Website Development",
+        "link": "https://drive.google.com/file/d/1-VJsAg9OtqkArabLnxnWfSx0DnD4eI4f/view?usp=drive_fs"
+      },
+      {
+        "imageAlt": "Intro to Software Engineering",
+        "imageSrc": "/images/about/roadmap-0-cert-2.jpg",
+        "label": "Intro to Software Engineering",
+        "link": "https://drive.google.com/file/d/1-SxiOh16IEDbR-8PMRI9gy5FvV3lUT1f/view?usp=drive_fs"
+      }
+    ],
+    "date": "2023-01-01",
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "I began my journey as a developer by learning HTML, CSS, and JavaScript autodidactically—with full commitment. From crafting simple static pages to exploring the fundamentals of web interactivity, this phase built the solid foundation that continues to support every project I create today."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Memulai perjalanan saya sebagai developer dengan belajar HTML, CSS, dan JavaScript secara otodidak namun serius. Dari membangun halaman sederhana hingga memahami dasar-dasar interaktivitas web, fase ini menjadi pondasi kuat yang terus saya gunakan dalam setiap proyek yang saya kerjakan."
+      }
+    ],
+    "learningSkill": [
+      {
+        "imageAlt": "Logo HTML",
+        "imageSrc": "/images/about/roadmap-0-skill-0.png",
+        "label": "HTML"
+      },
+      {
+        "imageAlt": "Logo CSS",
+        "imageSrc": "/images/about/roadmap-0-skill-1.png",
+        "label": "CSSS"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Start Learning Programming"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Mulai Belajar Pemrograman"
+      }
+    ]
+  },
+  {
+    "certificates": [
+      {
+        "imageAlt": "Javascript",
+        "imageSrc": "/images/about/roadmap-1-cert-0.webp",
+        "label": "Exploring the Basics of JavaScript",
+        "link": "https://www.freecodecamp.org/certification/aqil2514/javascript-algorithms-and-data-structures"
+      }
+    ],
+    "date": "2023-04-01",
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "This is my next step in learning HTML and CSS. In this session, I continued my progress by learning the basics of JavaScript, including how to add interactivity and make web pages more dynamic. This stage helped me understand how logic, events, and simple scripts work together to bring a website to life."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Ini adalah langkah lanjutan dari proses belajar HTML dan CSS. Pada sesi ini, saya mulai mempelajari dasar-dasar JavaScript, termasuk cara menambahkan interaktivitas dan membuat halaman web menjadi lebih dinamis. Tahap ini membantu saya memahami bagaimana logika, event, dan script sederhana bekerja bersama untuk menghidupkan sebuah website."
+      }
+    ],
+    "learningSkill": [
+      {
+        "imageAlt": "Icon Javascript",
+        "imageSrc": "/images/about/roadmap-1-skill-0.png",
+        "label": "Javascript"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Exploring the Basics of JavaScript"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Menjelajahi Dasar-Dasar JavaScript"
+      }
+    ]
+  },
+  {
+    "certificates": null,
+    "date": "2023-11-02",
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "At this stage, I began exploring how JavaScript interacts directly with elements on a web page through the DOM (Document Object Model). I learned how to manipulate content, add event listeners, handle user input, and build simple interactive features. This phase deepened my understanding of how HTML structure, CSS styling, and JavaScript logic work together within a website."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Pada tahap ini, saya mulai mendalami cara JavaScript berinteraksi langsung dengan elemen pada halaman web melalui DOM (Document Object Model). Saya mempelajari cara memanipulasi konten, menambahkan event listener, menangani input pengguna, serta membuat fitur interaktif sederhana. Fase ini memperluas pemahaman saya tentang bagaimana struktur HTML, gaya CSS, dan logika JavaScript bekerja bersama dalam sebuah website."
+      }
+    ],
+    "learningSkill": [
+      {
+        "imageAlt": "Javascript Icon",
+        "imageSrc": "/images/about/roadmap-2-skill-0.png",
+        "label": "Javascript"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Building Web Interactivity with the DOM"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Membangun Interaktivitas Web dengan DOM"
+      }
+    ]
+  },
+  {
+    "certificates": null,
+    "date": "2023-11-03",
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "At this stage, I expanded my knowledge of JavaScript into more advanced concepts used in modern web development. I learned Asynchronous Programming such as async/await and Promises, explored how the Fetch API retrieves external data, and worked with JSON as the primary data format. I also began using the module system to organize code into cleaner and more maintainable structures. This phase strengthened my ability to build more dynamic, complex, and scalable web applications."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Pada tahap ini, saya mulai memasuki konsep JavaScript tingkat lanjut yang banyak digunakan dalam pengembangan web modern. Saya mempelajari Async Programming seperti async/await dan Promises, memahami cara kerja Fetch API untuk mengambil data dari server, dan belajar mengelola JSON sebagai format data utama dalam aplikasi. Selain itu, saya mulai menggunakan module system untuk menata kode menjadi lebih terstruktur dan mudah dikelola. Fase ini memperkuat kemampuan saya dalam membangun aplikasi web yang lebih kompleks, dinamis, dan scalable."
+      }
+    ],
+    "learningSkill": [
+      {
+        "imageAlt": null,
+        "imageSrc": "/images/about/roadmap-3-skill-0.png",
+        "label": "Javascript"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Deepening JavaScript: Async, Data Handling & Modular Programming"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Pendalaman JavaScript: Async, Pengolahan Data & Pemrograman Modular"
+      }
+    ]
+  },
+  {
+    "certificates": [
+      {
+        "imageAlt": "Front End Development Libraries",
+        "imageSrc": "/images/about/roadmap-4-cert-0.jpg",
+        "label": "Front End Development Libraries",
+        "link": "https://www.freecodecamp.org/certification/aqil2514/front-end-development-libraries"
+      }
+    ],
+    "date": "2023-11-03",
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "At this stage, I began learning React, a modern JavaScript library for building user interfaces. I explored core concepts such as component-based architecture, props, state, and how to structure UIs in a scalable and maintainable way. I also learned how JSX works, how rendering is handled, and how to create reusable components. This phase was a major step toward understanding how modern, dynamic web applications are built efficiently."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Pada tahap ini, saya mulai belajar React, sebuah library JavaScript modern untuk membangun antarmuka pengguna. Saya mempelajari konsep dasar seperti component-based architecture, props, state, serta cara mengelola UI agar lebih terstruktur dan mudah dikembangkan. Saya juga memahami cara kerja JSX, rendering, dan membuat komponen yang dapat digunakan kembali. Fase ini membuka jalan bagi saya untuk memahami cara membangun aplikasi web modern yang dinamis dan efisien."
+      }
+    ],
+    "learningSkill": [
+      {
+        "imageAlt": "React JS",
+        "imageSrc": "/images/about/roadmap-4-skill-0.png",
+        "label": "React JS"
+      },
+      {
+        "imageAlt": "Javascript Icon",
+        "imageSrc": "/images/about/roadmap-4-skill-1.png",
+        "label": "Javascript"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Building Modern Interfaces with React"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "Membangun Antarmuka Modern dengan React"
+      }
+    ]
+  }
+]

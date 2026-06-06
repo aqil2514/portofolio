@@ -1,0 +1,308 @@
+{
+  "items": [
+    {
+      "bullets": [
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Receive incoming goods and inspect stock."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Menerima barang masuk dan memeriksa stok"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Record data in ERP systems and Microsoft Excel."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mencatat data ke sistem ERP dan Excel dengan akurasi 99% untuk memastikan  kelancaran operasional gudang"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Manage product distribution to suppliers and branches."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mengelola lebih dari 500 transaksi barang masuk/keluar per bulan dengan sistem  ERP"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Coordinate product deliveries to customers"
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mengatur pengiriman barang ke pelanggan"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Ensure all processes are performed with efficiency and accuracy"
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Memastikan stok selalu akurat melalui pengecekan rutin (Stok Opname), mengurangi  selisih inventaris hingga 20%"
+            }
+          ]
+        }
+      ],
+      "company": "PT. Alumindo Alloy Abadi",
+      "endDate": "2025-04-21",
+      "isCurrent": null,
+      "jobTitle": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Warehouse Administration Staff "
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Staf Administrasi Gudang"
+        }
+      ],
+      "location": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Cibitung, West Java"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Cibitung, Jawa Barat"
+        }
+      ],
+      "startDate": "2024-03-21"
+    },
+    {
+      "bullets": [
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Engineered a highly available, multi-stack Web3 Presale Platform (Cromachain) using Next.js, NestJS, and Wagmi, integrating secure Payment Gateway Webhooks and developing a complex, automated multi-level referral system for token distribution and instant cashback."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Merancang dan Mengembangkan Platform Presale Web3 yang Canggih (Cromachain) menggunakan kombinasi Next.js, NestJS, dan Wagmi, termasuk integrasi Webhooks Payment Gateway yang aman dan membangun sistem referral multi-level otomatis dengan cashback instan."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Developed and deployed a robust, custom Headless CMS for Dragon 8 Travel using the Next.js/Supabase/TypeScript stack, featuring real-time dynamic content management, Google OAuth authentication, and advanced i18n support for three languages (English, Indonesian, Chinese)."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Membangun dan Menerapkan Sistem CMS Kustom untuk Dragon 8 Travel menggunakan arsitektur Next.js/Supabase/TypeScript, dengan fitur utama manajemen konten dinamis real-time, otentikasi Google OAuth, dan dukungan multi-bahasa (i18n) untuk tiga bahasa."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Architected an end-to-end AI Content Automation System (n8n), leveraging OpenAI API for article generation, Prompt Engineering/Model Routing for quality control, and seamless integration with Cloudinary, Supabase, and custom Admin APIs for autonomous publication and social media distribution."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Merancang Sistem Otomatisasi Konten berbasis AI End-to-End (n8n) yang memanfaatkan OpenAI API untuk generasi artikel, menerapkan Prompt Engineering dan Model Routing untuk revisi kualitas, dan integrasi dengan API Admin kustom untuk publikasi mandiri dan distribusi media sosial."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Applied modern architectural patterns, including monorepo structure (implied by multiple stacks), serverless deployment (Vercel/Render), and ShadCN/Tailwind CSS implementation to ensure scalability, security, and superior user experience across all projects."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Menerapkan arsitektur full stack yang modern dan skalabel (menggunakan Next.js, NestJS, Supabase), fokus pada keamanan (server-side validation) dan efisiensi user experience (menggunakan ShadCN/Tailwind CSS) di seluruh proyek."
+            }
+          ]
+        }
+      ],
+      "company": "Freelance / Personal Projects",
+      "endDate": "2025-11-23",
+      "isCurrent": true,
+      "jobTitle": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        }
+      ],
+      "location": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Sukawangi, West Java"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Sukawangi, Jawa Barat"
+        }
+      ],
+      "startDate": "2023-07-01"
+    },
+    {
+      "bullets": [
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Developed an AI-integrated desktop application for remote work productivity monitoring, enhancing oversight for WFH environments."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mengembangkan aplikasi desktop untuk pemantauan produktivitas kerja jarak jauh (WFH) yang terintegrasi dengan teknologi AI."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Integrated Z.AI GLM to perform automated real-time analysis of periodic screen captures, converting visual data into actionable performance insights."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mengimplementasikan Z.AI GLM untuk menganalisis hasil tangkapan layar otomatis secara real-time guna mengidentifikasi aktivitas kerja secara akurat."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Architected a multi-tenant chatbot microservice using LangGraph for complex conversation orchestration and OpenRouter for LLM integration."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Merancang microservice chatbot multi-tenant menggunakan LangGraph untuk orkestrasi percakapan kompleks dan integrasi OpenRouter."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Developed an intelligent feedback loop system that tracks 'suggested replies' and generates automated improvement recommendations using an AI-driven suggestion engine."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Membangun sistem feedback loop cerdas untuk melacak saran balasan (suggested reply) dan menghasilkan rekomendasi peningkatan performa melalui improvement engine berbasis AI."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Implemented a robust asynchronous messaging flow using RabbitMQ to handle intent classification and adaptive response logic across various business divisions."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Mengimplementasikan alur pengiriman pesan asinkron menggunakan RabbitMQ untuk menangani klasifikasi intensi (intent) dan logika respons adaptif."
+            }
+          ]
+        }
+      ],
+      "company": "PT. GASS Teknologi Indonesia",
+      "endDate": null,
+      "isCurrent": true,
+      "jobTitle": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        }
+      ],
+      "location": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Jakarta, Indonesia (Remote)"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Jakarta, Indonesia (Remote)"
+        }
+      ],
+      "startDate": "2026-02-26"
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "EXPERIENCE"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "PENGALAMAN"
+    }
+  ]
+}

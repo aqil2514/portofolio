@@ -1,0 +1,145 @@
+{
+  "categories": [
+    "AI Integration",
+    "Product Engineering",
+    "Automation",
+    "DevOps",
+    "Backend"
+  ],
+  "features": [
+    {
+      "_key": "65fee39f37fc",
+      "_type": "feature",
+      "en": "Automated Article Generation",
+      "id": "Generate Artikel Otomatis"
+    },
+    {
+      "_key": "a1e9bc9248ab",
+      "_type": "feature",
+      "en": "AI-powered Revision & Data Mapping",
+      "id": "AI Revision & Mapping"
+    },
+    {
+      "_key": "806c1247cfcb",
+      "_type": "feature",
+      "en": "AI Image Generator",
+      "id": "AI Image Generator"
+    },
+    {
+      "_key": "fb9fa4f31d73",
+      "_type": "feature",
+      "en": "Automatic Publishing to Studinesia Admin Panel",
+      "id": "Auto Publishing ke Studinesia Admin"
+    },
+    {
+      "_key": "df79644d85f4",
+      "_type": "feature",
+      "en": "Google Sheets Integration",
+      "id": "Google Sheets Integration"
+    },
+    {
+      "_key": "aa914df4f15d",
+      "_type": "feature",
+      "en": "Facebook Graph API Automation",
+      "id": "Facebook Graph API Automation"
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "This project is a fully automated end-to-end content creation system built using n8n, OpenAI, and multiple external APIs. The workflow handles everything from generating article ideas to publishing the finished blog post and distributing it across social platforms—entirely hands-off once triggered."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Project ini adalah sebuah sistem otomatisasi end-to-end yang saya bangun menggunakan n8n, OpenAI, dan berbagai layanan API untuk mengotomatisasi proses pembuatan konten blog, publikasi artikel, hingga distribusi ke media sosial. Sistem ini bekerja sepenuhnya tanpa intervensi manual—cukup dengan menjalankan workflow atau memanggil webhook, seluruh proses akan berjalan otomatis dari awal hingga akhir."
+    }
+  ],
+  "id": "768c158e-e078-4b15-86ae-fd7673399035",
+  "image": {
+    "imageAlt": "N8N Automation Image",
+    "imageSrc": "/images/projects/n8n-automation.png",
+    "label": "N8N Automation Image"
+  },
+  "liveUrl": null,
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "This project is a fully automated end-to-end content creation system built using n8n, OpenAI, and multiple..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Project ini adalah sebuah sistem otomatisasi end-to-end yang saya bangun menggunakan n8n, OpenAI, dan berbagai layanan..."
+    }
+  ],
+  "sourceCode": null,
+  "status": "archived",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "This workflow automatically generates images using OpenAI, analyzes their quality, uploads them to Cloudinary, and merges the image metadata with the generated URL before saving everything into Google Sheets. The entries stored in the sheet are then manually reviewed to decide which content is suitable for publishing and which ones are not, keeping the curation process organized while maintaining a fully automated pipeline."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Workflow ini secara otomatis menghasilkan gambar menggunakan OpenAI, melakukan analisis kualitas, mengunggahnya ke Cloudinary, lalu menggabungkan metadata hasil analisis dan URL gambar sebelum akhirnya menambahkannya ke Google Sheets. Semua data yang masuk ke sheet kemudian saya tinjau kembali untuk menentukan mana konten yang layak ditayangkan dan mana yang tidak, sehingga proses kurasi tetap rapi dan terkontrol meskipun workflow berjalan otomatis."
+        }
+      ],
+      "title": "Image Generation For Instagram",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763784237/portofolio/N8N%20Automation%20-%20Generate%20Image.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "This workflow retrieves post data from Google Sheets and automatically publishes it to a Facebook Page using the Facebook Graph API. Once the post is successfully created, it fetches the official permalink from Facebook and updates the corresponding row in the sheet, ensuring every entry contains a valid and trackable URL. This automation makes the entire content distribution process seamless, structured, and easy to monitor."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Workflow ini mengambil data postingan dari Google Sheets, lalu secara otomatis mempublikasikannya ke Facebook Page menggunakan Facebook Graph API. Setelah posting berhasil dibuat, sistem mengambil permalink resmi dari Facebook dan memperbaruinya kembali ke Google Sheets sehingga setiap baris memiliki tautan yang valid dan bisa ditinjau dengan mudah. Dengan alur ini, proses distribusi konten menjadi sepenuhnya otomatis, terstruktur, dan mudah dimonitor."
+        }
+      ],
+      "title": "Upload Approved Image to Instagram",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763784297/portofolio/N8N%20Automation%20-%20Upload%20Approved%20Image%20to%20Instagram.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "This workflow automates the entire blog creation process, starting from keyword intake, generating an outline, producing the full article with AI, checking the word count, and automatically revising the content if it doesn't meet the required standard. Once the final article is ready, the system fetches the sitemap to avoid duplicates, generates a hero image using AI, maps all data into the correct structure, and publishes the post to the Studinesia Admin API. Everything runs with a single click or via webhook, making content production significantly faster, more consistent, and fully hands-off."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Workflow ini mengotomatisasi seluruh proses pembuatan artikel blog, dimulai dari pengambilan keyword, pembuatan outline, penulisan artikel oleh AI, pengecekan jumlah kata, hingga revisi otomatis apabila konten belum memenuhi standar. Setelah artikel final siap, sistem mengambil sitemap untuk memastikan tidak ada duplikasi, membuat hero image menggunakan AI, memetakan seluruh data ke dalam format yang tepat, lalu mengunggah artikel tersebut ke Admin Studinesia melalui API. Semua proses ini terjadi hanya dengan satu klik atau melalui webhook, sehingga produksi konten menjadi jauh lebih cepat, konsisten, dan bebas intervensi manual."
+        }
+      ],
+      "title": "Automate Upload Post",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763784296/portofolio/N8N%20Automation%20-%20Automate%20Upload%20Post.mp4"
+    }
+  ],
+  "techStack": [
+    "N8N",
+    "Webhook Triggers",
+    "Cron Schedules",
+    "OpenAI API",
+    "Model Routing & Prompt Engineering",
+    "AI Image Generation API",
+    "Supabase",
+    "Google Sheets",
+    "Cloudinary",
+    "Render",
+    "Custom API (Studinesia Admin API)"
+  ],
+  "title": "N8N Automation"
+}

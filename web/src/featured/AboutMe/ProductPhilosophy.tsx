@@ -2,7 +2,7 @@ import { PhilosophyCard } from "@/components/atoms/PhilosophyCard";
 import * as motion from "motion/react-client";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import GraphemeSplitter from "grapheme-splitter";
-import { PageAboutTypes } from "@/@types/Sanity";
+import { PageAboutTypes } from "@/@types/types";
 import { LocaleLang } from "@/@types/General";
 import { getTranslations } from "next-intl/server";
 

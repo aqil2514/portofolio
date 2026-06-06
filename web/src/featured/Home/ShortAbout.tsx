@@ -3,11 +3,12 @@ import Image from "next/image";
 import { fontCinzel, fontPrompt } from "@/constant/fonts";
 import { cn } from "@/lib/utils";
 import { getLocale, getTranslations } from "next-intl/server";
-import { getAboutPageCms } from "@/sanity/actions/aboutPage";
+import { getAboutPage } from "@/data/getAboutPage";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 
 export async function ShortAbout() {
-  const [t, about, locale] = await Promise.all([getTranslations("HomePage"), getAboutPageCms(), getLocale()]);
+  const [t, locale] = await Promise.all([getTranslations("HomePage"), getLocale()]);
+  const about = getAboutPage();
 
   const shortAbout = about.whoAmI[0].content;
 

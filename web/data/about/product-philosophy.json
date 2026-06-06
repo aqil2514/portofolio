@@ -1,0 +1,132 @@
+[
+  {
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Keep systems understandable and predictable."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Menjaga agar sistem mudah dipahami dan mudah dikembangkan."
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⚙️Simplicity First"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⚙️Mulai dari yang Simpel"
+      }
+    ]
+  },
+  {
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Eliminate repetitive tasks to focus on creativity."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Mengeliminasi tugas-tugas repetitif agar bisa fokus ke kreativitas."
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⚡Automation First"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⚡Mengutamakan Automasi"
+      }
+    ]
+  },
+  {
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Everything starts with solving real user needs."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Semuanya dimulai dengan menyelesaikan kebutuhan penggunaan."
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⭐Real Users Matter"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "⭐Kebutuhan Nyata Pengguna"
+      }
+    ]
+  },
+  {
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Fast experiences create trust and retention."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Kecepatan pengalaman membangun kepercayaan dan retensi"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "🚀Performance is King"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "🚀Performa adalah Raja"
+      }
+    ]
+  },
+  {
+    "description": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Good foundations scale without breaking."
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayTextValue",
+        "value": "Pondasi yang kuat untuk bisa di-scaleup"
+      }
+    ],
+    "title": [
+      {
+        "_key": "en",
+        "_type": "internationalizedArrayStringValue",
+        "value": "🧱Clean Architecture"
+      },
+      {
+        "_key": "id",
+        "_type": "internationalizedArrayStringValue",
+        "value": "🧱Arsitektur yang Bersih"
+      }
+    ]
+  }
+]

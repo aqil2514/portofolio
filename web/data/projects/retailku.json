@@ -1,0 +1,112 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "DevOps",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "f1a2b3c4d5e6",
+      "_type": "feature",
+      "en": "Multitenant architecture — each store has its own isolated workspace, data, and context.",
+      "id": "Arsitektur multitenant — setiap toko memiliki ruang kerja, data, dan konteks tersendiri."
+    },
+    {
+      "_key": "a1b2c3d4e5f6",
+      "_type": "feature",
+      "en": "Full purchase cycle: Purchase Order → Receiving → Payment → Return → Supplier Credit.",
+      "id": "Siklus pembelian lengkap: Purchase Order → Penerimaan Barang → Pembayaran → Retur → Supplier Credit."
+    },
+    {
+      "_key": "b2c3d4e5f6a1",
+      "_type": "feature",
+      "en": "Sales with cashier shift management, credit sales, and accounts receivable settlement.",
+      "id": "Penjualan dengan manajemen shift kasir, penjualan kredit, dan pelunasan piutang dagang."
+    },
+    {
+      "_key": "c3d4e5f6a1b2",
+      "_type": "feature",
+      "en": "Manufacture module: raw materials, production recipes, and production orders with automatic stock and COGS journal.",
+      "id": "Modul produksi: bahan baku, resep produksi, dan order produksi dengan jurnal stok dan HPP otomatis."
+    },
+    {
+      "_key": "d4e5f6a1b2c3",
+      "_type": "feature",
+      "en": "Automatic accounting journals from every operational transaction — purchases, sales, returns, expenses, and transfers.",
+      "id": "Jurnal akuntansi otomatis dari setiap transaksi operasional — pembelian, penjualan, retur, beban, dan transfer."
+    },
+    {
+      "_key": "e5f6a1b2c3d4",
+      "_type": "feature",
+      "en": "Financial reports: Income Statement, Trial Balance, and Balance Sheet.",
+      "id": "Laporan keuangan: Laba Rugi, Neraca Saldo, dan Neraca."
+    },
+    {
+      "_key": "f6a1b2c3d4e5",
+      "_type": "feature",
+      "en": "Cashflow report driven by journal entries — summary, allocation by category, transaction detail, and balance trend chart.",
+      "id": "Laporan cashflow berbasis jurnal — ringkasan, alokasi per kategori, detail transaksi, dan grafik pergerakan saldo."
+    },
+    {
+      "_key": "a2b3c4d5e6f1",
+      "_type": "feature",
+      "en": "Multi-user store membership — owners can invite team members via email.",
+      "id": "Keanggotaan toko multi-user — owner bisa mengundang anggota tim lewat email."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A multitenant retail management platform built as a mini ERP for small to mid-size retail businesses. The system covers the full operational cycle — from product and supplier management, purchase orders, stock receiving, manufacturing, and sales with cashier shifts, all the way to automatic accounting journals, financial reports, cashflow tracking, and a real-time dashboard. Each store runs in an isolated tenant context, making it suitable for businesses with multiple branches or units."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Platform manajemen retail multitenant yang dirancang sebagai mini ERP untuk bisnis retail kecil hingga menengah. Sistem ini mencakup siklus operasional penuh — dari pengelolaan produk dan supplier, purchase order, penerimaan barang, produksi, dan penjualan dengan shift kasir, hingga jurnal akuntansi otomatis, laporan keuangan, pemantauan cashflow, dan dashboard real-time. Setiap toko berjalan dalam konteks tenant yang terisolasi, sehingga cocok untuk bisnis dengan banyak cabang atau unit."
+    }
+  ],
+  "id": "3f7a1c2e-8b4d-4e9f-a6c5-2d1e0f3b7a9c",
+  "image": {
+    "imageAlt": "Retailku Image",
+    "imageSrc": "/images/projects/retailku.png",
+    "label": "Retailku"
+  },
+  "liveUrl": "https://www.retailku.com/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A multitenant retail management platform built as a mini ERP — covering purchases, stock, manufacturing, sales, accounting journals, and financial reports."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Platform manajemen retail multitenant sebagai mini ERP — mencakup pembelian, stok, produksi, penjualan, jurnal akuntansi, dan laporan keuangan."
+    }
+  ],
+  "sourceCode": null,
+  "status": "on-progress",
+  "subDemos": [],
+  "techStack": [
+    "Next.js",
+    "NestJS",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "TanStack Query",
+    "TanStack Table",
+    "ShadCN",
+    "Tailwind CSS",
+    "React Hook Form",
+    "ZOD",
+    "Recharts",
+    "Google OAuth",
+    "Resend",
+    "Vercel"
+  ],
+  "title": "Retailku"
+}

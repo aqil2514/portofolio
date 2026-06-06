@@ -1,7 +1,7 @@
 import ContactMeTemplate from "@/components/templates/ContactMetemplate";
 import { Metadata } from "next";
 import { getLocale } from "next-intl/server";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
 

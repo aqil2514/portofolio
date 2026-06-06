@@ -6,7 +6,7 @@ import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
 import { CoreSkills } from "@/featured/AboutMe/CoreSkill";
 import { ProductPhilosophy } from "@/featured/AboutMe/ProductPhilosophy";
-import { PageAboutTypes } from "@/@types/Sanity";
+import { PageAboutTypes } from "@/@types/types";
 import { AboutMeProvider } from "@/featured/AboutMe/provider";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import { LocaleLang } from "@/@types/General";

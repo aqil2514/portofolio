@@ -1,7 +1,7 @@
 "use client";
 
 import { ProjectCard, ProjectCategory } from "@/@types/Projects";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
 import React, { createContext, useContext, useMemo, useState } from "react";
 

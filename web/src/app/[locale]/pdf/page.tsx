@@ -1,8 +1,8 @@
 import MyDocument from "@/components/templates/PortofolioDocument";
-import { getAllCVData } from "@/sanity/actions/cv";
+import { getPortfolio } from "@/data/getPortfolio";
 import { Metadata } from "next";
 import { getLocale } from "next-intl/server";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
 
@@ -26,7 +26,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function CVPage() {
-  const [data, locale] = await Promise.all([getAllCVData(), getLocale()]);
+  const [locale] = await Promise.all([getLocale()]);
+  const data = getPortfolio();
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { getLocale } from "next-intl/server";
-import { Locale } from "@/@types/Sanity";
+import { Locale } from "@/@types/types";
 import { generateOGImage } from "@/app/og/generator";
 
 export default async function Image() {

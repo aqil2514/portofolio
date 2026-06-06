@@ -2,7 +2,7 @@ import { SkillCard } from "@/components/atoms/SkillCard";
 import * as motion from "motion/react-client";
 import { useTranslations } from "next-intl";
 import GraphemeSplitter from "grapheme-splitter";
-import { PageAboutTypes } from "@/@types/Sanity";
+import { PageAboutTypes } from "@/@types/types";
 
 interface Props {
   data: PageAboutTypes;

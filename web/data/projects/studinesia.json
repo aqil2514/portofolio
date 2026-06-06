@@ -1,0 +1,145 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "DevOps",
+    "Automation",
+    "AI Integration",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "dbe4287cea53",
+      "_type": "feature",
+      "en": "Newsletter Feature\n",
+      "id": "Fitur Langganan"
+    },
+    {
+      "_key": "c4e415e6f0ad",
+      "_type": "feature",
+      "en": "Write with AI\n",
+      "id": "Menulis dengan AI"
+    },
+    {
+      "_key": "a8fbfaa5def6",
+      "_type": "feature",
+      "en": "Scheduled Article\n",
+      "id": "Artikel Terjadwal"
+    },
+    {
+      "_key": "b9eba471effc",
+      "_type": "feature",
+      "en": "Automatically post on social media\n",
+      "id": "Otomatis posting ke sosial media"
+    },
+    {
+      "_key": "38ba27df951e",
+      "_type": "feature",
+      "en": "Automatically create a content",
+      "id": "Pembuatan konten full otomatis AI"
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A blog platform featuring in-depth articles across Islamic studies, Humanities, Technology, Health, Lifestyle, and Finance — crafted to deliver fresh insights, inspiration, and meaningful knowledge to readers."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Situs blog yang menyajikan berbagai artikel mendalam seputar Islami, Humaniora, Teknologi, Kesehatan, Gaya Hidup, dan Finansial — dirancang untuk memberi wawasan baru, inspirasi, serta pengetahuan yang relevan bagi pembaca."
+    }
+  ],
+  "id": "8ea5055d-3883-4b50-9fd8-5c33ac5e6a07",
+  "image": {
+    "imageAlt": "Studinesia Image",
+    "imageSrc": "/images/projects/studinesia.png",
+    "label": "Studinesia Image"
+  },
+  "liveUrl": "https://www.studinesia.online/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A blog platform featuring in-depth articles across Islamic studies, Humanities, Technology, Health, Lifestyle, and Finance —..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Situs blog yang menyajikan berbagai artikel mendalam seputar Islami, Humaniora, Teknologi, Kesehatan, Gaya Hidup, dan Finansial..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/studinesia",
+  "status": "archived",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "An automated writing feature powered by Gemini AI that generates full-length articles. Users only need to enter a title and a few metadata fields, and the system produces a complete article — from start to finish — quickly, consistently, and ready for publication."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Fitur penulisan otomatis yang memanfaatkan Gemini AI untuk menghasilkan artikel lengkap. Pengguna cukup memasukkan judul dan beberapa metadata, lalu sistem akan membuat artikel dari awal hingga akhir secara mandiri — cepat, konsisten, dan siap publikasi."
+        }
+      ],
+      "title": "Write With AI",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763878065/portofolio/Studinesia%20-%20Write%20With%20AI.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "A feature that schedules articles and automatically promotes them to Facebook Page, Twitter, and email the moment they are published. Everything runs without manual intervention, ensuring consistent and timely content distribution."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Fitur yang memungkinkan penjadwalan artikel sekaligus promosi otomatis ke Facebook Page, Twitter, dan email setelah artikel diterbitkan. Semua proses berjalan tanpa intervensi manual, memastikan jangkauan promosi yang konsisten dan tepat waktu."
+        }
+      ],
+      "title": "Auto Promote When Article Published",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763878457/portofolio/Studinesia%20-%20Cron%20Job%20and%20Social%20Media%20Integration.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Studinesia features an automated content pipeline integrated with AI systems and an N8N workflow. The process begins with keyword research, outline generation, AI-driven article writing, quality validation, and automatic revisions when the content doesn't meet the required standards. Once the final article is ready, the system checks the sitemap to prevent URL duplication, generates an AI-based hero image, maps all data into the proper publication format, and uploads it directly to the Studinesia Admin via API. Every step runs automatically through a single click or webhook, enabling content production that is significantly faster, consistent, and completely free from manual intervention."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Studinesia memiliki pipeline konten otomatis yang terintegrasi dengan sistem AI dan workflow N8N. Proses dimulai dari riset keyword, pembuatan outline, penulisan artikel oleh AI, validasi kualitas, hingga revisi otomatis apabila konten belum memenuhi standar. Setelah artikel final siap, sistem memeriksa sitemap untuk mencegah duplikasi URL, menghasilkan hero image menggunakan AI, memetakan seluruh data ke format publikasi, lalu mengunggahnya langsung ke Admin Studinesia melalui API. Semua tahap ini berjalan otomatis melalui satu klik atau webhook, sehingga produksi konten menjadi jauh lebih cepat, konsisten, dan tanpa proses manual."
+        }
+      ],
+      "title": "Automate Upload Post",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763784296/portofolio/N8N%20Automation%20-%20Automate%20Upload%20Post.mp4"
+    }
+  ],
+  "techStack": [
+    "Next.js",
+    "NextAuth",
+    "Tailwind CSS",
+    "TypeScript",
+    "ShadCN",
+    "Supabase",
+    "Vercel",
+    "RSS",
+    "JSON-LD",
+    "NestJS",
+    "Twitter/X API",
+    "GraphApi",
+    "Cron Schedules",
+    "Gemini API",
+    "OpenAI API"
+  ],
+  "title": "Studinesia"
+}

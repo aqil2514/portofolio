@@ -1,0 +1,96 @@
+{
+  "categories": [
+    "Backend",
+    "Automation",
+    "AI Integration"
+  ],
+  "features": [
+    {
+      "_key": "d8767da450f7",
+      "_type": "feature",
+      "en": "Real-time Trend Discovery : Automatically identifies trending topics to ensure high-relevance content.",
+      "id": "Real-time Trend Discovery : Identifikasi otomatis topik populer terkini untuk memastikan konten selalu relevan dan tepat sasaran."
+    },
+    {
+      "_key": "7f6372f18fb0",
+      "_type": "feature",
+      "en": "AI-Powered Drafting : Seamlessly generates structured and engaging article drafts.",
+      "id": "AI-Powered Drafting : Penyusunan draf artikel secara otomatis dengan struktur penulisan yang rapi dan menarik bagi pembaca."
+    },
+    {
+      "_key": "811236b6f931",
+      "_type": "feature",
+      "en": "Automated Image Generation : Creates dynamic visual assets to complement the article's context.",
+      "id": "Automated Image Generation : Pembuatan aset visual atau ilustrasi pendukung secara dinamis yang relevan dengan isi artikel."
+    },
+    {
+      "_key": "946e68f3ae31",
+      "_type": "feature",
+      "en": "Seamless Auto-Publishing : Fully automates the publishing process to Kompasiana using Playwright.",
+      "id": "Seamless Auto-Publishing : Otomasi proses publikasi konten secara menyeluruh ke platform Kompasiana menggunakan Playwright."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "An end-to-end content automation project built with Python. This project focuses on workflow efficiency, covering everything from real-time trending topic identification and draft composition to image generation and automated publishing on Kompasiana, a prominent news portal."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Proyek otomasi konten end-to-end yang dibangun menggunakan Python. Fokus utama proyek ini adalah efisiensi alur kerja, mulai dari identifikasi topik yang sedang trending secara real-time, penyusunan draf, generalisasi gambar pendukung, hingga automasi posting pada portal berita Kompasiana."
+    }
+  ],
+  "id": "475c5e63-67c0-45f0-bc8c-61d5f4ac6193",
+  "image": {
+    "imageAlt": "Kompasiana Scrapper Image",
+    "imageSrc": "/images/projects/kompasiana-scrapper.png",
+    "label": null
+  },
+  "liveUrl": null,
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "An end-to-end content automation project built with Python. This project focuses on workflow efficiency, covering everything..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Proyek otomasi konten end-to-end yang dibangun menggunakan Python. Fokus utama proyek ini adalah efisiensi alur kerja,..."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/automation-site",
+  "status": "archived",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "A live demonstration of automated article publishing to Kompasiana using Playwright. This process includes secure credential login, title and tag optimization, content insertion, and dynamic image placement—all executed fully automatically."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Demonstrasi alur publikasi artikel otomatis ke Kompasiana menggunakan Playwright. Proses mencakup autentikasi akun, pengisian judul, optimasi tag, input konten, hingga penempatan aset visual secara presisi tanpa intervensi manual"
+        }
+      ],
+      "title": "Auto Post to Kompasiana with Playwright",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1774345224/portofolio/Kompasiana_Scrapper_thugkn.mp4"
+    }
+  ],
+  "techStack": [
+    "Python",
+    "Playwright",
+    "Neon DB (PostgreSQL)",
+    "Cron Schedules",
+    "FastAPI",
+    "Pydantic",
+    "Vertex AI",
+    "AI Image Generation API"
+  ],
+  "title": "Kompasiana Scrapper"
+}

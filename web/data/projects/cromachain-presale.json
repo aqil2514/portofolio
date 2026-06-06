@@ -1,0 +1,195 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "738cf9f21718",
+      "_type": "feature",
+      "en": "Connect crypto wallet seamlessly using Wagmi and MetaMask integration.",
+      "id": "Koneksi dompet kripto secara mulus melalui integrasi Wagmi dan MetaMask.\n"
+    },
+    {
+      "_key": "80e8b084f774",
+      "_type": "feature",
+      "en": "Real-time token purchase and tracking for CRM and CMC presales.\n",
+      "id": "Pembelian token CRM dan CMC secara real-time dengan pelacakan transaksi langsung.\n"
+    },
+    {
+      "_key": "4136ea99c79e",
+      "_type": "feature",
+      "en": "Automated referral system with instant cashback and multi-level tracking.\n",
+      "id": "Sistem referral otomatis dengan cashback instan dan pelacakan multi-level.\n"
+    },
+    {
+      "_key": "73d6c9cfd896",
+      "_type": "feature",
+      "en": "Secure payment gateway integration with server-side verification and webhook support.\n",
+      "id": "Integrasi gateway pembayaran aman dengan verifikasi server-side dan dukungan webhook.\n"
+    },
+    {
+      "_key": "e84e01d9154a",
+      "_type": "feature",
+      "en": "Admin dashboard to monitor transactions, withdrawal requests, and user activity.\n",
+      "id": "Dashboard admin untuk memantau transaksi, permintaan penarikan, dan aktivitas pengguna.\n"
+    },
+    {
+      "_key": "57ceacf6f635",
+      "_type": "feature",
+      "en": "Supabase-powered backend for real-time data synchronization and scalable storage.\n",
+      "id": "Backend berbasis Supabase untuk sinkronisasi data real-time dan penyimpanan yang skalabel.\n"
+    },
+    {
+      "_key": "207753f2833d",
+      "_type": "feature",
+      "en": "Built with Next.js and NestJS for optimized performance and maintainable architecture.\n",
+      "id": "Dibangun dengan Next.js dan NestJS untuk performa optimal dan arsitektur yang mudah dirawat.\n"
+    },
+    {
+      "_key": "a8866dd421f5",
+      "_type": "feature",
+      "en": "Deployed on Vercel with continuous integration for smooth production delivery.\n",
+      "id": "Dideploy di Vercel dengan integrasi berkelanjutan untuk proses rilis yang lancar.\n"
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "An interactive Web3 platform for purchasing and managing CRM and CMC tokens, featuring an integrated referral system, admin dashboard, and automated payment gateway."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Platform Web3 interaktif untuk pembelian dan manajemen token CRM serta CMC, lengkap dengan sistem referral, dashboard admin, dan gateway pembayaran otomatis.\n"
+    }
+  ],
+  "id": "a344ea49-5d27-431d-92a8-0ecf3737f233",
+  "image": {
+    "imageAlt": "Cromachain Presale Image",
+    "imageSrc": "/images/projects/cromachain-presale.png",
+    "label": "Cromachain Presale"
+  },
+  "liveUrl": "https://presale.cromachain.com/",
+  "mainDemo": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "An interactive Web3 platform for purchasing and managing CRM and CMC tokens, featuring an integrated referral..."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Platform Web3 interaktif untuk pembelian dan manajemen token CRM serta CMC, lengkap dengan sistem referral, dashboard..."
+    }
+  ],
+  "sourceCode": null,
+  "status": "archived",
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Connection to Wallet with Wagmi and Referral System"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Koneksi ke Wallet dengan Wagmi dan Referral Sistem"
+        }
+      ],
+      "title": "Wallet Connection & Referral System",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763782821/portofolio/Cromachain%20Presale%20-%20Wallet%20Connection%20and%20Referral%20System.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Check eligibility to claim bonuses from the Airdrop website, with the requirement that users purchase at least 2 NFTs and add a button so that once the user has purchased, they only need to verify."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Cek kelayakan untuk mengambil bonus dari web Airdrop dengan syarat user harus membeli minimal 2 NFT dan menambahkan tombol agar ketika user sudah beli, user cukup verifikasi saja."
+        }
+      ],
+      "title": "Check Elig (Data From Airdrop Web)",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763782879/portofolio/Cromachain%20Presale%20-%20Check%20Elig%20%28Data%20From%20Airdrop%20Web%29.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Handle token purchases with integration to several payment methods specified by the Admin (ETH, BNB, USDT, etc.)"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Menangani pembelian token dengan integrasi ke beberapa metode pembayaran yang telah ditentukan oleh Admin (ETH, BNB, USDT, dll)"
+        }
+      ],
+      "title": "Payment Method Handler",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763782931/portofolio/Cromachain%20Presale%20-%20Payment%20Method%20Handler.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Simulate purchases with account sandbox and handle purchase bonuses from referrals."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Simulasi pembelian dengan sandbox akun dan menangani bonus pembelian dari referral."
+        }
+      ],
+      "title": "Payment Gateway & Referral Cashback",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763783009/portofolio/Cromachain%20Presale%20-%20Payment%20Gateway%20and%20Referral%20Cashback.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Transaction monitoring page on the Admin Dashboard so that admins can monitor purchases from users."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Halaman pemantauan transaksi di Admin Dashboard agar admin bisa memantau pembelian dari User."
+        }
+      ],
+      "title": "Admin Dashboard – Transactions",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1763783079/portofolio/Cromachain%20Presale%20-%20Admin%20Dashboard%20%E2%80%93%20Transactions.mp4"
+    }
+  ],
+  "techStack": [
+    "NestJS",
+    "TypeScript",
+    "JWT",
+    "SIWE (Sign-In With Ethereum)",
+    "Cookie Auth (cookie-parser)",
+    "Axios",
+    "Next.js",
+    "Tailwind CSS",
+    "ShadCN",
+    "Supabase",
+    "Wagmi",
+    "Vercel",
+    "Webhooks",
+    "TanStack Table",
+    "React Hook Form",
+    "ZOD",
+    "Framer Motion",
+    "NowPayments"
+  ],
+  "title": "Cromachain Presale"
+}

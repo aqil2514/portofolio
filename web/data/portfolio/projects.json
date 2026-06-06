@@ -1,0 +1,337 @@
+{
+  "_type": "projectsSection",
+  "items": [
+    {
+      "_key": "580c650615bd",
+      "_type": "projectItem",
+      "bullets": [
+        {
+          "_key": "52e94d4cc98d",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dynamic content management system powered by Supabase, allowing admin to update homepage, hero sliders, and articles in real time."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Sistem manajemen konten dinamis berbasis Supabase yang memungkinkan admin memperbarui beranda, slider hero, dan artikel secara real-time."
+            }
+          ]
+        },
+        {
+          "_key": "6031005162d9",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Integrated authentication using Google OAuth for secure and convenient access to the CMS dashboard."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Autentikasi terintegrasi menggunakan Google OAuth untuk akses aman dan praktis ke dashboard CMS."
+            }
+          ]
+        },
+        {
+          "_key": "1ea1db188d46",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Seamless multilingual support (English, Bahasa Indonesia, Mandarin) with automatic language detection and manual switcher."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dukungan tiga bahasa (Inggris, Indonesia, Chinese) dengan deteksi otomatis dan pemilih bahasa manual."
+            }
+          ]
+        },
+        {
+          "_key": "5226ca61bdd1",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Responsive, visually rich design optimized for mobile, tablet, and desktop using Tailwind CSS."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Desain responsif dan menarik yang dioptimalkan untuk perangkat mobile, tablet, dan desktop menggunakan Tailwind CSS."
+            }
+          ]
+        },
+        {
+          "_key": "3acb4838a528",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Image hosting and optimization via Cloudinary integration for fast and high-quality media delivery."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Hosting dan optimasi gambar melalui integrasi Cloudinary untuk kecepatan tinggi dan kualitas media terbaik."
+            }
+          ]
+        },
+        {
+          "_key": "04f49d19790b",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Admin dashboard with live preview, content versioning, and image upload capabilities."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dashboard admin dengan fitur pratinjau langsung, versi konten, dan kemampuan unggah gambar."
+            }
+          ]
+        },
+        {
+          "_key": "3255490716d6",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Modern frontend architecture built with Next.js 15 and TypeScript for scalability and performance."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Arsitektur frontend modern menggunakan Next.js 15 dan TypeScript untuk skalabilitas dan performa tinggi."
+            }
+          ]
+        },
+        {
+          "_key": "a37089ad415c",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Deployed on Vercel with continuous integration and optimized SEO metadata for better global reach."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dideploy di Vercel dengan integrasi berkelanjutan serta metadata SEO yang dioptimalkan untuk jangkauan global."
+            }
+          ]
+        }
+      ],
+      "endDate": "2025-11-15",
+      "role": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        }
+      ],
+      "startDate": "2025-10-01",
+      "title": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Dragon 8 Travel"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Dragon 8 Travel"
+        }
+      ]
+    },
+    {
+      "_key": "59ad3ee72a04",
+      "_type": "projectItem",
+      "bullets": [
+        {
+          "_key": "cb473d2b7d58",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Connect crypto wallet seamlessly using Wagmi and MetaMask integration."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Koneksi dompet kripto secara mulus melalui integrasi Wagmi dan MetaMask."
+            }
+          ]
+        },
+        {
+          "_key": "be371374276f",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Real-time token purchase and tracking for CRM and CMC presales."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Pembelian token CRM dan CMC secara real-time dengan pelacakan transaksi langsung."
+            }
+          ]
+        },
+        {
+          "_key": "f4d6526c68cf",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Automated referral system with instant cashback and multi-level tracking."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Sistem referral otomatis dengan cashback instan dan pelacakan multi-level."
+            }
+          ]
+        },
+        {
+          "_key": "9f912219aca8",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Secure payment gateway integration with server-side verification and webhook support."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Integrasi gateway pembayaran aman dengan verifikasi server-side dan dukungan webhook."
+            }
+          ]
+        },
+        {
+          "_key": "bd81c80e27b4",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Admin dashboard to monitor transactions, withdrawal requests, and user activity."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dashboard admin untuk memantau transaksi, permintaan penarikan, dan aktivitas pengguna."
+            }
+          ]
+        },
+        {
+          "_key": "1bcf903fa858",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Supabase-powered backend for real-time data synchronization and scalable storage."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Backend berbasis Supabase untuk sinkronisasi data real-time dan penyimpanan yang skalabel."
+            }
+          ]
+        },
+        {
+          "_key": "7055720737f9",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Built with Next.js and NestJS for optimized performance and maintainable architecture."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dibangun dengan Next.js dan NestJS untuk performa optimal dan arsitektur yang mudah dirawat."
+            }
+          ]
+        },
+        {
+          "_key": "55ae89d30533",
+          "_type": "bulletItem",
+          "text": [
+            {
+              "_key": "en",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Deployed on Vercel with continuous integration for smooth production delivery."
+            },
+            {
+              "_key": "id",
+              "_type": "internationalizedArrayStringValue",
+              "value": "Dideploy di Vercel dengan integrasi berkelanjutan untuk proses rilis yang lancar."
+            }
+          ]
+        }
+      ],
+      "endDate": "2025-10-31",
+      "role": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Full Stack Developer"
+        }
+      ],
+      "startDate": "2025-09-19",
+      "title": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Cromachain Presale"
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayStringValue",
+          "value": "Cromachain Presale"
+        }
+      ]
+    }
+  ],
+  "title": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayStringValue",
+      "value": "PROJECTS"
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayStringValue",
+      "value": "PROYEK"
+    }
+  ]
+}
