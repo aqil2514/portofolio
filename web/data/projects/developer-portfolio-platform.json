@@ -41,18 +41,24 @@
       "_type": "feature",
       "en": "Vercel Analytics for page performance monitoring",
       "id": "Vercel Analytics untuk pemantauan performa halaman"
+    },
+    {
+      "_key": "d7e8f9a0b1c2",
+      "_type": "feature",
+      "en": "AI portfolio chatbot powered by OpenRouter with automatic model fallback",
+      "id": "Chatbot AI portfolio berbasis OpenRouter dengan mekanisme fallback model otomatis"
     }
   ],
   "fullDesc": [
     {
       "_key": "en",
       "_type": "internationalizedArrayTextValue",
-      "value": "This project is a fully engineered developer portfolio platform designed to showcase professional identity, technical expertise, and project work. Built with a modern web stack, it includes bilingual routing (ID & EN), automated SEO metadata generation, dynamic OpenGraph image rendering per page, JSON-LD schema injection for Google indexing, content managed via local JSON files, PDF CV generation using React-PDF, and Vercel Analytics for performance monitoring.\nIt serves as both a personal brand hub and a technical demonstration of advanced web engineering practices — and is the very platform you are browsing right now."
+      "value": "This project is a fully engineered developer portfolio platform designed to showcase professional identity, technical expertise, and project work. Built with a modern web stack, it includes bilingual routing (ID & EN), automated SEO metadata generation, dynamic OpenGraph image rendering per page, JSON-LD schema injection for Google indexing, content managed via local JSON files, PDF CV generation using React-PDF, Vercel Analytics for performance monitoring, and an AI-powered chatbot using OpenRouter SDK with automatic model fallback.\nIt serves as both a personal brand hub and a technical demonstration of advanced web engineering practices — and is the very platform you are browsing right now."
     },
     {
       "_key": "id",
       "_type": "internationalizedArrayTextValue",
-      "value": "Project ini merupakan platform portfolio developer yang dibangun secara menyeluruh untuk menampilkan identitas profesional, keahlian teknis, dan katalog proyek. Dengan teknologi web modern, sistem ini menyediakan routing dua bahasa (ID & EN), generasi metadata SEO otomatis, render OpenGraph gambar dinamis per halaman, injeksi schema JSON-LD untuk meningkatkan indexing Google, konten yang dikelola via file JSON lokal, generator CV dalam bentuk PDF menggunakan React-PDF, dan Vercel Analytics untuk pemantauan performa.\nPlatform ini berfungsi sebagai pusat brand pribadi sekaligus demonstrasi kemampuan rekayasa web tingkat lanjut — dan merupakan platform yang sedang Anda buka saat ini."
+      "value": "Project ini merupakan platform portfolio developer yang dibangun secara menyeluruh untuk menampilkan identitas profesional, keahlian teknis, dan katalog proyek. Dengan teknologi web modern, sistem ini menyediakan routing dua bahasa (ID & EN), generasi metadata SEO otomatis, render OpenGraph gambar dinamis per halaman, injeksi schema JSON-LD untuk meningkatkan indexing Google, konten yang dikelola via file JSON lokal, generator CV dalam bentuk PDF menggunakan React-PDF, Vercel Analytics untuk pemantauan performa, dan chatbot AI berbasis OpenRouter SDK dengan fallback model otomatis.\nPlatform ini berfungsi sebagai pusat brand pribadi sekaligus demonstrasi kemampuan rekayasa web tingkat lanjut — dan merupakan platform yang sedang Anda buka saat ini."
     }
   ],
   "id": "6da70fcc-395a-4d26-aab8-00407e7a55da",
@@ -88,7 +94,8 @@
     "@react-pdf/renderer (PDF Engine)",
     "Vercel Analytics",
     "Framer Motion",
-    "JSON-LD"
+    "JSON-LD",
+    "@openrouter/sdk (AI Chatbot)"
   ],
   "title": "Developer Portfolio Platform"
 }
