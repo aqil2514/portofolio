@@ -17,6 +17,7 @@ import {
 import Script from "next/script";
 import { personSchema, websiteSchema } from "@/constant/schema";
 import { Analytics } from "@vercel/analytics/next"
+import { ChatFAB } from "@/components/chat/ChatFAB";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,6 +93,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages} >
             <main className="overflow-x-hidden">
               <FloatingNavButton />
+              <ChatFAB />
               {children}
             </main>
         </NextIntlClientProvider>

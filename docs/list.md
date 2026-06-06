@@ -33,11 +33,10 @@
 - [x] Test build production
 
 ## Todo 3 — Chatbot Portofolio
-- [ ] Tentukan model OpenRouter yang dipakai (default: Gemini 2.0 Flash gratis)
-- [ ] Buat API route di Next.js (`/api/chat`)
-- [ ] Pakai data JSON hasil migrasi sebagai system prompt context
-- [ ] Desain agar model mudah diganti via env variable (`OPENROUTER_MODEL`)
-- [ ] Implementasi mekanisme fallback model (Gemini 2.0 Flash → Llama 3.1 8B → Mistral 7B) jika model error/timeout
-- [ ] Setup rate limiting via Redis (reuse yang sudah ada)
-- [ ] Buat komponen chat UI (floating button atau di halaman Contact)
-- [ ] Test dengan berbagai pertanyaan soal profil
+- [x] Tentukan model OpenRouter yang dipakai (meta-llama/llama-3.3-70b-instruct:free)
+- [x] Buat API route di Next.js (`/api/chat`)
+- [x] Pakai data JSON hasil migrasi sebagai system prompt context
+- [x] Desain agar model mudah diganti via env variable (`OPENROUTER_MODEL`)
+- [x] Implementasi mekanisme fallback model
+- [x] Buat komponen chat UI (floating button + ChatPanel)
+- [x] Test dengan berbagai pertanyaan soal profil
