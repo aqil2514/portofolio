@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
+import { SITE_URL } from "@/constant/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale(); // "id" | "en"
@@ -26,6 +27,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: titleLocale[locale],
     description: descriptionLocale[locale],
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/projects`,
+      languages: {
+        en: `${SITE_URL}/en/projects`,
+        id: `${SITE_URL}/id/projects`,
+      },
+    },
   };
 }
 

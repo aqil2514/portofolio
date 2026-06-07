@@ -5,6 +5,7 @@ import { getLocale } from "next-intl/server";
 import { Locale } from "@/@types/types";
 import Script from "next/script";
 import { generateBreadcrumbSchema } from "@/utils/breadcrumbs";
+import { SITE_URL } from "@/constant/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -22,6 +23,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: titleLocale[locale],
     description: descriptionLocale[locale],
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/about-me`,
+      languages: {
+        en: `${SITE_URL}/en/about-me`,
+        id: `${SITE_URL}/id/about-me`,
+      },
+    },
   };
 }
 
