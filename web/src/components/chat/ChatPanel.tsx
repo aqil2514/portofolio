@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Send, X } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   role: "user" | "assistant";
@@ -125,7 +126,25 @@ export function ChatPanel({ onClose }: ChatPanelProps) {
                   }
                 `}
               >
-                {msg.content}
+                {msg.role === "assistant" ? (
+                  <ReactMarkdown
+                    components={{
+                      a: ({ href, children }) => (
+                        <a href={href} target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-blue-200">
+                          {children}
+                        </a>
+                      ),
+                      strong: ({ children }) => <strong className="font-semibold text-white">{children}</strong>,
+                      ul: ({ children }) => <ul className="list-disc list-inside space-y-1 mt-1">{children}</ul>,
+                      ol: ({ children }) => <ol className="list-decimal list-inside space-y-1 mt-1">{children}</ol>,
+                      p: ({ children }) => <p className="mb-1 last:mb-0">{children}</p>,
+                    }}
+                  >
+                    {msg.content}
+                  </ReactMarkdown>
+                ) : (
+                  msg.content
+                )}
               </div>
             </motion.div>
           ))}

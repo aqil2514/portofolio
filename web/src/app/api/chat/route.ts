@@ -6,11 +6,11 @@ import { buildSystemPrompt } from "@/data/getSystemPrompt";
 export const runtime = "nodejs";
 
 const PRIMARY_MODEL =
-  process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-70b-instruct:free";
+  process.env.OPENROUTER_MODEL ?? "google/gemma-4-31b-it:free";
 
 const FALLBACK_MODELS = [
-  "google/gemma-4-31b-it:free",
-  "qwen/qwen3-next-80b-a3b-instruct:free",
+  "qwen/qwen3-14b:free",
+  "meta-llama/llama-3.3-70b-instruct:free",
   "nvidia/nemotron-3-super-120b-a12b:free",
 ];
 

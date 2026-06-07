@@ -2,6 +2,7 @@ import summary from "../../data/portfolio/summary.json";
 import skills from "../../data/portfolio/skills.json";
 import education from "../../data/portfolio/education.json";
 import experience from "../../data/portfolio/experience.json";
+import roadmap from "../../data/about/roadmap-timeline.json";
 import { getProjectsData } from "./getProjects";
 
 function en(arr: { _key: string; value: string }[]) {
@@ -41,13 +42,22 @@ function buildExperience() {
     .join("\n\n");
 }
 
+function buildCertifications() {
+  return roadmap
+    .flatMap((r) => r.certificates ?? [])
+    .map((c) => `- ${c.label}`)
+    .join("\n");
+}
+
 function buildProjects() {
   return getProjectsData()
     .map((p) => {
       const live = p.liveUrl ? ` — Live: ${p.liveUrl}` : "";
       const src = p.sourceCode ? ` | Source: ${p.sourceCode}` : "";
       const stack = p.techStack?.slice(0, 5).join(", ");
-      return `- ${p.title} (${p.status})${live}${src}\n  Stack: ${stack}`;
+      const desc = en(p.shortDesc as unknown as { _key: string; value: string }[]);
+      const features = p.features?.map((f) => `    • ${f.en.trim()}`).join("\n") ?? "";
+      return `- ${p.title} (${p.status})${live}${src}\n  Stack: ${stack}\n  Desc: ${desc}${features ? `\n  Features:\n${features}` : ""}`;
     })
     .join("\n");
 }
@@ -61,9 +71,20 @@ export function buildSystemPrompt(): string {
 - Name: Muhamad Aqil Maulana
 - Role: Full Stack Developer
 - Email: muhamadaqil383@gmail.com
+- WhatsApp: https://wa.me/6285693273746
+- LinkedIn: https://www.linkedin.com/in/aqil2514/
+- GitHub: https://github.com/aqil2514
+- Fiverr: https://www.fiverr.com/s/jjZLA9v/
 - Location: Sukawangi, West Java, Indonesia
 - Portfolio: https://maqilm-portofolio.vercel.app/
-- GitHub: https://github.com/aqil2514
+
+## Current Employment
+- Currently employed full-time as Full-Stack Developer at PT. Gass Marketing Teknologi (since February 2026, Full Remote)
+- Note: "PT. GASS Teknologi Indonesia" in older records refers to the same company
+
+## Availability
+- Open to new full-time opportunities if the role is a strong fit
+- For direct inquiries, visitors can reach him via WhatsApp or email
 
 ## Summary
 ${summaryText}
@@ -76,6 +97,15 @@ ${buildExperience()}
 
 ## Skills
 ${buildSkills()}
+
+## Languages
+- Indonesian: Native
+- English: Conversational
+- Arabic: Conversational
+- Japanese: Conversational
+
+## Certifications
+${buildCertifications()}
 
 ## Projects
 ${buildProjects()}
