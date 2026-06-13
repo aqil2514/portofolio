@@ -5,19 +5,19 @@
       "_key": "b441dd7aa57f",
       "_type": "skillItem",
       "label": "Front-End & UI/UX",
-      "value": "Next.js, React.js, TypeScript, Tailwind CSS, ShadCN, Redux, i18n (Internationalization), Desktop App Framework"
+      "value": "Next.js, React.js, TypeScript, Tailwind CSS, ShadCN, Redux, i18n (Internationalization), Tauri (Desktop App Framework)"
     },
     {
       "_key": "a40c64186992",
       "_type": "skillItem",
       "label": "Back-End & Database",
-      "value": "NestJS, Node.js, Express.js, Supabase, PostgreSQL, MySQL, MongoDB, REST API, Webhook Handling, Server-Side Validation, RabbitMQ / Redis, Microservices Architecture"
+      "value": "NestJS, Node.js, Express.js, FastAPI (Python), Supabase, PostgreSQL, MySQL, MongoDB, REST API, Webhook Handling, Server-Side Validation, RabbitMQ / BullMQ / Redis, Microservices Architecture"
     },
     {
       "_key": "173cebc86f2d",
       "_type": "skillItem",
-      "label": "Modern Tech Stack",
-      "value": "Wagmi (Web3 Integration), OpenAI API, Prompt Engineering, n8n Workflow Automation, Headless CMS Development, LangGraph & LangChain, Agentic Workflows, Vector Databases, OpenRouter Integration, Python (AI & Scraping)"
+      "label": "AI & Modern Tech Stack",
+      "value": "Wagmi (Web3), OpenAI API, Prompt Engineering, LangGraph & LangChain, Agentic Workflows, Vector Databases & Embeddings, OpenRouter Integration, n8n Workflow Automation, Headless CMS, Python (AI & Scraping)"
     },
     {
       "_key": "712956b96941",
