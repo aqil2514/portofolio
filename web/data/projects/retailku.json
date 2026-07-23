@@ -10,8 +10,8 @@
     {
       "_key": "f1a2b3c4d5e6",
       "_type": "feature",
-      "en": "Multitenant architecture — each store has its own isolated workspace, data, and context.",
-      "id": "Arsitektur multitenant — setiap toko memiliki ruang kerja, data, dan konteks tersendiri."
+      "en": "Multitenant architecture - each store has its own isolated workspace, data, and context.",
+      "id": "Arsitektur multitenant - setiap toko memiliki ruang kerja, data, dan konteks tersendiri."
     },
     {
       "_key": "a1b2c3d4e5f6",
@@ -34,8 +34,8 @@
     {
       "_key": "d4e5f6a1b2c3",
       "_type": "feature",
-      "en": "Automatic accounting journals from every operational transaction — purchases, sales, returns, expenses, and transfers.",
-      "id": "Jurnal akuntansi otomatis dari setiap transaksi operasional — pembelian, penjualan, retur, beban, dan transfer."
+      "en": "Automatic accounting journals from every operational transaction - purchases, sales, returns, expenses, and transfers.",
+      "id": "Jurnal akuntansi otomatis dari setiap transaksi operasional - pembelian, penjualan, retur, beban, dan transfer."
     },
     {
       "_key": "e5f6a1b2c3d4",
@@ -46,26 +46,80 @@
     {
       "_key": "f6a1b2c3d4e5",
       "_type": "feature",
-      "en": "Cashflow report driven by journal entries — summary, allocation by category, transaction detail, and balance trend chart.",
-      "id": "Laporan cashflow berbasis jurnal — ringkasan, alokasi per kategori, detail transaksi, dan grafik pergerakan saldo."
+      "en": "Cashflow report driven by journal entries - summary, allocation by category, transaction detail, and balance trend chart.",
+      "id": "Laporan cashflow berbasis jurnal - ringkasan, alokasi per kategori, detail transaksi, dan grafik pergerakan saldo."
     },
     {
       "_key": "a2b3c4d5e6f1",
       "_type": "feature",
-      "en": "Multi-user store membership — owners can invite team members via email.",
-      "id": "Keanggotaan toko multi-user — owner bisa mengundang anggota tim lewat email."
+      "en": "Multi-user store membership - owners can invite team members via email.",
+      "id": "Keanggotaan toko multi-user - owner bisa mengundang anggota tim lewat email."
+    },
+    {
+      "_key": "b3c4d5e6f1a2",
+      "_type": "feature",
+      "en": "Sales analytics report - summary, per product, per type, per customer, and revenue trend.",
+      "id": "Laporan analitik penjualan - ringkasan, per produk, per tipe, per pelanggan, dan tren omzet."
+    },
+    {
+      "_key": "c4d5e6f1a2b3",
+      "_type": "feature",
+      "en": "Stock report with status indicators - Normal, Critical, and Out of Stock per product and material.",
+      "id": "Laporan stok dengan indikator status - Normal, Kritis, dan Habis per produk dan bahan baku."
+    },
+    {
+      "_key": "d5e6f1a2b3c4",
+      "_type": "feature",
+      "en": "Equity report, operational expenses, other income, and owner equity transactions (withdrawal & injection).",
+      "id": "Laporan perubahan modal, pencatatan beban operasional, pendapatan lain-lain, dan transaksi modal pemilik (prive & injeksi)."
+    },
+    {
+      "_key": "e6f1a2b3c4d5",
+      "_type": "feature",
+      "en": "Fixed assets management with full lifecycle tracking (active, disposed).",
+      "id": "Manajemen aset tetap dengan pelacakan siklus hidup penuh (aktif, dilepas)."
+    },
+    {
+      "_key": "f1a2b3c4d5e7",
+      "_type": "feature",
+      "en": "Investment management - instrument master and buy/redeem transactions with automatic transit journal.",
+      "id": "Manajemen investasi - master instrumen dan transaksi beli/tebus dengan jurnal transit otomatis."
+    },
+    {
+      "_key": "a2b3c4d5e6f2",
+      "_type": "feature",
+      "en": "Period closing with automatic closing journal entries for clean accounting period management.",
+      "id": "Penutupan periode akuntansi dengan jurnal closing otomatis untuk manajemen periode yang bersih."
+    },
+    {
+      "_key": "b3c4d5e6f1a3",
+      "_type": "feature",
+      "en": "Activity audit log and document number configuration per transaction type.",
+      "id": "Log audit aktivitas pengguna dan konfigurasi format nomor dokumen per jenis transaksi."
+    },
+    {
+      "_key": "c4d5e6f1a2b4",
+      "_type": "feature",
+      "en": "Real-time dashboard with stat cards, recent transactions, and cash summary via WebSocket.",
+      "id": "Dashboard real-time dengan ringkasan statistik, transaksi terkini, dan ringkasan kas via WebSocket."
+    },
+    {
+      "_key": "d5e6f1a2b3c5",
+      "_type": "feature",
+      "en": "Built-in MCP server - connect store data to AI clients (Claude, Cursor, etc.) and query sales, cashflow, financial reports, and AR/AP via natural language.",
+      "id": "MCP server built-in - hubungkan data toko ke AI client (Claude, Cursor, dll.) dan query data penjualan, cashflow, laporan keuangan, dan piutang/utang lewat bahasa alami."
     }
   ],
   "fullDesc": [
     {
       "_key": "en",
       "_type": "internationalizedArrayTextValue",
-      "value": "A multitenant retail management platform built as a mini ERP for small to mid-size retail businesses. The system covers the full operational cycle — from product and supplier management, purchase orders, stock receiving, manufacturing, and sales with cashier shifts, all the way to automatic accounting journals, financial reports, cashflow tracking, and a real-time dashboard. Each store runs in an isolated tenant context, making it suitable for businesses with multiple branches or units."
+      "value": "A commercial SaaS product built as a multitenant retail management platform and mini ERP for small to mid-size retail businesses. Subscription-based, with each store running in an isolated tenant context. The system covers the full operational cycle - from product and supplier management, purchase orders, stock receiving, manufacturing, and sales with cashier shifts, all the way to automatic accounting journals, financial reports, cashflow tracking, and a real-time dashboard. Additional modules include fixed assets, investment management, period closing, equity reporting, stock reports, multi-tab sales analytics, and a built-in MCP server for AI-powered data queries."
     },
     {
       "_key": "id",
       "_type": "internationalizedArrayTextValue",
-      "value": "Platform manajemen retail multitenant yang dirancang sebagai mini ERP untuk bisnis retail kecil hingga menengah. Sistem ini mencakup siklus operasional penuh — dari pengelolaan produk dan supplier, purchase order, penerimaan barang, produksi, dan penjualan dengan shift kasir, hingga jurnal akuntansi otomatis, laporan keuangan, pemantauan cashflow, dan dashboard real-time. Setiap toko berjalan dalam konteks tenant yang terisolasi, sehingga cocok untuk bisnis dengan banyak cabang atau unit."
+      "value": "Produk SaaS komersial berupa platform manajemen retail multitenant yang dirancang sebagai mini ERP untuk bisnis retail kecil hingga menengah. Berbasis langganan (subscription), dengan setiap toko berjalan dalam konteks tenant yang terisolasi. Sistem ini mencakup siklus operasional penuh - dari pengelolaan produk dan supplier, purchase order, penerimaan barang, produksi, dan penjualan dengan shift kasir, hingga jurnal akuntansi otomatis, laporan keuangan, pemantauan cashflow, dan dashboard real-time. Modul tambahan mencakup aset tetap, manajemen investasi, penutupan periode, laporan perubahan modal, laporan stok, analitik penjualan multi-tab, dan MCP server built-in untuk query data via AI."
     }
   ],
   "id": "3f7a1c2e-8b4d-4e9f-a6c5-2d1e0f3b7a9c",
@@ -80,12 +134,12 @@
     {
       "_key": "en",
       "_type": "internationalizedArrayTextValue",
-      "value": "A multitenant retail management platform built as a mini ERP — covering purchases, stock, manufacturing, sales, accounting journals, and financial reports."
+      "value": "A commercial SaaS product — multitenant retail management platform and mini ERP with subscription model, covering purchases, stock, manufacturing, sales, accounting journals, and financial reports."
     },
     {
       "_key": "id",
       "_type": "internationalizedArrayTextValue",
-      "value": "Platform manajemen retail multitenant sebagai mini ERP — mencakup pembelian, stok, produksi, penjualan, jurnal akuntansi, dan laporan keuangan."
+      "value": "Produk SaaS komersial - platform manajemen retail multitenant berbasis langganan sebagai mini ERP, mencakup pembelian, stok, produksi, penjualan, jurnal akuntansi, dan laporan keuangan."
     }
   ],
   "sourceCode": null,
@@ -106,7 +160,12 @@
     "Recharts",
     "Google OAuth",
     "Resend",
-    "Vercel"
+    "Vercel",
+    "Zustand",
+    "Socket.IO",
+    "Cloudflare R2",
+    "Passport.js",
+    "Model Context Protocol"
   ],
   "title": "Retailku"
 }
