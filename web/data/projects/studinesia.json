@@ -12,25 +12,25 @@
     {
       "_key": "dbe4287cea53",
       "_type": "feature",
-      "en": "Newsletter Feature\n",
+      "en": "Newsletter Feature",
       "id": "Fitur Langganan"
     },
     {
       "_key": "c4e415e6f0ad",
       "_type": "feature",
-      "en": "Write with AI\n",
+      "en": "Write with AI",
       "id": "Menulis dengan AI"
     },
     {
       "_key": "a8fbfaa5def6",
       "_type": "feature",
-      "en": "Scheduled Article\n",
+      "en": "Scheduled Article",
       "id": "Artikel Terjadwal"
     },
     {
       "_key": "b9eba471effc",
       "_type": "feature",
-      "en": "Automatically post on social media\n",
+      "en": "Automatically post on social media",
       "id": "Otomatis posting ke sosial media"
     },
     {
@@ -59,7 +59,6 @@
     "label": "Studinesia Image"
   },
   "liveUrl": null,
-  "mainDemo": null,
   "shortDesc": [
     {
       "_key": "en",

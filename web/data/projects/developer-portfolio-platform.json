@@ -68,7 +68,6 @@
     "label": "Developer Portfolio Platform"
   },
   "liveUrl": "https://maqilm-portofolio.vercel.app/",
-  "mainDemo": null,
   "shortDesc": [
     {
       "_key": "en",
@@ -83,7 +82,7 @@
   ],
   "sourceCode": "https://github.com/aqil2514/portofolio",
   "status": "live",
-  "subDemos": null,
+  "subDemos": [],
   "techStack": [
     "Next.js",
     "TypeScript",

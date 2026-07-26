@@ -10,49 +10,49 @@
       "_key": "738cf9f21718",
       "_type": "feature",
       "en": "Connect crypto wallet seamlessly using Wagmi and MetaMask integration.",
-      "id": "Koneksi dompet kripto secara mulus melalui integrasi Wagmi dan MetaMask.\n"
+      "id": "Koneksi dompet kripto secara mulus melalui integrasi Wagmi dan MetaMask."
     },
     {
       "_key": "80e8b084f774",
       "_type": "feature",
-      "en": "Real-time token purchase and tracking for CRM and CMC presales.\n",
-      "id": "Pembelian token CRM dan CMC secara real-time dengan pelacakan transaksi langsung.\n"
+      "en": "Real-time token purchase and tracking for CRM and CMC presales.",
+      "id": "Pembelian token CRM dan CMC secara real-time dengan pelacakan transaksi langsung."
     },
     {
       "_key": "4136ea99c79e",
       "_type": "feature",
-      "en": "Automated referral system with instant cashback and multi-level tracking.\n",
-      "id": "Sistem referral otomatis dengan cashback instan dan pelacakan multi-level.\n"
+      "en": "Automated referral system with instant cashback and multi-level tracking.",
+      "id": "Sistem referral otomatis dengan cashback instan dan pelacakan multi-level."
     },
     {
       "_key": "73d6c9cfd896",
       "_type": "feature",
-      "en": "Secure payment gateway integration with server-side verification and webhook support.\n",
-      "id": "Integrasi gateway pembayaran aman dengan verifikasi server-side dan dukungan webhook.\n"
+      "en": "Secure payment gateway integration with server-side verification and webhook support.",
+      "id": "Integrasi gateway pembayaran aman dengan verifikasi server-side dan dukungan webhook."
     },
     {
       "_key": "e84e01d9154a",
       "_type": "feature",
-      "en": "Admin dashboard to monitor transactions, withdrawal requests, and user activity.\n",
-      "id": "Dashboard admin untuk memantau transaksi, permintaan penarikan, dan aktivitas pengguna.\n"
+      "en": "Admin dashboard to monitor transactions, withdrawal requests, and user activity.",
+      "id": "Dashboard admin untuk memantau transaksi, permintaan penarikan, dan aktivitas pengguna."
     },
     {
       "_key": "57ceacf6f635",
       "_type": "feature",
-      "en": "Supabase-powered backend for real-time data synchronization and scalable storage.\n",
-      "id": "Backend berbasis Supabase untuk sinkronisasi data real-time dan penyimpanan yang skalabel.\n"
+      "en": "Supabase-powered backend for real-time data synchronization and scalable storage.",
+      "id": "Backend berbasis Supabase untuk sinkronisasi data real-time dan penyimpanan yang skalabel."
     },
     {
       "_key": "207753f2833d",
       "_type": "feature",
-      "en": "Built with Next.js and NestJS for optimized performance and maintainable architecture.\n",
-      "id": "Dibangun dengan Next.js dan NestJS untuk performa optimal dan arsitektur yang mudah dirawat.\n"
+      "en": "Built with Next.js and NestJS for optimized performance and maintainable architecture.",
+      "id": "Dibangun dengan Next.js dan NestJS untuk performa optimal dan arsitektur yang mudah dirawat."
     },
     {
       "_key": "a8866dd421f5",
       "_type": "feature",
-      "en": "Deployed on Vercel with continuous integration for smooth production delivery.\n",
-      "id": "Dideploy di Vercel dengan integrasi berkelanjutan untuk proses rilis yang lancar.\n"
+      "en": "Deployed on Vercel with continuous integration for smooth production delivery.",
+      "id": "Dideploy di Vercel dengan integrasi berkelanjutan untuk proses rilis yang lancar."
     }
   ],
   "fullDesc": [
@@ -64,7 +64,7 @@
     {
       "_key": "id",
       "_type": "internationalizedArrayTextValue",
-      "value": "Platform Web3 interaktif untuk pembelian dan manajemen token CRM serta CMC, lengkap dengan sistem referral, dashboard admin, dan gateway pembayaran otomatis.\n"
+      "value": "Platform Web3 interaktif untuk pembelian dan manajemen token CRM serta CMC, lengkap dengan sistem referral, dashboard admin, dan gateway pembayaran otomatis."
     }
   ],
   "id": "a344ea49-5d27-431d-92a8-0ecf3737f233",
@@ -74,7 +74,6 @@
     "label": "Cromachain Presale"
   },
   "liveUrl": null,
-  "mainDemo": null,
   "shortDesc": [
     {
       "_key": "en",

@@ -9,49 +9,49 @@
     {
       "_key": "355efc5e1383",
       "_type": "feature",
-      "en": "Dynamic content management system powered by Supabase, allowing admin to update homepage, hero sliders, and articles in real time.\n",
+      "en": "Dynamic content management system powered by Supabase, allowing admin to update homepage, hero sliders, and articles in real time.",
       "id": "Sistem manajemen konten dinamis berbasis Supabase yang memungkinkan admin memperbarui beranda, slider hero, dan artikel secara real-time."
     },
     {
       "_key": "0272684d2e85",
       "_type": "feature",
-      "en": "Integrated authentication using Google OAuth for secure and convenient access to the CMS dashboard.\n",
+      "en": "Integrated authentication using Google OAuth for secure and convenient access to the CMS dashboard.",
       "id": "Autentikasi terintegrasi menggunakan Google OAuth untuk akses aman dan praktis ke dashboard CMS."
     },
     {
       "_key": "fcc9ccba087e",
       "_type": "feature",
-      "en": "Seamless multilingual support (English, Bahasa Indonesia, Mandarin) with automatic language detection and manual switcher.\n",
+      "en": "Seamless multilingual support (English, Bahasa Indonesia, Mandarin) with automatic language detection and manual switcher.",
       "id": "Dukungan tiga bahasa (Inggris, Indonesia, Chinese) dengan deteksi otomatis dan pemilih bahasa manual."
     },
     {
       "_key": "a6bca25df08e",
       "_type": "feature",
-      "en": "Responsive, visually rich design optimized for mobile, tablet, and desktop using Tailwind CSS.\n",
+      "en": "Responsive, visually rich design optimized for mobile, tablet, and desktop using Tailwind CSS.",
       "id": "Desain responsif dan menarik yang dioptimalkan untuk perangkat mobile, tablet, dan desktop menggunakan Tailwind CSS."
     },
     {
       "_key": "ff0321e99b93",
       "_type": "feature",
-      "en": "Image hosting and optimization via Cloudinary integration for fast and high-quality media delivery.\n",
+      "en": "Image hosting and optimization via Cloudinary integration for fast and high-quality media delivery.",
       "id": "Hosting dan optimasi gambar melalui integrasi Cloudinary untuk kecepatan tinggi dan kualitas media terbaik."
     },
     {
       "_key": "09239751b652",
       "_type": "feature",
-      "en": "Admin dashboard with live preview, content versioning, and image upload capabilities.\n",
+      "en": "Admin dashboard with live preview, content versioning, and image upload capabilities.",
       "id": "Dashboard admin dengan fitur pratinjau langsung, versi konten, dan kemampuan unggah gambar."
     },
     {
       "_key": "3d0cf18fa3b1",
       "_type": "feature",
-      "en": "Modern frontend architecture built with Next.js 15 and TypeScript for scalability and performance.\n",
-      "id": "Arsitektur frontend modern menggunakan Next.js 15 dan TypeScript untuk skalabilitas dan performa tinggi.\n"
+      "en": "Modern frontend architecture built with Next.js 15 and TypeScript for scalability and performance.",
+      "id": "Arsitektur frontend modern menggunakan Next.js 15 dan TypeScript untuk skalabilitas dan performa tinggi."
     },
     {
       "_key": "5b4807206472",
       "_type": "feature",
-      "en": "Deployed on Vercel with continuous integration and optimized SEO metadata for better global reach.\n",
+      "en": "Deployed on Vercel with continuous integration and optimized SEO metadata for better global reach.",
       "id": "Dideploy di Vercel dengan integrasi berkelanjutan serta metadata SEO yang dioptimalkan untuk jangkauan global."
     }
   ],
@@ -74,7 +74,6 @@
     "label": "Dragon 8 Travel"
   },
   "liveUrl": "https://dragon8travel.com/",
-  "mainDemo": null,
   "shortDesc": [
     {
       "_key": "en",

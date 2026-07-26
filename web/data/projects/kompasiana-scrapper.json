@@ -46,10 +46,9 @@
   "image": {
     "imageAlt": "Kompasiana Scrapper Image",
     "imageSrc": "/images/projects/kompasiana-scrapper.png",
-    "label": null
+    "label": "Kompasiana Scrapper"
   },
   "liveUrl": null,
-  "mainDemo": null,
   "shortDesc": [
     {
       "_key": "en",
