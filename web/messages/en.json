@@ -16,7 +16,16 @@
     "viewCertificate": "View Certificate →",
     "whoAmIseeCV": "View CV",
     "whoAmIDownloadCV": "Download CV",
-    "cvLanguageNote": "The CV language automatically matches the current website language."
+    "cvLanguageNote": "The CV language automatically matches the current website language.",
+    "mcpServer": {
+      "title": "MCP Server",
+      "description": "This portfolio exposes a public Model Context Protocol (MCP) server, so AI tools like Claude or Cursor can query my projects, experience, and skills directly.",
+      "endpointLabel": "Endpoint",
+      "configLabel": "Client config",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Read-only, no authentication required. Rate-limited to prevent abuse."
+    }
   },
   "ProjectsPage": {
     "title": "My Projects",

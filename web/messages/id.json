@@ -16,7 +16,16 @@
     "viewCertificate": "Lihat Sertifikat →",
     "whoAmIseeCV": "Lihat CV",
     "whoAmIDownloadCV": "Unduh CV",
-    "cvLanguageNote": "Bahasa dalam CV akan menyesuaikan dengan bahasa situs yang sedang Anda gunakan."
+    "cvLanguageNote": "Bahasa dalam CV akan menyesuaikan dengan bahasa situs yang sedang Anda gunakan.",
+    "mcpServer": {
+      "title": "MCP Server",
+      "description": "Portofolio ini menyediakan MCP (Model Context Protocol) server publik, sehingga AI tools seperti Claude atau Cursor bisa langsung mengambil data project, pengalaman, dan skill saya.",
+      "endpointLabel": "Endpoint",
+      "configLabel": "Konfigurasi client",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "note": "Read-only, tidak butuh autentikasi. Dibatasi rate limit untuk mencegah penyalahgunaan."
+    }
   },
   "ProjectsPage": {
     "title": "Proyek Saya",

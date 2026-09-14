@@ -6,6 +6,7 @@ import { RoadmapTimeline } from "@/featured/AboutMe/RoadmapTimeline";
 import { WhoAmI } from "@/featured/AboutMe/WhoAmI";
 import { CoreSkills } from "@/featured/AboutMe/CoreSkill";
 import { ProductPhilosophy } from "@/featured/AboutMe/ProductPhilosophy";
+import { McpServer } from "@/featured/AboutMe/McpServer";
 import { PageAboutTypes } from "@/@types/types";
 import { AboutMeProvider } from "@/featured/AboutMe/provider";
 import { getInternationalizationValue } from "@/utils/getInternationalizationValue";
@@ -35,6 +36,7 @@ export default async function AboutMeTemplate({ data, locale }: Props) {
         </BallAnimation>
         <WhoAmI />
         <CoreSkills data={data} />
+        <McpServer />
         <ProductPhilosophy data={data} locale={locale} />
         <RoadmapTimeline />
       </MainContainer>

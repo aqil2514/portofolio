@@ -5,6 +5,7 @@ import { CTAButton } from "@/featured/Home/CTAButton";
 import { SkillsSection } from "@/featured/Home/SkillsSection";
 import { FeaturedProjects } from "@/featured/Home/FeaturedProjects/FeaturedProjects";
 import { ShortAbout } from "@/featured/Home/ShortAbout";
+import { McpServer } from "@/featured/AboutMe/McpServer";
 
 export default function HomeTemplate() {
   return (
@@ -15,6 +16,7 @@ export default function HomeTemplate() {
       <CTAButton />
       <SkillsSection />
       <FeaturedProjects />
+      <McpServer />
       <ShortAbout />
     </MainContainer>
   );
