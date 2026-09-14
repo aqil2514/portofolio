@@ -100,8 +100,8 @@
     {
       "_key": "c4d5e6f1a2b4",
       "_type": "feature",
-      "en": "Real-time dashboard with stat cards, recent transactions, and cash summary via WebSocket.",
-      "id": "Dashboard real-time dengan ringkasan statistik, transaksi terkini, dan ringkasan kas via WebSocket."
+      "en": "Dashboard with stat cards, recent transactions, sales trend, and cash summary.",
+      "id": "Dashboard dengan ringkasan statistik, transaksi terkini, tren penjualan, dan ringkasan kas."
     },
     {
       "_key": "d5e6f1a2b3c5",
@@ -114,12 +114,12 @@
     {
       "_key": "en",
       "_type": "internationalizedArrayTextValue",
-      "value": "A commercial SaaS product built as a multitenant retail management platform and mini ERP for small to mid-size retail businesses. Subscription-based, with each store running in an isolated tenant context. The system covers the full operational cycle - from product and supplier management, purchase orders, stock receiving, manufacturing, and sales with cashier shifts, all the way to automatic accounting journals, financial reports, cashflow tracking, and a real-time dashboard. Additional modules include fixed assets, investment management, period closing, equity reporting, stock reports, multi-tab sales analytics, and a built-in MCP server for AI-powered data queries."
+      "value": "A commercial SaaS product built as a multitenant retail management platform and mini ERP for small to mid-size retail businesses. Subscription-based, with each store running in an isolated tenant context. The system covers the full operational cycle - from product and supplier management, purchase orders, stock receiving, manufacturing, and sales with cashier shifts, all the way to automatic accounting journals, financial reports, cashflow tracking, and an operational dashboard. Additional modules include fixed assets, investment management, period closing, equity reporting, stock reports, multi-tab sales analytics, and a built-in MCP server for AI-powered data queries."
     },
     {
       "_key": "id",
       "_type": "internationalizedArrayTextValue",
-      "value": "Produk SaaS komersial berupa platform manajemen retail multitenant yang dirancang sebagai mini ERP untuk bisnis retail kecil hingga menengah. Berbasis langganan (subscription), dengan setiap toko berjalan dalam konteks tenant yang terisolasi. Sistem ini mencakup siklus operasional penuh - dari pengelolaan produk dan supplier, purchase order, penerimaan barang, produksi, dan penjualan dengan shift kasir, hingga jurnal akuntansi otomatis, laporan keuangan, pemantauan cashflow, dan dashboard real-time. Modul tambahan mencakup aset tetap, manajemen investasi, penutupan periode, laporan perubahan modal, laporan stok, analitik penjualan multi-tab, dan MCP server built-in untuk query data via AI."
+      "value": "Produk SaaS komersial berupa platform manajemen retail multitenant yang dirancang sebagai mini ERP untuk bisnis retail kecil hingga menengah. Berbasis langganan (subscription), dengan setiap toko berjalan dalam konteks tenant yang terisolasi. Sistem ini mencakup siklus operasional penuh - dari pengelolaan produk dan supplier, purchase order, penerimaan barang, produksi, dan penjualan dengan shift kasir, hingga jurnal akuntansi otomatis, laporan keuangan, pemantauan cashflow, dan dashboard operasional. Modul tambahan mencakup aset tetap, manajemen investasi, penutupan periode, laporan perubahan modal, laporan stok, analitik penjualan multi-tab, dan MCP server built-in untuk query data via AI."
     }
   ],
   "id": "3f7a1c2e-8b4d-4e9f-a6c5-2d1e0f3b7a9c",
