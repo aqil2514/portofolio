@@ -9,6 +9,7 @@ import internalOperatingSystem from "../../data/projects/internal-operating-syst
 import studinesia from "../../data/projects/studinesia.json";
 import cromachainPresale from "../../data/projects/cromachain-presale.json";
 import retailku from "../../data/projects/retailku.json";
+import financialApp from "../../data/projects/financial-app.json";
 
 const projectsData = [
   dragon8Travel,
@@ -21,6 +22,7 @@ const projectsData = [
   studinesia,
   cromachainPresale,
   retailku,
+  financialApp,
 ];
 
 export function getProjectsData(): ProjectCard[] {

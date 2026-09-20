@@ -1,0 +1,103 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "51d47a7d5e06",
+      "_type": "feature",
+      "en": "Offline-first architecture — all core features (transactions, reports, debt tracking, attachments) work fully without internet, backed by local SQLite.",
+      "id": "Arsitektur offline-first - seluruh fitur inti (transaksi, laporan, piutang/utang, lampiran) berjalan penuh tanpa internet, didukung SQLite lokal."
+    },
+    {
+      "_key": "a9e37c7090ca",
+      "_type": "feature",
+      "en": "Debt & receivable tracking modeled as real account transfers (cash ↔ debt account), keeping balances consistent instead of relying on separate, manually-reconciled records.",
+      "id": "Pencatatan utang-piutang dimodelkan sebagai transfer antar akun (kas <-> akun utang-piutang), menjaga saldo tetap konsisten alih-alih catatan terpisah yang direkonsiliasi manual."
+    },
+    {
+      "_key": "943766532000",
+      "_type": "feature",
+      "en": "Transaction attachments — capture or upload proof of transaction, with thumbnail generation and configurable local storage folder.",
+      "id": "Lampiran transaksi - ambil atau unggah bukti transaksi, dengan pembuatan thumbnail otomatis dan folder penyimpanan lokal yang bisa dikonfigurasi."
+    },
+    {
+      "_key": "56ea1df742f5",
+      "_type": "feature",
+      "en": "Bulk import from Money Manager exports, with category deduplication and detail/photo recovery.",
+      "id": "Impor massal dari data ekspor Money Manager, dengan deduplikasi kategori dan pemulihan detail/foto transaksi."
+    },
+    {
+      "_key": "c3a5f91a9f2f",
+      "_type": "feature",
+      "en": "Reports & visualizations: monthly income/expense summary, category breakdown, and account balance trends.",
+      "id": "Laporan & visualisasi: ringkasan pemasukan/pengeluaran bulanan, breakdown per kategori, dan tren saldo akun."
+    },
+    {
+      "_key": "21763913c637",
+      "_type": "feature",
+      "en": "Native Rust layer (Tauri) for local database access, file import, and attachment handling — not a plain webview wrapper.",
+      "id": "Lapisan native Rust (Tauri) untuk akses database lokal, impor file, dan penanganan lampiran - bukan sekadar webview wrapper biasa."
+    },
+    {
+      "_key": "a7c38f57adb1",
+      "_type": "feature",
+      "en": "Planned MCP client integration with Retailku (a separate SaaS product of mine) — pulling daily transaction aggregates automatically via Retailku's own MCP server, without needing any new API built on the Retailku side.",
+      "id": "Rencana integrasi sebagai MCP client dengan Retailku (produk SaaS terpisah milik sendiri) - menarik agregasi transaksi harian secara otomatis lewat MCP server Retailku, tanpa perlu API baru di sisi Retailku."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A personal finance tracker built as a desktop application with Tauri and Next.js, designed offline-first: all data lives in a local SQLite database, and every core feature works fully without an internet connection. It replaces years of manual bookkeeping in Excel and a third-party mobile app, with 7,000+ historical transactions migrated over via a custom import pipeline.\n\nBeyond standard income/expense tracking, debts and receivables are modeled as real transfers between a cash account and a debt account, so balances stay consistent by construction rather than through manual reconciliation. Transactions can carry attachments (captured or uploaded proof) with automatic thumbnails and a user-configurable storage folder, backed by a native Rust layer rather than a plain webview wrapper.\n\nThe project is under active development, with a clearly documented roadmap: a personal MCP server so Claude can answer questions about personal finances directly, multi-device sync (desktop + mobile) with conflict resolution, and — most notably — a planned MCP client integration with Retailku, my own multi-tenant retail SaaS. Instead of building a new API between the two systems, financial-app would consume Retailku's existing MCP tools directly to pull daily business-transaction aggregates, eliminating the double bookkeeping between business and personal finances that motivated this project in the first place."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Aplikasi pencatatan keuangan pribadi berupa desktop app dengan Tauri dan Next.js, dirancang offline-first: seluruh data tersimpan di SQLite lokal, dan semua fitur inti berjalan penuh tanpa koneksi internet. Menggantikan kebiasaan pencatatan manual bertahun-tahun di Excel dan aplikasi mobile eksternal, dengan 7.000+ transaksi historis yang dimigrasikan lewat pipeline impor kustom.\n\nSelain pencatatan pemasukan/pengeluaran standar, utang-piutang dimodelkan sebagai transfer nyata antara akun kas dan akun utang-piutang, sehingga saldo tetap konsisten secara desain, bukan lewat rekonsiliasi manual. Transaksi bisa dilengkapi lampiran (bukti yang diambil atau diunggah) dengan thumbnail otomatis dan folder penyimpanan yang bisa dikonfigurasi pengguna, didukung lapisan Rust native, bukan sekadar webview wrapper biasa.\n\nProyek ini masih dikembangkan aktif, dengan roadmap yang terdokumentasi jelas: MCP server pribadi agar Claude bisa menjawab pertanyaan seputar keuangan pribadi secara langsung, sinkronisasi multi-device (desktop + mobile) dengan resolusi konflik, dan yang paling menonjol - rencana integrasi sebagai MCP client dengan Retailku, produk SaaS retail multitenant milik sendiri. Alih-alih membangun API baru antar dua sistem, financial-app akan langsung memakai tools MCP yang sudah ada di Retailku untuk menarik agregasi transaksi bisnis harian, menghilangkan pencatatan ganda antara keuangan bisnis dan pribadi yang menjadi motivasi awal proyek ini."
+    }
+  ],
+  "id": "cb376583-8ef7-43cb-ac4d-b7973c1ce6df",
+  "image": {
+    "imageAlt": "Financial App Image",
+    "imageSrc": "/images/projects/financial-app.png",
+    "label": "Financial App"
+  },
+  "liveUrl": null,
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "An offline-first personal finance desktop app (Tauri + Next.js + SQLite), with debt tracking modeled as real account transfers and a roadmap to integrate with Retailku via MCP."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Desktop app keuangan pribadi offline-first (Tauri + Next.js + SQLite), dengan pencatatan utang-piutang sebagai transfer akun nyata dan roadmap integrasi ke Retailku lewat MCP."
+    }
+  ],
+  "sourceCode": "https://github.com/aqil2514/financial-tracker-app",
+  "status": "on-progress",
+  "subDemos": [],
+  "techStack": [
+    "Tauri",
+    "Rust",
+    "Next.js",
+    "TypeScript",
+    "SQLite",
+    "ShadCN",
+    "Tailwind CSS",
+    "React Hook Form",
+    "ZOD",
+    "TanStack Query",
+    "Recharts",
+    "Tiptap",
+    "Vitest",
+    "Model Context Protocol"
+  ],
+  "title": "Financial App"
+}
