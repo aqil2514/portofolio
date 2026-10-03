@@ -42,9 +42,15 @@ export function ProjectDialog({ data, setData }: Props) {
               <h3 className="text-white/90 text-lg font-semibold tracking-wide">
                 {t("ProjectsPage.projectDescription")}
               </h3>
-              <p className="text-white/85 mt-4 text-sm leading-relaxed">
-                {getInternationalizationValue(data.fullDesc, locale)}
-              </p>
+              <div className="mt-4 space-y-3">
+                {getInternationalizationValue(data.fullDesc, locale)
+                  .split("\n\n")
+                  .map((paragraph, index) => (
+                    <p key={index} className="text-white/85 text-sm leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+              </div>
             </div>
           )}
 
