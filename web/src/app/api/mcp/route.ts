@@ -10,6 +10,7 @@ import { getTechStack } from "@/data/getTechStack";
 import { InternationalizedArray } from "@/@types/types";
 
 export const runtime = "nodejs";
+export const maxDuration = 30;
 
 const ratelimit =
   process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
@@ -195,6 +196,10 @@ const handler = createMcpHandler((server) => {
     name: "aqil-portfolio",
     version: "1.0.0",
   },
+  // Semua tool di sini request-response murni, tidak ada server-push,
+  // jadi SSE subscription tidak dibutuhkan -- cegah koneksi menggantung
+  // sampai hit 300s timeout Vercel.
+  maxSubscriptions: 0,
 });
 
 async function withRateLimit(

@@ -18,6 +18,11 @@ import Script from "next/script";
 import { personSchema, websiteSchema } from "@/constant/schema";
 import { Analytics } from "@vercel/analytics/next"
 import { ChatFAB } from "@/components/chat/ChatFAB";
+import { routing } from "@/i18n/routing";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
