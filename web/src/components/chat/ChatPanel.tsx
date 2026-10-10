@@ -49,10 +49,11 @@ export function ChatPanel({ onClose }: ChatPanelProps) {
       });
 
       const data = await res.json();
-      setMessages((prev) => [
-        ...prev,
-        { role: "assistant", content: data.reply ?? "Sorry, something went wrong." },
-      ]);
+      // The route explains rate limits and busy models in `error` — show that
+      // rather than a generic failure.
+      const content =
+        data.reply || data.error || "Sorry, something went wrong.";
+      setMessages((prev) => [...prev, { role: "assistant", content }]);
     } catch {
       setMessages((prev) => [
         ...prev,

@@ -20,9 +20,9 @@ export function ProjectDialog({ data, setData }: Props) {
     <Dialog open={!!data} onOpenChange={(open) => !open && setData(null)}>
       <DialogContent
         className="
-          sm:max-w-6xl 
+          sm:max-w-4xl
           sm:w-[95%] w-[95%]
-          bg-white/10 backdrop-blur-xl
+          bg-[#0d1b2a]/95 backdrop-blur-xl
           border border-white/20
           text-white
           rounded-2xl
@@ -39,14 +39,14 @@ export function ProjectDialog({ data, setData }: Props) {
           {/* CONTENT */}
           {data?.fullDesc && (
             <div className="px-6 pb-6">
-              <h3 className="text-white/90 text-lg font-semibold tracking-wide">
+              <h3 className="text-white text-lg font-semibold tracking-wide">
                 {t("ProjectsPage.projectDescription")}
               </h3>
-              <div className="mt-4 space-y-3">
+              <div className="mt-4 space-y-4">
                 {getInternationalizationValue(data.fullDesc, locale)
                   .split("\n\n")
                   .map((paragraph, index) => (
-                    <p key={index} className="text-white/85 text-sm leading-relaxed">
+                    <p key={index} className="text-white/90 text-[15px] leading-7">
                       {paragraph}
                     </p>
                   ))}
@@ -59,8 +59,8 @@ export function ProjectDialog({ data, setData }: Props) {
 
           {/* Fitur */}
           {data?.features && (
-            <div className="px-6 pt-4 pb-8 space-y-3">
-              <h3 className="text-white/90 text-lg font-semibold tracking-wide">
+            <div className="px-6 pt-4 pb-8 space-y-4">
+              <h3 className="text-white text-lg font-semibold tracking-wide">
                 {t("General.features")}
               </h3>
 
@@ -69,12 +69,12 @@ export function ProjectDialog({ data, setData }: Props) {
                   <li
                     key={feature._key}
                     className="
-            flex items-center gap-3 
-            text-white/85 text-sm leading-relaxed
-          "
+                      flex items-start gap-3
+                      text-white/90 text-[15px] leading-7
+                    "
                   >
                     {/* Bullet icon */}
-                    <CheckCircle className="w-4 h-4 text-white/70 mt-0.5 shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-white/70 mt-1.5 shrink-0" />
 
                     {/* Feature text */}
                     <span>{feature[locale]}</span>

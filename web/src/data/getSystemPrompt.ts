@@ -49,6 +49,11 @@ function buildCertifications() {
     .join("\n");
 }
 
+/**
+ * Project list without the `features` bullets. Features make up roughly 70% of
+ * the prompt but are only relevant when a visitor asks about a specific
+ * project, so they are appended on demand instead — see `buildProjectDetail`.
+ */
 function buildProjects() {
   return getProjectsData()
     .map((p) => {
@@ -56,10 +61,31 @@ function buildProjects() {
       const src = p.sourceCode ? ` | Source: ${p.sourceCode}` : "";
       const stack = p.techStack?.slice(0, 5).join(", ");
       const desc = en(p.shortDesc as unknown as { _key: string; value: string }[]);
-      const features = p.features?.map((f) => `    • ${f.en.trim()}`).join("\n") ?? "";
-      return `- ${p.title} (${p.status})${live}${src}\n  Stack: ${stack}\n  Desc: ${desc}${features ? `\n  Features:\n${features}` : ""}`;
+      return `- ${p.title} (${p.status})${live}${src}\n  Stack: ${stack}\n  Desc: ${desc}`;
     })
     .join("\n");
+}
+
+/**
+ * Full detail (features + tech stack) for the projects a visitor actually asked
+ * about, appended to the base prompt by `/api/chat`.
+ */
+export function buildProjectDetail(titles: string[]): string {
+  if (titles.length === 0) return "";
+
+  const wanted = new Set(titles);
+  const blocks = getProjectsData()
+    .filter((p) => wanted.has(p.title))
+    .map((p) => {
+      const stack = p.techStack?.join(", ") ?? "";
+      const features =
+        p.features?.map((f) => `  • ${f.en.trim()}`).join("\n") ?? "";
+      return `### ${p.title}\nFull stack: ${stack}${features ? `\nFeatures:\n${features}` : ""}`;
+    });
+
+  if (blocks.length === 0) return "";
+
+  return `\n\n## Project Detail (relevant to this question)\n${blocks.join("\n\n")}`;
 }
 
 export function buildSystemPrompt(): string {
@@ -109,6 +135,21 @@ ${buildCertifications()}
 
 ## Projects
 ${buildProjects()}
+
+If a "Project Detail" section appears below, it holds the full feature list for the
+projects this visitor asked about — prefer it over the summary above. When it is
+absent, answer from the summary and offer to go deeper rather than inventing details.
+
+## Grounding rules (highest priority — these override everything else)
+- Use ONLY the facts written above. This profile is the complete record; anything absent from it is something you do not know.
+- NEVER name a technology, library, tool, feature, employer, date, or metric that does not appear verbatim above. Do not infer what a project "probably" uses from its domain — a Web3 project is not evidence of Ethers.js, Viem, WalletConnect, or smart-contract work unless those words are listed.
+- Do not expand an item into a category. If the stack lists Wagmi, say Wagmi — do not present it as general "Web3 stack mastery" and fill the rest in yourself.
+- Never invent section headings that imply broader expertise than the data shows (e.g. "Technologies mastered", "Core competencies").
+- If a visitor asks about something not covered, say plainly that it is not listed in the portfolio and offer to connect them with Aqil. An honest "not listed" is always better than a plausible guess.
+- Do not state skill levels ("expert", "advanced", "solid experience") unless the profile says so.
+- Naming a tool is not a licence to describe what it was used for. Listing Wagmi does not let you add "read/write contract", "wallet connection", or any other capability the profile does not spell out.
+- Say nothing about Aqil as a person beyond the profile — not his response time, availability hours, working style, personality, or preferred channel. "He usually replies quickly on WhatsApp" is an invented claim; just give the contact details as listed.
+- Listing what is NOT in the profile is useful, but keep it to what the visitor asked. Do not pad the answer with named alternatives that were never mentioned (e.g. answering a Solidity question by also ruling out Foundry, Hardhat, and Truffle) — a reader can mistake that list for something Aqil was evaluated on.
 
 ## Guidelines
 - Answer in the same language the visitor uses (Indonesian or English)
