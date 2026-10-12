@@ -143,7 +143,72 @@
   ],
   "sourceCode": null,
   "status": "live",
-  "subDemos": [],
+  "subDemos": [
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Sales transaction page — adding a sale triggers over a dozen automatic side effects behind the scenes. Checking the sold product shows a stock history decrease, and the general journal reflects it: debit Cash plus Cost of Goods Sold, credit Inventory and Retail Sales. A second case with an underpaid amount shows the outstanding balance automatically treated as a trade receivable — the journal adds a debit to Trade Receivable while the credit side stays the same, and the balance sheet reflects the receivable."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Halaman transaksi penjualan — menambah transaksi penjualan memicu belasan side effect otomatis di belakang layar. Mengecek produk yang terjual menunjukkan riwayat stok berkurang, dan jurnal umum mencatatnya: debit Kas plus HPP Penjualan, kredit Persediaan Barang dan Penjualan Retail. Pada kasus kedua dengan pembayaran kurang, sisa tagihan otomatis dianggap sebagai piutang dagang — jurnal menambah debit Piutang Dagang sementara sisi kredit tetap, dan neraca ikut menampilkan piutang tersebut."
+        }
+      ],
+      "title": "Sales Transaction",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1791799495/portofolio/Segmen_1_-_Transaksi_Penjualan_dheeaz.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Revising a sales transaction — clicking Revise loads all previously entered data as the starting point. Adding an item and saving (payment unchanged) succeeds with a note marking it as a revision of the earlier transaction: the old record is automatically cancelled and a new one created in its place. Stock briefly rises back with a revision note before dropping again to match the new data, and in the general journal a reversal entry is generated automatically alongside a new journal entry reflecting the latest figures."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Revisi transaksi penjualan — klik Revisi memuat seluruh data yang sudah diinput sebagai titik awal. Menambah item lalu menyimpan (pembayaran tidak berubah) berhasil dengan keterangan bahwa ini revisi dari transaksi sebelumnya: data lama otomatis dibatalkan dan data baru dibuat ulang. Stok sempat naik kembali dengan catatan revisi penjualan sebelum berkurang lagi sesuai data baru, dan di jurnal umum jurnal pembalik dibuat otomatis berdampingan dengan jurnal baru yang mengikuti data terbaru."
+        }
+      ],
+      "title": "Sales Revision",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1791799453/portofolio/Segmen_2_-_Revisi_Penjualan_jxlvyz.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Cash Opname module — a physical cash balance correction feature. After picking the account to count, the system balance is shown automatically, and cash is counted by denomination. A dedicated field for third-party funds handles a real-world scenario: other people's or personal money getting mixed with business cash even after physical separation — these funds are automatically subtracted from the total so only the store's net cash remains. Posting the opname automatically generates a general journal entry whenever a discrepancy is found."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Modul Cash Opname — fitur koreksi saldo kas fisik. Setelah memilih akun yang ingin di-opname, saldo sistem otomatis muncul, lalu uang dihitung per denominasi. Ada field khusus untuk dana pihak ketiga yang menangani skenario nyata: uang orang lain atau uang pribadi tercampur dengan kas bisnis meski sudah dipisah secara fisik - dana ini otomatis mengurangi saldo total sehingga yang tersisa hanya kas bersih milik warung. Memposting opname otomatis membuat jurnal umum ketika ditemukan selisih."
+        }
+      ],
+      "title": "Cash Opname",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1791799456/portofolio/Segmen_3_-_Cash_Opname_ucb07e.mp4"
+    },
+    {
+      "description": [
+        {
+          "_key": "en",
+          "_type": "internationalizedArrayTextValue",
+          "value": "Native MCP server (around 102 tools), originally built to meet personal needs. A single prompt asking for a sales report, income statement, and asset ROI is processed by the AI end-to-end: it returns September 2026 sales, the profit and loss statement, and ranks fixed assets by ROI (Glass Display Case highest at 46.97%, alongside others like the sun pole and showcase fridge), plus a recommendation to monitor the freezer for its low margin. Asking it to turn the results into a spreadsheet is handled in the same conversation."
+        },
+        {
+          "_key": "id",
+          "_type": "internationalizedArrayTextValue",
+          "value": "MCP server native (sekitar 102 tools), yang awalnya dibuat untuk memenuhi kebutuhan pribadi. Satu prompt yang meminta laporan penjualan, laba rugi, dan ROI aset diproses AI dari awal sampai akhir: hasilnya berupa penjualan September 2026, laporan laba rugi, dan ranking aset tetap berdasarkan ROI (Etalase Kaca tertinggi di 46,97%, disusul yang lain seperti tiang matahari dan kulkas showcase), plus saran untuk memantau freezer karena marginnya paling rendah. Permintaan lanjutan untuk membuat spreadsheet dari hasil tersebut juga ditangani dalam percakapan yang sama."
+        }
+      ],
+      "title": "MCP Server",
+      "videoUrl": "https://res.cloudinary.com/dwcr3rpgi/video/upload/v1791799405/portofolio/Segmen_4_-_MCP_Servers_ee8aef.mp4"
+    }
+  ],
   "techStack": [
     "Next.js",
     "NestJS",

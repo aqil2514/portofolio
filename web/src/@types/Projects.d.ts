@@ -70,6 +70,6 @@ export interface ProjectCard {
 
   features: ProjectFeatures[];
 
-  liveUrl: string;
-  sourceCode: string;
+  liveUrl: string | null;
+  sourceCode: string | null;
 }

@@ -25,14 +25,14 @@ const featuredItems: ProjectSummary[] = [
     techStack: ["Next.js", "NestJS", "PostgreSQL"],
   },
   {
-    title: "Flowtooly",
+    title: "Financial App",
     image: {
-      imageAlt: "Flowtooly",
-      label: "Flowtooly",
-      imageSrc: "/images/projects/flowtooly.png",
+      imageAlt: "Financial App Image",
+      label: "Financial App",
+      imageSrc: "/images/projects/financial-app.png",
     },
-    liveUrl: "https://flowtooly.com",
-    techStack: ["Next.js", "Tailwind CSS", "ShadCN"],
+    liveUrl: "https://github.com/aqil2514/financial-tracker-app/releases/latest",
+    techStack: ["Tauri", "Rust", "Next.js"],
   },
 ];
 

@@ -109,7 +109,7 @@
     "imageSrc": "/images/projects/financial-app.png",
     "label": "Financial App"
   },
-  "liveUrl": null,
+  "liveUrl": "https://github.com/aqil2514/financial-tracker-app/releases/latest",
   "shortDesc": [
     {
       "_key": "en",
@@ -123,7 +123,7 @@
     }
   ],
   "sourceCode": "https://github.com/aqil2514/financial-tracker-app",
-  "status": "on-progress",
+  "status": "live",
   "subDemos": [],
   "techStack": [
     "Tauri",
