@@ -1,0 +1,117 @@
+{
+  "categories": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "DevOps",
+    "Product Engineering"
+  ],
+  "features": [
+    {
+      "_key": "a1k3m7p2q9r4",
+      "_type": "feature",
+      "en": "Multi-tenant by subdomain — every invitation lives at its own <slug>.ajakkita.id. A proxy rewrites the subdomain to an internal tenant route, with reserved-subdomain and slug validation shared between the proxy and the onboarding code, and unknown slugs returning a real 404.",
+      "id": "Multi-tenant berbasis subdomain - tiap undangan hidup di <slug>.ajakkita.id sendiri. Proxy me-rewrite subdomain ke route tenant internal, dengan validasi subdomain terlarang dan slug yang dipakai bersama oleh proxy dan kode onboarding, serta slug tak dikenal menghasilkan 404 sungguhan."
+    },
+    {
+      "_key": "b4n8c2v6x1z5",
+      "_type": "feature",
+      "en": "Three invitation templates (elegant-minimalist, rose-classic, dark-gold) with a catalog and live preview, covering cover screen, countdown, couple profiles, love-story timeline, gallery, event details with map embed, RSVP, guestbook, digital envelope (bank accounts and QRIS), and background music.",
+      "id": "Tiga template undangan (elegant-minimalist, rose-classic, dark-gold) dengan katalog dan pratinjau langsung, mencakup cover, hitung mundur, profil mempelai, timeline cerita cinta, galeri, detail acara dengan peta tertanam, RSVP, buku tamu, amplop digital (rekening dan QRIS), dan musik latar."
+    },
+    {
+      "_key": "c7d1f5h9j3k8",
+      "_type": "feature",
+      "en": "Display studio for customers — an admin screen that edits the invitation section by section next to a live iframe preview of the real public page. It locates the field being edited by searching the preview's text, so templates need no extra markup.",
+      "id": "Studio Tampilan untuk pelanggan - layar admin yang mengedit undangan per section di samping pratinjau iframe dari halaman publik yang asli. Letak isian yang sedang diedit dicari lewat teks di pratinjau, jadi template tidak perlu penanda tambahan."
+    },
+    {
+      "_key": "d2e6g0i4l8o3",
+      "_type": "feature",
+      "en": "Per-template texts and typed settings — each template declares its own editable text fields and sections, stored under a per-template namespace in a JSON column. Switching template and switching back never loses what was typed, backed by a migration module with 27 unit tests.",
+      "id": "Teks dan pengaturan bertipe per template - tiap template mendeklarasikan field teks dan section-nya sendiri, disimpan di namespace per template pada satu kolom JSON. Ganti template lalu kembali tidak menghilangkan isian, didukung modul migrasi dengan 27 tes unit."
+    },
+    {
+      "_key": "e5f9h3j7m1p6",
+      "_type": "feature",
+      "en": "Two admin layers — a per-invitation admin (scrypt-hashed password, checked at the proxy, the page/layout, and every server action) for guests, RSVPs, wishes, CSV export, and content; and an owner admin on the main domain using Auth.js with Google login restricted to an email allowlist, to create, reset, deactivate, or delete invitations.",
+      "id": "Dua lapis admin - admin per undangan (password di-hash scrypt, diperiksa di proxy, page/layout, dan setiap server action) untuk tamu, RSVP, ucapan, ekspor CSV, dan konten; serta admin pemilik di domain utama dengan Auth.js dan login Google yang dibatasi allowlist email, untuk membuat, reset, menonaktifkan, atau menghapus undangan."
+    },
+    {
+      "_key": "f8g2i6k0n4q9",
+      "_type": "feature",
+      "en": "Media pipeline on Cloudflare R2 — images are resized to WebP in the browser, uploaded with presigned PUT URLs and verified with a HEAD check, served from a custom domain through a custom image loader. A scheduled sweep deletes orphaned objects after a 24-hour grace period, using a list of every column that references an image.",
+      "id": "Pipeline media di Cloudflare R2 - gambar di-resize ke WebP di browser, diunggah lewat presigned PUT URL dan diverifikasi dengan cek HEAD, disajikan dari domain kustom lewat image loader kustom. Sapuan terjadwal menghapus objek yatim setelah masa tenggang 24 jam, memakai daftar semua kolom yang merujuk gambar."
+    },
+    {
+      "_key": "g3h7j1l5o9r2",
+      "_type": "feature",
+      "en": "Guest-endpoint protection for RSVP and wishes — per-IP and per-invitation rate limits, length caps, a honeypot field, and an existence check on the invitation, with the client IP read only from headers the reverse proxy overwrites.",
+      "id": "Perlindungan endpoint tamu untuk RSVP dan ucapan - rate limit per IP dan per undangan, batas panjang, honeypot, dan pengecekan keberadaan undangan, dengan IP klien hanya dibaca dari header yang ditimpa reverse proxy."
+    },
+    {
+      "_key": "h6i0k4m8p2s7",
+      "_type": "feature",
+      "en": "Automated zero-source deployment — GitHub Actions runs typecheck, lint, build, and database migrations through an SSH tunnel, rsyncs a standalone build into a versioned release folder, switches the `current` symlink atomically, runs a health check, and rolls back automatically on failure.",
+      "id": "Deployment otomatis tanpa source di server - GitHub Actions menjalankan typecheck, lint, build, dan migrasi database lewat SSH tunnel, lalu rsync build standalone ke folder rilis berversi, memindahkan symlink `current` secara atomik, cek kesehatan, dan rollback otomatis jika gagal."
+    },
+    {
+      "_key": "i9j3l7n1q5t0",
+      "_type": "feature",
+      "en": "Per-invitation WhatsApp link previews — title, description, and og:image come from each invitation's own data, with a fallback preview image for the main domain and for invitations without a gallery.",
+      "id": "Pratinjau tautan WhatsApp per undangan - judul, deskripsi, dan og:image berasal dari data undangan masing-masing, dengan gambar cadangan untuk domain utama dan undangan tanpa galeri."
+    }
+  ],
+  "fullDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Ajakkita is a digital wedding invitation service, live at ajakkita.id. Each couple gets their own invitation at a personal subdomain (<slug>.ajakkita.id) with per-guest links (?to=Name), a countdown, love-story timeline, gallery, map, RSVP, guestbook, digital envelope, and background music — and a private admin page where the couple manages guests, reads RSVPs and wishes, and edits the invitation themselves.\n\nIt started as a single template and was deliberately restructured into a multi-tenant product before the first real customer. One Next.js app serves every tenant: a proxy rewrites the subdomain to an internal route, one Postgres schema holds all invitations with JSON columns for gallery, love story, and per-template settings, and tenant pages are cached with ISR. Templates are plain React components that receive the invitation, so the visual design is not constrained by the data model; what constrains a new template is the admin, which is why each template declares its own sections and editable fields and the admin form is generated from that declaration.\n\nThe part I spent the most care on is what happens after the invitation is sent. Guest-facing endpoints are rate limited per IP and per invitation, with a honeypot and length limits; the per-invitation admin is protected at three layers; and the owner admin on the main domain uses Auth.js with Google login restricted to my own email, so onboarding, password resets, and deletion no longer need a terminal and an SSH tunnel. Photos live in Cloudflare R2, resized in the browser and uploaded with presigned URLs, with a scheduled sweep that removes orphaned files — and a documented rule that any new image column must be registered in the sweep's reference list, or its photos would be deleted as orphans.\n\nThe customer-facing editor is a display studio: a section-by-section form next to a live iframe preview of the real public page. To scroll the preview to the field being edited without adding markers to every template, the studio finds the field's text in the preview document. Template texts moved from one flat map shared by all templates to a per-template namespace, because 32 of 60 text keys were reused across templates with different defaults; the migration is reversible and idempotent, and backed by unit tests.\n\nIt runs on a single small VPS (Next.js under PM2, Postgres, nginx) behind Cloudflare with a wildcard origin certificate, chosen after comparing hosting options on cost, memory headroom, and commercial-use terms. Deployments are fully automated from GitHub Actions with atomic release switching, a health check, and automatic rollback. The business side is still being validated — the repo tracks explicit evaluation criteria (paying customers, hours of work per invitation, price) and what not to build before they are met. Remaining work: scheduled database backups to a private bucket, uptime monitoring, a licensed background-music library, and more templates once real requests show which ones matter."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Ajakkita adalah layanan undangan pernikahan digital yang sudah live di ajakkita.id. Tiap pasangan mendapat undangan di subdomain pribadi (<slug>.ajakkita.id) dengan link per tamu (?to=Nama), hitung mundur, timeline cerita cinta, galeri, peta, RSVP, buku tamu, amplop digital, dan musik latar - plus halaman admin privat tempat pasangan mengelola tamu, membaca RSVP dan ucapan, dan mengedit undangannya sendiri.\n\nBermula dari satu template, lalu sengaja disusun ulang menjadi produk multi-tenant sebelum ada pelanggan sungguhan pertama. Satu aplikasi Next.js melayani semua tenant: proxy me-rewrite subdomain ke route internal, satu skema Postgres menyimpan semua undangan dengan kolom JSON untuk galeri, cerita cinta, dan pengaturan per template, dan halaman tenant di-cache dengan ISR. Template adalah komponen React biasa yang menerima data undangan, jadi tampilannya tidak dibatasi model data; yang membatasi template baru adalah admin-nya, sehingga tiap template mendeklarasikan section dan field yang bisa diedit sendiri dan form admin dibuat dari deklarasi itu.\n\nBagian yang paling saya perhatikan adalah apa yang terjadi setelah undangan disebar. Endpoint untuk tamu dibatasi rate limit per IP dan per undangan, dengan honeypot dan batas panjang; admin per undangan dijaga tiga lapis; dan admin pemilik di domain utama memakai Auth.js dengan login Google yang dibatasi ke email saya sendiri, sehingga onboarding, reset password, dan penghapusan tidak lagi butuh terminal dan SSH tunnel. Foto disimpan di Cloudflare R2, di-resize di browser dan diunggah lewat presigned URL, dengan sapuan terjadwal yang membuang file yatim - dan aturan tertulis bahwa setiap kolom gambar baru wajib didaftarkan ke daftar referensi sapuan, kalau tidak fotonya dihapus sebagai yatim.\n\nEditor untuk pelanggan berupa studio Tampilan: form per section di samping pratinjau iframe dari halaman publik yang asli. Agar pratinjau bisa menggulir ke isian yang sedang diedit tanpa menambah penanda di tiap template, studio mencari teks isian itu di dokumen pratinjau. Teks template dipindah dari satu peta datar yang dipakai semua template ke namespace per template, karena 32 dari 60 kunci teks dipakai lebih dari satu template dengan teks bawaan berbeda; migrasinya bisa dibalik dan idempoten, dengan dukungan tes unit.\n\nBerjalan di satu VPS kecil (Next.js di PM2, Postgres, nginx) di belakang Cloudflare dengan sertifikat origin wildcard, dipilih setelah membandingkan opsi hosting dari sisi biaya, ruang memori, dan aturan pemakaian komersial. Deployment otomatis penuh dari GitHub Actions dengan pergantian rilis atomik, cek kesehatan, dan rollback otomatis. Sisi bisnisnya masih divalidasi - repo mencatat kriteria evaluasi yang eksplisit (jumlah pelanggan berbayar, jam kerja per undangan, harga) beserta apa yang tidak boleh dibangun sebelum kriteria itu terpenuhi. Sisa pekerjaan: backup database terjadwal ke bucket privat, uptime monitoring, pustaka musik latar berlisensi, dan template tambahan setelah permintaan nyata menunjukkan mana yang penting."
+    }
+  ],
+  "id": "55e7f8e1-6114-459f-b78b-1b60e68cc6fc",
+  "image": {
+    "imageAlt": "Ajakkita Image",
+    "imageSrc": "/images/projects/ajakkita.png",
+    "label": "Ajakkita"
+  },
+  "liveUrl": "https://ajakkita.id",
+  "shortDesc": [
+    {
+      "_key": "en",
+      "_type": "internationalizedArrayTextValue",
+      "value": "A multi-tenant digital wedding invitation service (Next.js + Prisma + PostgreSQL) where every couple gets their own subdomain, three switchable templates, a live-preview editing studio, RSVP and guestbook, photos on Cloudflare R2, and fully automated VPS deployment with rollback."
+    },
+    {
+      "_key": "id",
+      "_type": "internationalizedArrayTextValue",
+      "value": "Layanan undangan pernikahan digital multi-tenant (Next.js + Prisma + PostgreSQL) di mana tiap pasangan mendapat subdomain sendiri, tiga template yang bisa diganti, studio edit dengan pratinjau langsung, RSVP dan buku tamu, foto di Cloudflare R2, serta deployment VPS otomatis dengan rollback."
+    }
+  ],
+  "sourceCode": null,
+  "status": "live",
+  "subDemos": [],
+  "techStack": [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "ShadCN",
+    "Prisma",
+    "PostgreSQL",
+    "Auth.js",
+    "Google OAuth",
+    "Motion",
+    "Cloudflare R2",
+    "Cloudflare",
+    "Vitest",
+    "GitHub Actions",
+    "PM2",
+    "nginx"
+  ],
+  "title": "Ajakkita"
+}

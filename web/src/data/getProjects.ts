@@ -10,6 +10,7 @@ import studinesia from "../../data/projects/studinesia.json";
 import cromachainPresale from "../../data/projects/cromachain-presale.json";
 import retailku from "../../data/projects/retailku.json";
 import financialApp from "../../data/projects/financial-app.json";
+import ajakkita from "../../data/projects/ajakkita.json";
 
 const projectsData = [
   dragon8Travel,
@@ -23,6 +24,7 @@ const projectsData = [
   cromachainPresale,
   retailku,
   financialApp,
+  ajakkita,
 ];
 
 export function getProjectsData(): ProjectCard[] {

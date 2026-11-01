@@ -5,14 +5,14 @@ import { FeaturedProjectsFooter } from "./FeaturedProjectsFooter";
 
 const featuredItems: ProjectSummary[] = [
   {
-    title: "Dragon 8 Travel",
+    title: "Ajakkita",
     image: {
-      imageAlt: "Dragon 8 Travel",
-      label: "Dragon 8 Travel",
-      imageSrc: "/images/projects/dragon-8-travel.png",
+      imageAlt: "Ajakkita Image",
+      label: "Ajakkita",
+      imageSrc: "/images/projects/ajakkita.png",
     },
-    liveUrl: "https://dragon8travel.com/",
-    techStack: ["Next.js", "Tailwind CSS", "Supabase"],
+    liveUrl: "https://ajakkita.id",
+    techStack: ["Next.js", "Prisma", "PostgreSQL"],
   },
   {
     title: "Retailku",
