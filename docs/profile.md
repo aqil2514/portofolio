@@ -32,7 +32,7 @@ Full-stack developer experienced in building digital systems, AI automation, and
 ### Freelance / Personal Projects — Full Stack Developer
 **Jul 2023 – Present | Sukawangi, West Java**
 - Built Web3 Presale Platform (Cromachain) using Next.js, NestJS, and Wagmi with payment gateway webhooks and automated multi-level referral system
-- Developed a custom Headless CMS for Dragon 8 Travel (Next.js/Supabase/TypeScript) with real-time content management and trilingual i18n (EN/ID/ZH)
+- Built and launched Ajakkita (ajakkita.id) — a multi-tenant digital wedding invitation service (Next.js + Prisma + PostgreSQL) with per-couple subdomains, a live-preview editing studio, Cloudflare R2 media, and automated VPS deployment with rollback
 - Architected an end-to-end AI Content Automation System using n8n, OpenAI API, and custom Admin APIs
 - Built Retailku — a multitenant retail mini ERP with full purchase cycle, manufacturing, sales, accounting journals, and financial reports (NestJS + Prisma + PostgreSQL + Next.js)
 
@@ -55,6 +55,11 @@ Full-stack developer experienced in building digital systems, AI automation, and
 | Product Engineering | Intermediate | Product Architecture, CMS Integration, Admin Dashboard, Auth (NextAuth/Auth.js), REST API Design, State Management |
 
 ## Projects
+
+### Ajakkita (Live)
+Multi-tenant digital wedding invitation service — per-couple subdomains, three switchable templates, RSVP, guestbook, digital envelope, a live-preview editing studio, and an Auth.js-secured owner admin.
+- Stack: Next.js, TypeScript, Tailwind CSS, ShadCN, Prisma, PostgreSQL, Auth.js, Cloudflare R2, Vitest, GitHub Actions, PM2, nginx
+- Live: https://ajakkita.id
 
 ### Retailku (On Progress)
 Multitenant retail management platform — mini ERP for retail businesses covering purchases, stock, manufacturing, sales, cashflow, accounting journals, and financial reports.
@@ -80,11 +85,6 @@ Web3 platform for purchasing and managing CRM and CMC tokens — referral system
 ### N8N Automation (Archived)
 Fully automated end-to-end content creation system — article generation, AI image creation, Facebook publishing, and Studinesia API integration.
 - Stack: n8n, OpenAI API, Cloudinary, Supabase, Google Sheets, Render, Facebook Graph API
-
-### Dragon 8 Travel (Archived)
-Custom Headless CMS for a travel agency — trilingual (EN/ID/ZH), Google OAuth, real-time content management.
-- Stack: Next.js, Supabase, TypeScript, Tailwind CSS, NextAuth, i18n
-- Source: https://github.com/aqil2514/dragon8-travel
 
 ### Developer Portfolio Platform (Live)
 This portfolio site — bilingual routing (ID/EN), dynamic OpenGraph, JSON-LD SEO, PDF CV generator, Vercel Analytics.

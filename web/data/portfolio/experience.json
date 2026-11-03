@@ -123,12 +123,12 @@
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Developed and deployed a robust, custom Headless CMS for Dragon 8 Travel using the Next.js/Supabase/TypeScript stack, featuring real-time dynamic content management, Google OAuth authentication, and advanced i18n support for three languages (English, Indonesian, Chinese)."
+              "value": "Built and launched Ajakkita (ajakkita.id), a multi-tenant digital wedding invitation service on Next.js, Prisma, and PostgreSQL, with per-couple subdomains, a live-preview editing studio, Cloudflare R2 media handling, and fully automated VPS deployment with rollback."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Membangun dan Menerapkan Sistem CMS Kustom untuk Dragon 8 Travel menggunakan arsitektur Next.js/Supabase/TypeScript, dengan fitur utama manajemen konten dinamis real-time, otentikasi Google OAuth, dan dukungan multi-bahasa (i18n) untuk tiga bahasa."
+              "value": "Membangun dan meluncurkan Ajakkita (ajakkita.id), layanan undangan pernikahan digital multi-tenant dengan Next.js, Prisma, dan PostgreSQL, lengkap dengan subdomain per pasangan, studio edit berpratinjau langsung, pengelolaan media di Cloudflare R2, dan deployment VPS otomatis penuh dengan rollback."
             }
           ]
         },

@@ -1,5 +1,4 @@
 import { ProjectCard, ProjectCategory } from "@/@types/Projects";
-import dragon8Travel from "../../data/projects/dragon-8-travel.json";
 import kompasianaScrapper from "../../data/projects/kompasiana-scrapper.json";
 import miniQuiz from "../../data/projects/mini-quiz.json";
 import developerPortfolioPlatform from "../../data/projects/developer-portfolio-platform.json";
@@ -13,7 +12,6 @@ import financialApp from "../../data/projects/financial-app.json";
 import ajakkita from "../../data/projects/ajakkita.json";
 
 const projectsData = [
-  dragon8Travel,
   kompasianaScrapper,
   miniQuiz,
   developerPortfolioPlatform,

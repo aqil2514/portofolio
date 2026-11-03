@@ -2,139 +2,91 @@
   "_type": "projectsSection",
   "items": [
     {
-      "_key": "580c650615bd",
+      "_key": "16ca3f51b41a",
       "_type": "projectItem",
       "bullets": [
         {
-          "_key": "52e94d4cc98d",
+          "_key": "aaa450669cfc",
           "_type": "bulletItem",
           "text": [
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Dynamic content management system powered by Supabase, allowing admin to update homepage, hero sliders, and articles in real time."
+              "value": "Multi-tenant digital wedding invitation service (ajakkita.id): one Next.js app serves every couple on its own subdomain, with three switchable templates, RSVP, guestbook, digital envelope, and per-guest links."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Sistem manajemen konten dinamis berbasis Supabase yang memungkinkan admin memperbarui beranda, slider hero, dan artikel secara real-time."
+              "value": "Layanan undangan pernikahan digital multi-tenant (ajakkita.id): satu aplikasi Next.js melayani setiap pasangan di subdomain sendiri, dengan tiga template yang bisa diganti, RSVP, buku tamu, amplop digital, dan link per tamu."
             }
           ]
         },
         {
-          "_key": "6031005162d9",
+          "_key": "a8f51cbacbf7",
           "_type": "bulletItem",
           "text": [
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Integrated authentication using Google OAuth for secure and convenient access to the CMS dashboard."
+              "value": "Built a customer-facing editing studio with a live preview of the real public page, plus an owner admin secured with Auth.js (Google login restricted to an email allowlist) and a per-invitation admin with scrypt-hashed passwords."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Autentikasi terintegrasi menggunakan Google OAuth untuk akses aman dan praktis ke dashboard CMS."
+              "value": "Membangun studio edit untuk pelanggan dengan pratinjau langsung dari halaman publik yang asli, serta admin pemilik yang diamankan Auth.js (login Google dengan allowlist email) dan admin per undangan dengan password ber-hash scrypt."
             }
           ]
         },
         {
-          "_key": "1ea1db188d46",
+          "_key": "6d4a23b2f9ae",
           "_type": "bulletItem",
           "text": [
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Seamless multilingual support (English, Bahasa Indonesia, Mandarin) with automatic language detection and manual switcher."
+              "value": "Designed the data layer on Prisma and PostgreSQL, including a reversible migration of template texts to a per-template namespace, covered by unit tests (Vitest)."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Dukungan tiga bahasa (Inggris, Indonesia, Chinese) dengan deteksi otomatis dan pemilih bahasa manual."
+              "value": "Merancang lapisan data dengan Prisma dan PostgreSQL, termasuk migrasi teks template ke namespace per template yang bisa dibalik, dengan dukungan tes unit (Vitest)."
             }
           ]
         },
         {
-          "_key": "5226ca61bdd1",
+          "_key": "fe30abb416c6",
           "_type": "bulletItem",
           "text": [
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Responsive, visually rich design optimized for mobile, tablet, and desktop using Tailwind CSS."
+              "value": "Handled photo uploads on Cloudflare R2 with browser-side WebP resizing, presigned URLs, and a scheduled sweep for orphaned files; protected guest endpoints with per-IP and per-invitation rate limiting and a honeypot."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Desain responsif dan menarik yang dioptimalkan untuk perangkat mobile, tablet, dan desktop menggunakan Tailwind CSS."
+              "value": "Menangani unggah foto di Cloudflare R2 dengan resize WebP di browser, presigned URL, dan sapuan terjadwal untuk file yatim; melindungi endpoint tamu dengan rate limit per IP dan per undangan serta honeypot."
             }
           ]
         },
         {
-          "_key": "3acb4838a528",
+          "_key": "fb4fe3406f94",
           "_type": "bulletItem",
           "text": [
             {
               "_key": "en",
               "_type": "internationalizedArrayStringValue",
-              "value": "Image hosting and optimization via Cloudinary integration for fast and high-quality media delivery."
+              "value": "Automated deployment to a VPS (PM2, nginx, Cloudflare) with GitHub Actions: database migrations, atomic release switching, health check, and automatic rollback."
             },
             {
               "_key": "id",
               "_type": "internationalizedArrayStringValue",
-              "value": "Hosting dan optimasi gambar melalui integrasi Cloudinary untuk kecepatan tinggi dan kualitas media terbaik."
-            }
-          ]
-        },
-        {
-          "_key": "04f49d19790b",
-          "_type": "bulletItem",
-          "text": [
-            {
-              "_key": "en",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Admin dashboard with live preview, content versioning, and image upload capabilities."
-            },
-            {
-              "_key": "id",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Dashboard admin dengan fitur pratinjau langsung, versi konten, dan kemampuan unggah gambar."
-            }
-          ]
-        },
-        {
-          "_key": "3255490716d6",
-          "_type": "bulletItem",
-          "text": [
-            {
-              "_key": "en",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Modern frontend architecture built with Next.js 15 and TypeScript for scalability and performance."
-            },
-            {
-              "_key": "id",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Arsitektur frontend modern menggunakan Next.js 15 dan TypeScript untuk skalabilitas dan performa tinggi."
-            }
-          ]
-        },
-        {
-          "_key": "a37089ad415c",
-          "_type": "bulletItem",
-          "text": [
-            {
-              "_key": "en",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Deployed on Vercel with continuous integration and optimized SEO metadata for better global reach."
-            },
-            {
-              "_key": "id",
-              "_type": "internationalizedArrayStringValue",
-              "value": "Dideploy di Vercel dengan integrasi berkelanjutan serta metadata SEO yang dioptimalkan untuk jangkauan global."
+              "value": "Mengotomatiskan deployment ke VPS (PM2, nginx, Cloudflare) dengan GitHub Actions: migrasi database, pergantian rilis atomik, cek kesehatan, dan rollback otomatis."
             }
           ]
         }
       ],
-      "endDate": "2025-11-15",
+      "endDate": "2026-11-03",
       "role": [
         {
           "_key": "en",
@@ -147,17 +99,17 @@
           "value": "Full Stack Developer"
         }
       ],
-      "startDate": "2025-10-01",
+      "startDate": "2026-10-29",
       "title": [
         {
           "_key": "en",
           "_type": "internationalizedArrayStringValue",
-          "value": "Dragon 8 Travel"
+          "value": "Ajakkita"
         },
         {
           "_key": "id",
           "_type": "internationalizedArrayStringValue",
-          "value": "Dragon 8 Travel"
+          "value": "Ajakkita"
         }
       ]
     },
