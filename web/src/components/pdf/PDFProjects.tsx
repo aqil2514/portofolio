@@ -12,6 +12,7 @@ interface Props{
 }
 
 export const PDFProjects:React.FC<Props> = ({data, locale}) => {
+  const isCurrentValue = locale === "en" ? "Present" : "Sekarang";
   return (
     <View style={styles.projectsSection}>
       <Text style={styles.sectionTitle}>{getInternationalizationValue(data.title, locale)}</Text>
@@ -22,7 +23,10 @@ export const PDFProjects:React.FC<Props> = ({data, locale}) => {
           <View style={styles.projectHeaderRow}>
             <Text style={styles.projectTitle}>{getInternationalizationValue(project.title, locale)}</Text>
             <Text style={styles.projectDates}>
-              {formatMonthYear(project.startDate, locale)} - {formatMonthYear(project.endDate, locale)}
+              {formatMonthYear(project.startDate, locale)} -{" "}
+              {project.isCurrent || !project.endDate
+                ? isCurrentValue
+                : formatMonthYear(project.endDate, locale)}
             </Text>
           </View>
 

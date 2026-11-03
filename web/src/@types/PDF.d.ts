@@ -59,7 +59,8 @@ export interface ProjectItem {
   bullets: {
     text: InternationalizedArray[];
   }[];
-  endDate: string;
+  endDate?: string;
+  isCurrent?: boolean;
   role?: InternationalizedArray[];
   startDate: string;
   title: InternationalizedArray[];

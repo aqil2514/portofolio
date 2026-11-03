@@ -86,7 +86,7 @@
           ]
         }
       ],
-      "endDate": "2026-11-03",
+      "isCurrent": true,
       "role": [
         {
           "_key": "en",
